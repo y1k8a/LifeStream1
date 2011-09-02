@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="directory" title="搜索">
+	<tab_container name="Directory Tabs">
+		<panel label="All" name="find_all_panel">
+			<string name="searching_text">
+				查找中……
+			</string>
+			<string name="not_found_text">
+				什麼也沒找到。
+			</string>
+			<text name="find">
+				尋找：
+			</text>
+			<line_editor label="搜索" name="search_editor" tool_tip="搜索第二人生"/>
+			<button label="後退" name="back_btn"/>
+			<button label="前進" name="forward_btn"/>
+			<button label="搜索" name="search_btn"/>
+			<combo_box name="Category">
+				<combo_item name="AnyCategory">
+					所有分類
+				</combo_item>
+				<combo_item name="Events">
+					事件
+				</combo_item>
+				<combo_item name="Groups">
+					社群
+				</combo_item>
+				<combo_item name="People">
+					居民
+				</combo_item>
+				<combo_item name="Places">
+					地點
+				</combo_item>
+				<combo_item name="Wiki">
+					Wiki
+				</combo_item>
+			</combo_box>
+			<check_box label="普遍級內容" name="incpg"/>
+			<check_box label="輔導級內容" name="incmature"/>
+			<check_box label="成人內容" name="incadult"/>
+			<button label="?" label_selected="?" name="?"/>
+			<string name="loading_text">
+				載入中...
+			</string>
+			<string name="done_text">
+				完成
+			</string>
+		</panel>
+		<panel label="分類廣告" name="classified_panel">
+			<string name="searching_text">
+				查找中……
+			</string>
+			<string name="not_found_text">
+				什麼也沒找到。
+			</string>
+			<text name="find">
+				尋找:
+			</text>
+			<check_box label="普遍級內容" name="incpg"/>
+			<check_box label="輔導級內容" name="incmature"/>
+			<check_box label="成人內容" name="incadult"/>
+			<combo_box name="Category">
+				<combo_item name="AnyCategory">
+					任意分類
+				</combo_item>
+				<combo_item name="Shopping">
+					購物
+				</combo_item>
+				<combo_item name="LandRental">
+					待租土地
+				</combo_item>
+				<combo_item name="PropertyRental">
+					財產租賃
+				</combo_item>
+				<combo_item name="SpecialAttraction">
+					特殊吸引力
+				</combo_item>
+				<combo_item name="NewProducts">
+					新產品
+				</combo_item>
+				<combo_item name="Employment">
+					職業
+				</combo_item>
+				<combo_item name="Wanted">
+					需求
+				</combo_item>
+				<combo_item name="Service">
+					服務
+				</combo_item>
+				<combo_item name="Personal">
+					私人的
+				</combo_item>
+			</combo_box>
+			<button label="遊覽" label_selected="遊覽" name="Browse"/>
+			<button label="搜索" label_selected="搜索" name="Search"/>
+			<button label="投放廣告..." label_selected="投放廣告..." name="Place an Ad..."/>
+			<button label="刪除" label_selected="刪除" name="Delete"/>
+			<scroll_list name="results">
+				<column label="" name="icon"/>
+				<column label="" name="type"/>
+				<column label="名稱" name="name"/>
+				<column label="價錢" name="price"/>
+			</scroll_list>
+			<button label="下一頁 &gt;" label_selected="下一頁 &gt;" name="Next &gt;"/>
+			<button label="&lt; 上一頁" label_selected="&lt; 上一頁" name="&lt; Prev"/>
+		</panel>
+		<panel label="事件" name="events_panel">
+			<string name="searching_text">
+				查找中……
+			</string>
+			<string name="not_found_text">
+				什麼也沒找到。
+			</string>
+			<text name="text2">
+				尋找：
+			</text>
+			<radio_group name="date_mode">
+				<radio_item name="current">
+					當前和近期事件
+				</radio_item>
+				<radio_item name="date">
+					日期
+				</radio_item>
+			</radio_group>
+			<button label="&lt;&lt;" label_selected="&lt;&lt;" name="&lt;&lt;" tool_tip="返回一天"/>
+			<text name="date_text">
+				6/6
+			</text>
+			<button label="&gt;&gt;" label_selected="&gt;&gt;" name="&gt;&gt;" tool_tip="前進一天"/>
+			<button label="今日" label_selected="今日" name="Today" tool_tip="顯示今天發生的事件"/>
+			<text name="text">
+				種類列表:
+			</text>
+			<combo_box name="category combo">
+				<combo_item name="All">
+					任意分類
+				</combo_item>
+				<combo_item name="Discussion">
+					討論
+				</combo_item>
+				<combo_item name="Sports">
+					體育
+				</combo_item>
+				<combo_item name="LiveMusic">
+					現場音樂
+				</combo_item>
+				<combo_item name="Commercial">
+					商業
+				</combo_item>
+				<combo_item name="Nightlife/Entertainment">
+					夜生活/娛樂
+				</combo_item>
+				<combo_item name="Games/Contests">
+					遊戲/競賽
+				</combo_item>
+				<combo_item name="Pageants">
+					遊行
+				</combo_item>
+				<combo_item name="Education">
+					教育
+				</combo_item>
+				<combo_item name="ArtsandCulture">
+					藝術與文化
+				</combo_item>
+				<combo_item name="Charity/SupportGroups">
+					慈善機構
+				</combo_item>
+				<combo_item name="Miscellaneous">
+					其他
+				</combo_item>
+			</combo_box>
+			<check_box label="普遍級內容" name="incpg"/>
+			<check_box label="輔導級內容" name="incmature"/>
+			<check_box label="成人內容" name="incadult"/>
+			<button label="搜索" label_selected="搜索" name="Search" tool_tip="搜索"/>
+			<button label="刪除" label_selected="刪除" name="Delete"/>
+			<scroll_list name="results">
+				<column label="" name="icon"/>
+				<column label="" name="type"/>
+				<column label="名稱" name="name"/>
+				<column label="時間 (PT)" name="date"/>
+				<column label="" name="event_id"/>
+				<column label="時間" name="time"/>
+			</scroll_list>
+			<button label="下一頁 &gt;" label_selected="下一頁 &gt;" name="Next &gt;"/>
+			<button label="&lt; 上一頁" label_selected="&lt; 上一頁" name="&lt; Prev"/>
+		</panel>
+		<panel label="熱門地點" name="showcase_panel">
+			<string name="searching_text">
+				查找中……
+			</string>
+			<string name="not_found_text">
+				什麼也沒找到。
+			</string>
+			<button label="後退" name="back_btn"/>
+			<button label="前進" name="forward_btn"/>
+			<string name="loading_text">
+				載入中...
+			</string>
+			<string name="done_text">
+				完成
+			</string>
+		</panel>
+		<panel label="土地出售" name="land_sales_panel">
+			<string name="searching_text">
+				查找中……
+			</string>
+			<string name="not_found_text">
+				什麼也沒找到。
+			</string>
+			<string name="land_help_text">
+				土地可以直接用福幣購買（F$），也可以用林登元或美元拍賣。
+要直接購買, 進入該地塊，然後點擊功能表列上的地點名稱。
+			</string>
+			<text name="find">
+				尋找：
+			</text>
+			<check_box label="普遍級內容" name="incpg"/>
+			<check_box label="輔導級內容" name="incmature"/>
+			<check_box label="成人內容" name="incadult"/>
+			<combo_box bottom="-64" left="224" name="type" width="168">
+				<combo_item name="AllTypes">
+					所有類型
+				</combo_item>
+				<combo_item name="Auction">
+					拍賣
+				</combo_item>
+				<combo_item name="MainlandSales">
+					出售 - 大陸
+				</combo_item>
+				<combo_item name="EstateSales">
+					出售 - 地產
+				</combo_item>
+			</combo_box>
+			<check_box label="標價 &#8804; " name="pricecheck"/>
+			<text name="pricecheck_symbol">
+				L$
+			</text>
+			<check_box label="地區 &#8805; " name="areacheck"/>
+			<text left="190" name="areacheck_symbol" width="75">
+				m²
+			</text>
+			<line_editor left="135" name="priceedit"/>
+			<line_editor left="135" name="areaedit"/>
+			<button bottom="-66" label="搜索" label_selected="搜索" left="140" name="Search" width="80"/>
+			<scroll_list height="438" name="results">
+				<column label="" name="icon"/>
+				<column label="" name="type"/>
+				<column label="名稱" name="name"/>
+				<column label="類型" name="landtype"/>
+				<column label="F$ 價格" name="price"/>
+				<column label="面積" name="area"/>
+				<column label="L$/m²" name="per_meter"/>
+			</scroll_list>
+			<button label="下一頁&gt;" label_selected="下一頁&gt;" name="Next &gt;"/>
+			<button label="&lt; 之前" label_selected="&lt; 之前" name="&lt; Prev"/>
+		</panel>
+		<panel label="地點" name="places_panel">
+			<string name="searching_text">
+				查找中……
+			</string>
+			<string name="not_found_text">
+				什麼也沒找到。
+			</string>
+			<text name="find">
+				查找:
+			</text>
+			<check_box label="普遍級內容" name="incpg"/>
+			<check_box label="輔導級內容" name="incmature"/>
+			<check_box label="成人內容" name="incadult"/>
+			<combo_box name="Category">
+				<combo_item name="AnyCategory">
+					任意分類
+				</combo_item>
+				<combo_item name="LindenLocation">
+					福爾摩亞園區的地點
+				</combo_item>
+				<combo_item name="Arts&amp;Culture">
+					藝術和文化
+				</combo_item>
+				<combo_item name="Business">
+					商業
+				</combo_item>
+				<combo_item name="Educational">
+					教育
+				</combo_item>
+				<combo_item name="Gaming">
+					博彩/遊戲
+				</combo_item>
+				<combo_item name="Hangout">
+					聚會
+				</combo_item>
+				<combo_item name="NewcomerFriendly">
+					初行者友好
+				</combo_item>
+				<combo_item name="Parks&amp;Nature">
+					公園和自然
+				</combo_item>
+				<combo_item name="Residential">
+					居住區
+				</combo_item>
+				<combo_item name="Shopping">
+					購物
+				</combo_item>
+				<combo_item name="Other">
+					其他
+				</combo_item>
+			</combo_box>
+			<combo_box name="Category_Adult">
+				<combo_item name="AnyCategory">
+					任意分類
+				</combo_item>
+				<combo_item name="LindenLocation">
+					林登實驗室的地點
+				</combo_item>
+				<combo_item name="Adult">
+					Adult
+				</combo_item>
+				<combo_item name="Arts&amp;Culture">
+					藝術與文化
+				</combo_item>
+				<combo_item name="Business">
+					商業
+				</combo_item>
+				<combo_item name="Educational">
+					教育
+				</combo_item>
+				<combo_item name="Gaming">
+					遊戲/競賽
+				</combo_item>
+				<combo_item name="Hangout">
+					聚會
+				</combo_item>
+				<combo_item name="NewcomerFriendly">
+					易於新居民使用
+				</combo_item>
+				<combo_item name="Parks&amp;Nature">
+					公園和大自然
+				</combo_item>
+				<combo_item name="Residential">
+					居住區
+				</combo_item>
+				<combo_item name="Shopping">
+					購物
+				</combo_item>
+				<combo_item name="Other">
+					其他
+				</combo_item>
+			</combo_box>
+			<button label="搜索" label_selected="搜索" name="Search"/>
+			<scroll_list name="results">
+				<column label="" name="icon"/>
+				<column label="" name="type"/>
+				<column label="名稱" name="name"/>
+				<column label="流量" name="dwell"/>
+			</scroll_list>
+			<button label="下一頁 &gt;" label_selected="下一頁 &gt;" name="Next &gt;"/>
+			<button label="&lt; 上一頁" label_selected="&lt; 上一頁" name="&lt; Prev"/>
+		</panel>
+		<panel label="居民" name="people_panel">
+			<string name="searching_text">
+				查找中……
+			</string>
+			<string name="not_found_text">
+				什麼也沒找到。
+			</string>
+			<text name="find">
+				查找:
+			</text>
+			<button label="搜索" label_selected="搜索" name="Search"/>
+			<scroll_list name="results">
+				<column label="" name="icon"/>
+				<column label="" name="type"/>
+				<column label="名字" name="name"/>
+			</scroll_list>
+			<button label="下一頁 &gt;" label_selected="下一頁 &gt;" name="Next &gt;"/>
+			<button label="&lt; 上一頁" label_selected="&lt; 上一頁" name="&lt; Prev"/>
+		</panel>
+		<panel label="社群" name="groups_panel">
+			<string name="searching_text">
+				查找中……
+			</string>
+			<string name="not_found_text">
+				什麼也沒找到。
+			</string>
+			<text name="find">
+				尋找：
+			</text>
+			<line_editor label="查找" name="search_editor" tool_tip="搜索第二人生"/>
+			<button label="後退" name="back_btn"/>
+			<button label="前進" name="forward_btn"/>
+			<button label="搜索" label_selected="搜索" name="search_btn"/>
+			<check_box label="普遍級內容" name="incpg"/>
+			<check_box label="輔導級內容" name="incmature"/>
+			<check_box label="成人內容" name="incadult"/>
+			<string name="loading_text">
+				載入中...
+			</string>
+			<string name="done_text">
+				完成
+			</string>
+		</panel>
+	</tab_container>
+</floater>

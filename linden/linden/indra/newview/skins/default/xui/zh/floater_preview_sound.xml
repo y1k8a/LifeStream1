@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="preview_sound" title="聲音: 女性噓聲2">
+	<text type="string" length="1" name="desc txt">
+		描述:
+	</text>
+	<button label="在世界中播放" label_selected="在世界中播放"
+	     name="Sound play btn"
+	     tool_tip="播放這段音訊且其他人也可聽到。" />
+	<button label="本地播放" label_selected="本地播放" name="Sound audition btn"
+	     tool_tip="播放這段音訊且僅有您可以聽到。" />
+</floater>

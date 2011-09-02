@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_bumps" title="碰撞、推動和敲打">
+	<text name="none_detected">
+		沒有監測到
+	</text>
+	<text name="bump">
+		[TIME]  [FIRST] [LAST] 撞了你
+	</text>
+	<text name="llpushobject">
+		[TIME]  [FIRST] [LAST] 用腳本推了你
+	</text>
+	<text name="selected_object_collide">
+		[TIME]  [FIRST] [LAST] 用一件物體敲打了你
+	</text>
+	<text name="scripted_object_collide">
+		[TIME]  [FIRST] [LAST] 用一件有腳本物體敲打了你
+	</text>
+	<text name="physical_object_collide">
+		[TIME]  [FIRST] [LAST] 用一件物理的物體敲打了你
+	</text>
+</floater>

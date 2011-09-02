@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="Give Money" title="주민 지불: [FIRST] [LAST]">
+
+	<text name="fastpay text">
+		빠른 지불:
+	</text>
+
+	<text name="amount text">
+		금액:
+	</text>
+
+	<button name="pay btn"    label="지불" />
+	<button name="cancel btn" label="취소" />
+
+</floater>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater
+	 can_tear_off="true"
+	 min_height="310"
+	 min_width="241"
+	 name="landmarkpicker"
+	 title="整理: 地標">
+	<check_box
+		 
+		 label="顯示資料夾"
+		 name="show_folders_check" />
+	<button
+		 label="新建"
+		 label_selected="新建"
+		 name="New" />
+	<button
+		 label="重命名"
+		 label_selected="重命名"
+		 name="Rename" />
+	<button
+		 label="新建資料夾"
+		 label_selected="新建資料夾"
+		 name="NewFolder" />
+	<button
+		 label="編輯"
+		 label_selected="編輯"
+		 name="Edit" />
+	<button
+		 label="刪除"
+		 label_selected="刪除"
+		 name="Delete" />
+	<button
+		 label="關閉"
+		 label_selected="關閉"
+		 name="Close" />
+</floater>
+

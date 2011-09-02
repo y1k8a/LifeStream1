@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- This file contains strings that used to be hardcoded in the source.
+     It is only for those strings which do not belong in a floater.
+     For example, the strings used in avatar chat bubbles, and strings 
+     that are returned from one component and may appear in many places-->
+<strings>
+
+	<!-- Imprudence-specific strings -->
+	<string name="StatBarDaysOfWeek">
+		星期日:星期一:星期二:星期三:星期四:星期五:星期六
+	</string>
+	<string name="StatBarMonthsOfYear">
+		一月:二月:三月:四月:五月:六月:七月:八月:九月:十月:十一月:十二月
+	</string>
+	
+	<string name="LoginInProgress">
+		正在登錄。 [APP_NAME] 可能會看上去沒有反應。 請稍候。
+	</string>
+	<string name="LoginAuthenticating">
+		認證中
+	</string>
+	<string name="LoginMaintenance">
+		正在進行帳戶維護...
+	</string>
+	<string name="LoginAttempt">
+		上次登錄嘗試失敗。正在登錄，第 [NUMBER] 次嘗試
+	</string>
+	<string name="LoginPrecaching">
+		世界載入中...
+	</string>
+	<string name="LoginInitializingBrowser">
+		正在初始化內置流覽器...
+	</string>
+	<string name="LoginInitializingMultimedia">
+		正在初始化多媒體...
+	</string>
+	<string name="LoginVerifyingCache">
+		正在驗證快取檔案 (可能需要 60-90 秒)...
+	</string>
+	<string name="LoginProcessingResponse">
+		處理回復...
+	</string>
+	<string name="LoginInitializingWorld">
+		正在初始化世界...
+	</string>
+	<string name="LoginDecodingImages">
+		正在解碼圖像...
+	</string>
+	<string name="LoginInitializingQuicktime">
+		正在初始化 QuickTime...
+	</string>
+	<string name="LoginQuicktimeNotFound">
+		沒有找到 QuickTime - 不能初始化。
+	</string>
+	<string name="LoginQuicktimeOK">
+		QuickTime 初始化成功。
+	</string>
+	<string name="LoginWaitingForRegionHandshake">
+		等待區域握手信號……...
+	</string>
+	<string name="LoginConnectingToRegion">
+		正在連接到區域...
+	</string>
+	<string name="LoginDownloadingClothing">
+		下載裝束中...
+	</string>
+	<string name="AgentLostConnection">
+		該區域可能存在問題。請檢查您到互聯網的連接。
+	</string>
+	<string name="TooltipPerson">
+		人物
+	</string>
+	<string name="TooltipNoName">
+		(沒有名字)
+	</string>
+	<string name="TooltipOwner">
+		主人:
+	</string>
+	<string name="TooltipPublic">
+		公共
+	</string>
+	<string name="TooltipIsGroup">
+		(社群)
+	</string>
+	<string name="TooltipFlagScript">
+		腳本
+	</string>
+	<string name="TooltipFlagPhysics">
+		物理
+	</string>
+	<string name="TooltipFlagTouch">
+		觸摸
+	</string>
+	<string name="TooltipFlagL$">
+		F$
+	</string>
+	<string name="TooltipFlagDropInventory">
+		放置物體
+	</string>
+	<string name="TooltipFlagPhantom">
+		幻影
+	</string>
+	<string name="TooltipFlagTemporary">
+		暫時
+	</string>
+	<string name="TooltipFlagRightClickMenu">
+		(點擊右鍵, 打開菜單)
+	</string>
+	<string name="TooltipFreeToCopy">
+		可任意複製
+	</string>
+	<string name="TooltipForSaleL$">
+		待售: L$[AMOUNT]
+	</string>
+	<string name="TooltipForSaleMsg">
+		待售: [MESSAGE]
+	</string>
+	<string name="TooltipFlagGroupBuild">
+		社群可建造
+	</string>
+	<string name="TooltipFlagNoBuild">
+		不可建造
+	</string>
+	<string name="TooltipFlagNoEdit">
+		社群可建造
+	</string>
+	<string name="TooltipFlagNotSafe">
+		不安全
+	</string>
+	<string name="TooltipFlagNoFly">
+		不可飛行
+	</string>
+	<string name="TooltipFlagGroupScripts">
+		僅社群腳本
+	</string>
+	<string name="TooltipFlagNoScripts">
+		無腳本
+	</string>
+	<string name="TooltipLand">
+		土地:
+	</string>
+	<string name="TooltipMustSingleDrop">
+		僅可以拖動單個物品到這裡
+	</string>
+	<string name="RetrievingData">
+		獲取中...
+	</string>
+	<string name="ReleaseNotes">
+		更新注釋
+	</string>
+	<string name="LoadingData">
+		載入中...
+	</string>
+	<string name="AvatarNameNobody">
+		(沒有人)
+	</string>
+	<string name="AvatarNameWaiting">
+		(等待中)
+	</string>
+	<string name="AvatarNameHippos">
+		(是河馬)
+	</string>
+	<string name="GroupNameNone">
+		(無社群)
+	</string>
+	<string name="AssetErrorNone">
+		沒有錯誤
+	</string>
+	<string name="AssetErrorRequestFailed">
+		資產請求: 失敗
+	</string>
+	<string name="AssetErrorNonexistentFile">
+		資產請求: 不存在的文件
+	</string>
+	<string name="AssetErrorNotInDatabase">
+		資產請求: 資料庫中未找到資產
+	</string>
+	<string name="AssetErrorEOF">
+		文件末端
+	</string>
+	<string name="AssetErrorCannotOpenFile">
+		無法打開文件
+	</string>
+	<string name="AssetErrorFileNotFound">
+		文件未找到
+	</string>
+	<string name="AssetErrorTCPTimeout">
+		檔案傳輸超時
+	</string>
+	<string name="AssetErrorCircuitGone">
+		通路沒有了
+	</string>
+	<string name="AssetErrorPriceMismatch">
+		用戶端與伺服器持有的價格不一致
+	</string>
+	<string name="AssetErrorUnknownStatus">
+		未知狀態
+	</string>
+	<string name="AvatarEditingApparance">
+		(正在編輯外觀)
+	</string>
+	<string name="AvatarAway">
+		離開
+	</string>
+	<string name="AvatarBusy">
+		忙碌
+	</string>
+	<string name="AvatarMuted">
+		已遮罩
+	</string>
+	<string name="anim_express_afraid">
+		害怕
+	</string>
+	<string name="anim_express_anger">
+		生氣
+	</string>
+	<string name="anim_away">
+		離開
+	</string>
+	<string name="anim_backflip">
+		後空翻
+	</string>
+	<string name="anim_express_laugh">
+		Belly Laugh
+	</string>
+	<string name="anim_express_toothsmile">
+		BigSmile
+	</string>
+	<string name="anim_blowkiss">
+		飛吻
+	</string>
+	<string name="anim_express_bored">
+		無聊
+	</string>
+	<string name="anim_bow">
+		鞠躬
+	</string>
+	<string name="anim_clap">
+		鼓掌
+	</string>
+	<string name="anim_courtbow">
+		宮廷式鞠躬
+	</string>
+	<string name="anim_express_cry">
+		哭泣
+	</string>
+	<string name="anim_dance1">
+		舞蹈 1
+	</string>
+	<string name="anim_dance2">
+		舞蹈 2
+	</string>
+	<string name="anim_dance3">
+		舞蹈 3
+	</string>
+	<string name="anim_dance4">
+		舞蹈 4
+	</string>
+	<string name="anim_dance5">
+		舞蹈 5
+	</string>
+	<string name="anim_dance6">
+		舞蹈 6
+	</string>
+	<string name="anim_dance7">
+		舞蹈 7
+	</string>
+	<string name="anim_dance8">
+		舞蹈 8
+	</string>
+	<string name="anim_express_disdain">
+		Disdain
+	</string>
+	<string name="anim_drink">
+		喝
+	</string>
+	<string name="anim_express_embarrased">
+		害羞
+	</string>
+	<string name="anim_angry_fingerwag">
+		搖手指
+	</string>
+	<string name="anim_fist_pump">
+		Fist Pump
+	</string>
+	<string name="anim_yoga_float">
+		浮空瑜伽
+	</string>
+	<string name="anim_express_frown">
+		皺眉
+	</string>
+	<string name="anim_impatient">
+		不耐煩
+	</string>
+	<string name="anim_jumpforjoy">
+		高興得跳起來
+	</string>
+	<string name="anim_kissmybutt">
+		親我的屁股吧
+	</string>
+	<string name="anim_express_kiss">
+		親吻
+	</string>
+	<string name="anim_laugh_short">
+		大笑
+	</string>
+	<string name="anim_musclebeach">
+		肌肉海灘
+	</string>
+	<string name="anim_no_unhappy">
+		不要 (不高興地)
+	</string>
+	<string name="anim_no_head">
+		不要
+	</string>
+	<string name="anim_nyanya">
+		喵~喵~喵~
+	</string>
+	<string name="anim_punch_onetwo">
+		One-Two Punch
+	</string>
+	<string name="anim_express_open_mouth">
+		張開嘴
+	</string>
+	<string name="anim_peace">
+		和平
+	</string>
+	<string name="anim_point_you">
+		指別人
+	</string>
+	<string name="anim_point_me">
+		指自己
+	</string>
+	<string name="anim_punch_l">
+		左拳
+	</string>
+	<string name="anim_punch_r">
+		右拳
+	</string>
+	<string name="anim_rps_countdown">
+		RPS 計數
+	</string>
+	<string name="anim_rps_paper">
+		RPS 布
+	</string>
+	<string name="anim_rps_rock">
+		RPS 石頭
+	</string>
+	<string name="anim_rps_scissors">
+		RPS 剪刀
+	</string>
+	<string name="anim_express_repulsed">
+		Repulsed
+	</string>
+	<string name="anim_kick_roundhouse_r">
+		Roundhouse Kick
+	</string>
+	<string name="anim_express_sad">
+		傷心
+	</string>
+	<string name="anim_salute">
+		敬禮
+	</string>
+	<string name="anim_shout">
+		喊叫
+	</string>
+	<string name="anim_express_shrug">
+		聳肩
+	</string>
+	<string name="anim_express_smile">
+		微笑
+	</string>
+	<string name="anim_smoke_idle">
+		吸煙 空閒
+	</string>
+	<string name="anim_smoke_inhale">
+		吸煙 吸氣
+	</string>
+	<string name="anim_smoke_throw_down">
+		吸煙 扔下去
+	</string>
+	<string name="anim_express_surprise">
+		吃驚
+	</string>
+	<string name="anim_sword_strike_r">
+		劍刺
+	</string>
+	<string name="anim_angry_tantrum">
+		Tantrum
+	</string>
+	<string name="anim_express_tongue_out">
+		伸舌頭
+	</string>
+	<string name="anim_hello">
+		招手
+	</string>
+	<string name="anim_whisper">
+		悄悄話
+	</string>
+	<string name="anim_whistle">
+		吹口哨
+	</string>
+	<string name="anim_express_wink">
+		眨眼
+	</string>
+	<string name="anim_wink_hollywood">
+		眨眼 (好萊塢式)
+	</string>
+	<string name="anim_express_worry">
+		擔心
+	</string>
+	<string name="anim_yes_happy">
+		是的 (高興地)
+	</string>
+	<string name="anim_yes_head">
+		是的
+	</string>
+	<string name="texture_loading">
+		載入中...
+	</string>
+	<string name="worldmap_offline">
+		離線
+	</string>
+	<string name="whisper">
+		小聲說:
+	</string>
+	<string name="shout">
+		大喊:
+	</string>
+	<string name="SIM_ACCESS_PG">
+		普遍級
+	</string>
+	<string name="SIM_ACCESS_MATURE">
+		輔導級
+	</string>
+	<string name="SIM_ACCESS_ADULT">
+		成人
+	</string>
+	<string name="SIM_ACCESS_DOWN">
+		離線
+	</string>
+	<string name="SIM_ACCESS_MIN">
+		未知
+	</string>
+	<string name="land_type_unknown">
+		（未知）
+	</string>
+	<string name="covenant_never_modified">最後更新 （從不）</string>
+	<string name="covenant_modified">最後更新於: </string>
+	<string name="all_files">
+		所有檔
+	</string>
+	<string name="sound_files">
+		聲音
+	</string>
+	<string name="animation_files">
+		動畫
+	</string>
+	<string name="image_files">
+		圖片
+	</string>
+	<string name="save_file_verb">
+		保存
+	</string>
+	<string name="load_file_verb">
+		上傳
+	</string>
+	<string name="targa_image_files">
+		Targa圖片
+	</string>
+	<string name="bitmap_image_files">
+		點陣圖
+	</string>
+	<string name="avi_movie_file">
+		AVI視頻檔
+	</string>
+	<string name="xaf_animation_file">
+		XAF動畫文件
+	</string>
+	<string name="xml_file">
+		XML文件
+	</string>
+	<string name="dot_raw_file">
+		RAW文件
+	</string>
+	<string name="compressed_image_files">
+		壓縮圖片
+	</string>
+	<string name="load_files">
+		上傳文件
+	</string>
+	<string name="choose_the_directory">
+		選擇資料夾
+	</string>
+</strings>

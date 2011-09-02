@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="網路" name="network">
+	<text name="text_box">
+		最大頻寬:
+	</text>
+	<text name="text_box2">
+		kbps (每秒kb數)
+	</text>
+	<text name="cache_size_label_l">
+		磁碟快取大小:
+	</text>
+	<text name="text_box5">
+		百萬位元組
+	</text>
+	<button label="清除緩存" name="clear_cache"/>
+	<text name="cache_location_label">
+		磁片緩存位置:
+	</text>
+	<button label="設定" label_selected="設定" name="set_cache"/>
+	<button label="重設" label_selected="設定" name="reset_cache"/>
+	<check_box label="自訂連接埠" name="connection_port_enabled"/>
+	<spinner label="埠號:" name="connection_port"/>
+</panel>

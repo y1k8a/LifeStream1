@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="queue" title="重新設定進度">
+	<button label="關閉" label_selected="關閉" name="close" />
+</floater>

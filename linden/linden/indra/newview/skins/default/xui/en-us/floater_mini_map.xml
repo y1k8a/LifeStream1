@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<floater name="minimap" short_title="Mini-Map"
+         height="455" width="200" min_height="325" min_width="200"
+         follows="top|right" can_close="true" can_drag_on_left="false"
+         can_minimize="true" can_resize="true" can_tear_off="false"
+	       rect_control="FloaterMiniMapRect">
+
+  <panel label="Mini Map" name="mini_mapview"
+         top="-2" left="2" bottom="196" right="196"
+         follows="left|top|right|bottom" mouse_opaque="false" />
+
+  <!-- Note: panel contents are defined in panel_radar.xml -->
+  <panel name="RadarPanel" label="Radar"
+         left="2" top="196" right="196" height="120"
+         follows="left|right|bottom" />
+
+  <button name="toggle_radar" label=""
+          bottom="202" left="10" height="18" width="18"
+          follows="left|bottom" halign="center"
+          font="SansSerif" scale_image="true"
+          tool_tip="Show or hide the radar" />
+
+</floater>

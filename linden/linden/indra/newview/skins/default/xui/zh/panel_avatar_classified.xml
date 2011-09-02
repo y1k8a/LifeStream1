@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="Classified" title="分類的">
+	<line_editor name="given_name_editor" tool_tip="名字必須以字母或數位開始，不可用標點。"/>
+	<line_editor name="location_editor" tool_tip="設置分類廣告的位置到你當前的位置。"/>
+	<button label="調節位置" left="10" name="set_location_btn" width="80"/>
+	<button label="瞬間移動" left_delta="90" name="classified_teleport_btn" width="80"/>
+	<button label="在地圖中顯示" left_delta="90" name="classified_map_btn" width="110"/>
+	<combo_box label="" name="classified_category_combo"/>
+	<combo_box label="" name="classified_mature_check">
+		<combo_item name="select_mature">
+			- 選擇輔導級 -
+		</combo_item>
+		<combo_item name="mature">
+			輔導級內容
+		</combo_item>
+		<combo_item name="pg">
+			普遍級內容
+		</combo_item>
+	</combo_box>
+	<text name="classified_info_text" tool_tip="你選擇為你的廣告付費越多, 您的廣告在廣告欄裡出現的位置就會越高.">
+		廣告發佈: 還沒有發佈
+	</text>
+	<text name="click_through_text" tool_tip="分類廣告發佈後的點擊數.">
+		點擊數:
+	</text>
+	<button label="發佈..." name="classified_update_btn"/>
+	<check_box label="每週自動更新" name="auto_renew_check"/>
+	<string name="ad_placed_paid">
+		廣告發佈: [DATE]，為此付出了 L$[AMT]。
+	</string>
+	<string name="update_txt">
+		更新
+	</string>
+	<string name="publish_txt">
+		發佈...
+	</string>
+</panel>

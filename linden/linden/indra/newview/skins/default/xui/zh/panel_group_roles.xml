@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="會員和角色" name="roles_tab">
+	<string name="default_needs_apply_text">
+		在目前的標籤頁上有尚未應用的更改。
+	</string>
+	<string name="want_apply_text">
+		您是否願意現在就應用這些更改?
+	</string>
+	<button label="?" name="help_button"/>
+	<panel name="members_header">
+		<text name="static">
+			成員和角色
+		</text>
+		<text name="static2">
+			社群成員被分配以不同的角色和能力。
+角色和能力的分配可以簡單地修改，以便靈活地組織社群。
+		</text>
+	</panel>
+	<panel name="roles_header">
+		<text name="static">
+			角色
+		</text>
+		<text name="role_properties_modifiable">
+			選擇下面的一個角色。你可以修改角色的名稱、描述和會員頭銜。
+		</text>
+		<text name="role_properties_not_modifiable">
+			選擇下面的角色，察看它的屬性、具有這個角色的成員和其所允許的能力。
+		</text>
+		<text name="role_actions_modifiable">
+			你也可以對角色分配能力。
+		</text>
+		<text name="role_actions_not_modifiable">
+			你可以查看，但不能修改，或者分配這些能力。
+		</text>
+	</panel>
+	<panel name="actions_header">
+		<text name="static">
+			能力
+		</text>
+		<text name="static2">
+			你可以查看每項能力的具體描述，以及哪些角色和會員可以執行此項能力。
+		</text>
+	</panel>
+	<tab_container name="roles_tab_container">
+		<panel label="會員" name="members_sub_tab" tool_tip="Members">
+			<button label="搜索" name="search_button"/>
+			<button label="顯示全部" name="show_all_button"/>
+			<name_list name="member_list">
+				<column label="會員名字" name="name"/>
+				<column label="捐獻的土地額度" name="donated"/>
+				<column label="最後登入" name="online"/>
+			</name_list>
+			<button label="邀請新成員..." name="member_invite"/>
+			<button label="從社群中驅逐" name="member_eject"/>
+			<string name="help_text">
+				你可以添加或移除分配給會員的角色。按住控制鍵並點擊會員的名字，選擇多個會員。
+			</string>
+		</panel>
+		<panel label="角色" name="roles_sub_tab">
+			<button label="搜索" name="search_button"/>
+			<button label="顯示全部" name="show_all_button"/>
+			<scroll_list name="role_list">
+				<column label="角色名字" name="name"/>
+				<column label="頭銜" name="title"/>
+				<column label="會員數" name="members"/>
+			</scroll_list>
+			<button label="創建新的角色 ..." name="role_create"/>
+			<button label="刪除角色" name="role_delete"/>
+			<string name="help_text">
+				角色都有一個頭銜，以及一組這個角色可以執行的能力。團員們可以屬於一個或多個角色。一個社群最多有 10 個角色，包括'普通人'和'團長'這兩個角色。
+			</string>
+			<string name="cant_delete_role">
+				&apos;所有成員&apos; 和 &apos;擁有者&apos; 角色 是特殊的且不能被刪除
+			</string>
+		</panel>
+		<panel label="能力" name="actions_sub_tab">
+			<button label="搜索" name="search_button"/>
+			<button label="顯示全部" name="show_all_button"/>
+			<scroll_list name="action_list" tool_tip="選擇一個角色查看詳細內容。">
+				<column label="" name="icon"/>
+				<column label="" name="action"/>
+			</scroll_list>
+			<string name="help_text">
+				能力允許持有角色的團員在社群中做特定的事項。能力有很多種。
+			</string>
+		</panel>
+	</tab_container>
+	<panel name="members_footer">
+		<text name="static">
+			分配的角色
+		</text>
+		<text name="static2">
+			允許的能力
+		</text>
+		<scroll_list name="member_assigned_roles">
+			<column label="" name="checkbox"/>
+			<column label="" name="role"/>
+		</scroll_list>
+		<scroll_list name="member_allowed_actions" tool_tip="每個能力的詳細資料請參見能力標籤。">
+			<column label="" name="icon"/>
+			<column label="" name="action"/>
+		</scroll_list>
+	</panel>
+	<panel name="roles_footer">
+		<text name="static">
+			名稱
+		</text>
+		<text name="static2">
+			描述
+		</text>
+		<line_editor name="role_name">
+			雇員
+		</line_editor>
+		<text name="static3">
+			頭銜
+		</text>
+		<line_editor name="role_title">
+			(等待中)
+		</line_editor>
+		<text_editor name="role_description">
+			(等待中)
+		</text_editor>
+		<text name="static4">
+			分配的成員
+		</text>
+		<text name="static5" tool_tip="目前所選擇的角色能使用的能力列表如下。">
+			允許能力
+		</text>
+		<check_box label="組員可見" name="role_visible_in_list" tool_tip="設定該角色的成員對社群外的人是否在一般標籤頁中可見。"/>
+		<scroll_list name="role_allowed_actions" tool_tip="每個能力的詳細資料請參見能力標籤。">
+			<column label="" name="icon"/>
+			<column label="" name="checkbox"/>
+			<column label="" name="action"/>
+		</scroll_list>
+	</panel>
+	<panel name="actions_footer">
+		<text name="static">
+			描述
+		</text>
+		<text_editor name="action_description">
+			這項能力是 '從社群中驅逐會員'。只有團長能夠驅逐另一個團長。
+		</text_editor>
+		<text name="static2">
+			有該能力的角色
+		</text>
+		<text name="static3">
+			有該能力的會員
+		</text>
+	</panel>
+</panel>

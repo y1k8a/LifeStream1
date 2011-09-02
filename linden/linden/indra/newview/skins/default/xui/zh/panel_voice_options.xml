@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="content_panel">
+	<text_editor name="voice_intro_text1" word_wrap="true">
+		使用以下的選項設置你的語音聊天體驗。
+	</text_editor>
+	<radio_group draw_border="false" name="ear_location">
+		<radio_item name="0">
+			從攝像機的位置聽語音聊天。
+		</radio_item>
+		<radio_item name="1">
+			從化身的位置聽語音聊天。
+		</radio_item>
+	</radio_group>
+	<check_box label="僅好友可向我發起語聊請求" name="friends_only_check"/>
+	<check_box label="以切換模式使用即按即說" name="push_to_talk_toggle_check"/>
+	<text name="push_to_talk_label" word_wrap="true">
+		即按即說切換鍵:
+	</text>
+	<line_editor name="modifier_combo"/>
+	<button label="設置按鍵" name="set_voice_hotkey_button"/>
+	<button label="使用滑鼠中鍵" name="set_voice_middlemouse_button"/>
+</panel>

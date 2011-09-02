@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater customize" title="外表">
+	<tab_container name="customize tab container">
+		<panel label="身體部位" name="body_parts_placeholder"/>
+		<panel label="體型" name="Shape">
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+			<button label="身體" label_selected="身體" name="Body"/>
+			<button label="頭部" label_selected="頭部" name="Head"/>
+			<button label="眼睛" label_selected="眼睛" name="Eyes"/>
+			<button label="耳朵" label_selected="耳朵" name="Ears"/>
+			<button label="鼻子" label_selected="鼻子" name="Nose"/>
+			<button label="嘴部" label_selected="嘴部" name="Mouth"/>
+			<button label="下巴" label_selected="下巴" name="Chin"/>
+			<button label="腹部" label_selected="腹部" name="Torso"/>
+			<button label="腿部" label_selected="腿部" name="Legs"/>
+			<radio_group name="sex radio">
+				<radio_item length="1" name="radio" type="string">
+					女性
+				</radio_item>
+				<radio_item length="1" name="radio2" type="string">
+					男性
+				</radio_item>
+			</radio_group>
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的體型，需從你的百寶箱中拖拽一個新的體型至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件穿著的權利。
+			</text>
+			<text name="Item Action Label">
+				體形：
+			</text>
+			<button label="創建新的體型" label_selected="創建新的體型" name="Create New"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+		</panel>
+		<panel label="皮膚" name="Skin">
+			<button label="皮膚顏色" label_selected="皮膚顏色" name="Skin Color"/>
+			<button label="面部細節" label_selected="面部細節" name="Face Detail"/>
+			<button label="化妝" label_selected="化妝" name="Makeup"/>
+			<button label="身體細節" label_selected="身體細節" name="Body Detail"/>
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於 [PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的皮膚，需從你的百寶箱中拖拽一個新的皮膚至你的
+化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				皮膚：
+			</text>
+			<texture_picker label="頭部紋身" name="Head Tattoos" tool_tip="點擊這裡來選擇圖片"/>
+			<texture_picker label="上身的紋身" name="Upper Tattoos" tool_tip="點擊這裡來選擇圖片"/>
+			<texture_picker label="下身紋身" name="Lower Tattoos" tool_tip="點擊這裡來選擇圖片"/>
+			<button label="創建新的皮膚" label_selected="創建新的皮膚" name="Create New"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="頭髮" name="Hair">
+			<button label="顏色" label_selected="顏色" name="Color"/>
+			<button label="風格" label_selected="風格" name="Style"/>
+			<button label="眉毛" label_selected="眉毛" name="Eyebrows"/>
+			<button label="鬍鬚" label_selected="鬍鬚" name="Facial"/>
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的髮型，需從你的百寶箱中拖拽一個新的髮型至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				頭髮：
+			</text>
+			<texture_picker label="材質" name="Texture" tool_tip="點擊這裡來選擇圖片"/>
+			<button label="創建新的頭髮" label_selected="傳建新的頭髮" name="Create New"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="眼睛" name="Eyes">
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的眼睛，需從你的百寶箱中拖拽一個新的眼睛至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				眼睛：
+			</text>
+			<texture_picker label="瞳孔" name="Iris" tool_tip="點擊這裡來選擇圖片"/>
+			<button label="創建新的眼睛" label_selected="創建新的眼睛" name="Create New"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="服裝" name="clothes_placeholder"/>
+		<panel label="襯衣" name="Shirt">
+			<texture_picker label="質地" name="Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="創建新的襯衫" label_selected="創建新的襯衫" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的襯衫，需從你的百寶箱中拖拽一個新的襯衫至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				裙子：
+			</text>
+		</panel>
+		<panel label="褲子" name="Pants">
+			<texture_picker label="質地" name="Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="創建新的褲子" label_selected="創建新的褲子" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的褲子，需從你的百寶箱中拖拽一個新的褲子至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				褲子：
+			</text>
+		</panel>
+		<panel label="鞋子" name="Shoes">
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的鞋子，需從你的百寶箱中拖拽一個新的鞋子至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				鞋子：
+			</text>
+			<texture_picker label="質地" name="Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="創建新的鞋子" label_selected="創建新的鞋子" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="襪子" name="Socks">
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的襪子，需從你的百寶箱中拖拽一個新的襪子至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				襪子：
+			</text>
+			<texture_picker label="質地" name="Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="創建新的襪子" label_selected="創建新的襪子" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="夾克" name="Jacket">
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的夾克，需從你的百寶箱中拖拽一個新的夾克至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				外套：
+			</text>
+			<texture_picker label="上身材質" name="Upper Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<texture_picker label="下身材質" name="Lower Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="創建新的夾克" label_selected="創建新的夾克" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="手套" name="Gloves">
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的手套，需從你的百寶箱中拖拽一個新的手套至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				手套：
+			</text>
+			<texture_picker label="質地" name="Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="傳建新的手套" label_selected="傳建新的手套" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="內衣" name="Undershirt">
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的內衣，需從你的百寶箱中拖拽一個新的內衣至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				內衣：
+			</text>
+			<texture_picker label="質地" name="Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="創建新的內衣" label_selected="創建新的內衣" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="內褲" name="Underpants">
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的內褲，需從你的百寶箱中拖拽一個新的內褲至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				內褲：
+			</text>
+			<texture_picker label="質地" name="Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="創建新的內褲" label_selected="創建新的內褲" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+		<panel label="裙子" name="Skirt">
+			<text length="1" name="title" type="string">
+				[DESC]
+			</text>
+			<text length="1" name="title_no_modify" type="string">
+				[DESC]: 無法修改
+			</text>
+			<text length="1" name="title_loading" type="string">
+				[DESC]: 載入中...
+			</text>
+			<text length="1" name="title_not_worn" type="string">
+				[DESC]: 沒有被穿著
+			</text>
+			<text length="1" name="path" type="string">
+				位於[PATH]
+			</text>
+			<text length="1" name="not worn instructions" type="string">
+				要使用新的裙子，需從你的百寶箱中拖拽一個新的裙子至你的化身上。
+或者，你也可以從新創建一個，並穿上它。
+			</text>
+			<text length="1" name="no modify instructions" type="string">
+				你沒有修改這件服飾的權利。
+			</text>
+			<text name="Item Action Label">
+				裙子：
+			</text>
+			<texture_picker label="質地" name="Fabric" tool_tip="點擊這裡來選擇圖片"/>
+			<color_swatch label="顏色/配色" name="Color/Tint" tool_tip="點擊這裡來打開色彩選擇器"/>
+			<button label="創建新的裙子" label_selected="創建新的短裙" name="Create New"/>
+			<button label="脫掉" label_selected="脫掉" name="Take Off"/>
+			<button label="存儲" label_selected="存儲" name="Save"/>
+			<button label="另存為..." label_selected="另存為..." name="Save As"/>
+			<button label="恢復" label_selected="恢復" name="Revert"/>
+		</panel>
+	</tab_container>
+	<button label="取消" label_selected="取消" name="Cancel"/>
+	<button label="確定" label_selected="確定" name="Ok"/>
+	<button label="Make Outfit..." label_selected="製作裝束..." name="Make Outfit"/>
+</floater>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="panel_login">
+<!--
+	<text name="first_name_text">
+		名稱:
+	</text>
+	<text name="last_name_text">
+		姓氏:
+	</text>
+-->
+	<text name="email_address_text">
+		電子郵件:
+	</text>
+	<text name="password_text">
+		密碼:
+	</text>
+	<text name="start_location_text">
+		開始位置:
+	</text>
+	<combo_box name="start_location_combo">
+		<combo_item name="MyHome">
+			我的家
+		</combo_item>
+		<combo_item name="MyLastLocation">
+			我最後所在位置
+		</combo_item>
+		<combo_item name="Typeregionname">
+			&lt;輸入地功能變數名稱&gt;
+		</combo_item>
+	</combo_box>
+	<check_box label="記住密碼" name="remember_check" />
+	<text name="full_screen_text">
+		登陸後顯示器會採用全屏顯示。
+	</text>
+	<button label="新帳戶..." label_selected="新帳戶..." name="new_account_btn" />
+	<button label="登入" label_selected="登入" name="connect_btn" />
+	<button label="參數設定..." label_selected="參數設定..." name="preferences_btn" />
+	<button label="退出" label_selected="退出" name="quit_btn" />
+	<text name="forgot_password_text">
+		忘記了姓名或密碼？
+	</text>
+	<text
+		 name="create_new_account_text"
+		 hover_color="50 115 185">
+		申請新帳戶。
+	</text>
+
+	<text name="version_text">
+		1.23.4 (5)
+	</text>
+</panel>

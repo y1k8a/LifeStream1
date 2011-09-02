@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel
+	 name="media_controls">
+	<icon
+		 label=""
+		 name="music_icon"
+		 tool_tip="播放或暫停音樂" />
+	<button
+		 label=""
+		 name="music_play"
+		 tool_tip="播放或暫停音樂" />
+  <button
+		 label=""
+		 name="music_pause"
+		 tool_tip="暫停音樂" />
+  <button
+		 label=""
+		 name="music_stop"
+		 tool_tip="停止音樂" />
+  <icon
+		 label=""
+		 name="media_icon"
+		 tool_tip="播放或暫停音樂" />
+  <button
+		 image_disabled="flyout_btn_left_disabled.tga"
+		 label=""
+		 name="media_play"
+		 tool_tip="播放或暫停音樂" />
+  <button
+		 image_disabled="flyout_btn_left_disabled.tga"
+		 label=""
+		 name="media_pause"
+		 tool_tip="暫停媒體" />
+	<button
+		 label=""
+		 name="media_stop"
+		 tool_tip="停止媒體" />
+	<volume_slider
+		 name="volume_slider"
+		 tool_tip="主音量" />
+	<button
+		 label=""
+		 name="mute_master"
+		 tool_tip="全部禁音" />
+	<button
+		 name="expand"
+		 tool_tip="單獨調節音量大小" />
+ 
+	<string
+		 name="play_label">
+		播放
+	</string>
+	<string
+		 name="stop_label">
+		停止
+	</string>
+	<string
+		 name="pause_label">
+		暫停
+	</string>
+	<string
+		 name="default_tooltip_label">
+		沒有設定媒體
+	</string>
+	<string
+		 name="media_hidden_label">
+		(網址被地塊擁有者隱藏)
+	</string>
+	<string
+		 name="media_icon_tooltip_web">
+		該地點顯示網頁上的內容。點擊播放按鈕顯示網路內容。
+	</string>
+	<string
+		 name="media_icon_tooltip_movie">
+		該地點顯示視頻內容，點擊播放按鈕播放視頻。
+	</string>
+	<string
+		 name="media_play_tooltip">
+		在該地點顯示網路內容。
+	</string>
+</panel>
+
+

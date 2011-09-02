@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="toolbar">
+	<string name="Redock Windows">
+		恢復停靠窗口
+	</string>
+	<layout_stack name="toolbar_stack">
+		<button label="即時通" name="im_btn" tool_tip="用即時通聯繫你的朋友。" />
+		<button label="" name="chat_btn" tool_tip="顯示聊天欄。(回車鍵)" />
+		<flyout_button label="交流" name="communicate_btn"
+		     tool_tip="查找並與你的好友和社群交流。" />
+		<button label="飛翔" label_selected="停止飛翔" name="fly_btn"
+		     tool_tip="開始飛行。使用E/C鍵或者PgUp/PgDn來控制飛行高度。" />
+		<button label="快照" name="snapshot_btn"
+		     tool_tip="將螢幕快照圖保存到硬碟或百寶箱中。" />
+		<button label="搜索" name="directory_btn"
+		     tool_tip="搜索地點，事件，人物以及更多。" />
+		<button label="建造" name="build_btn" tool_tip="創建新的物品。" />
+		<button label="迷你地圖" name="radar_btn"
+		     tool_tip="你周圍區域的地圖。 (Ctrl-Shift-M)" />
+		<button label="地圖" name="map_btn" tool_tip="世界地圖。 (Ctrl-M)" />
+		<button label="百寶箱" name="inventory_btn" tool_tip="你的物品欄。 (Ctrl-I)" />
+	</layout_stack>
+</panel>
+<!-- Translated for Second Life 1.19.0 (80267) -->

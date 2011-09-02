@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<pie_menu name="Land Pie">
+	<menu_item_call label="關於土地..." name="About Land..." />
+	<menu_item_call label="創建" name="Create" />
+	<menu_item_call label="去這裡" name="Go Here" />
+	<menu_item_call label="坐在這裡" name="Sit Here" />
+	<menu_item_call label="購買通行證" name="Land Buy Pass" />
+	<menu_item_call label="編輯地形" name="Edit Terrain" />
+	<menu_item_call label="購買土地..." name="Land Buy" />
+</pie_menu>
+<!-- Translated for Second Life 1.19.0 (80267) -->

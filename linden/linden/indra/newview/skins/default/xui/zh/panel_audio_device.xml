@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel
+	 name="device_settings">
+	<text
+		 name="Audio Devices">
+		音訊設備
+	</text>
+
+		<text
+		 name="Input device (microphone):">
+			輸入裝置( 麥克風) :
+		</text>
+
+		<text
+		 name="Output device (speakers):">
+			輸出設備 (揚聲器):
+		</text>
+		<combo_box
+		 allow_text_entry="false"
+		 max_chars="128"
+		 name="voice_output_device" />
+		 
+	<text
+		 name="Input level:">
+		輸入音量
+	</text>
+
+		<text_editor
+		 name="voice_intro_text1">調節滑塊來控制你說的話的音量。  要測試輸入音量的話，只要對著你的麥克風說話就可以了。</text_editor>
+
+	<volume_slider
+		 name="mic_volume_slider"
+		 tool_tip="用這個滑塊調節音量。" />
+
+	<text
+		 name="wait_text">
+		請稍候
+	</text>
+	
+
+	<text
+		 name="default_text" >"預設"</text>
+
+	</panel>

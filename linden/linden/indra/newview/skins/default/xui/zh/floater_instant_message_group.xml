@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater
+	 label="(未知)"
+	 name="im_floater"
+	 title="(未知)">
+	<string
+		 name="ringing">
+		正在加入語音聊天...
+	</string>
+	<string
+		 name="connected">
+		已連接，點擊結束通話來掛斷
+	</string>
+	<string
+		 name="hang_up">
+		離開了語音聊天
+	</string>
+	<string
+		 name="live_help_dialog"
+		 wordwrap="false">
+		*** 歡迎來到幫助請求 *** 
+    	請首先按 F1 參閱我們的福爾摩亞説明頁面，或訪問知識庫 http://secondlife.com/knowledgebase/ 
+		若你找不到所需的答案，請輸入你的問題，然後等待可用的工作人員的回復。
+    	-=-=- 反應時間不固定，特別在高峰時期 -=-=-
+	</string>
+	<string
+		 name="title_string">
+		與 [NAME] 的即時通信
+	</string>
+	<string
+		 name="typing_start_string">
+		[NAME] 正在輸入...
+	</string>
+	<string
+		 name="session_start_string">
+		正在開始和 [NAME] 的會話，請稍候。
+	</string>
+	<string
+		 name="moderated_chat_label">
+		(對話受管理，語音預設關閉)
+	</string>
+	<string
+		 name="default_text_label">
+		點擊這裡語音聊天。
+	</string>
+	<string
+		 name="muted_text_label">
+		您的文字聊天已被社群管理員禁用。
+	</string>
+	<layout_stack 
+		name="panels">
+		<layout_panel
+			 name="im_contents_panel">
+			<button
+				 label="社群訊息"
+				 name="group_info_btn" />
+			<button
+				 image_overlay_alignment="left"
+				 label="加入通話"
+				 name="start_call_btn"
+				 width="90"/>
+			<button
+				 image_overlay_alignment="left"
+				 label="結束通話"
+				 name="end_call_btn"/>
+			<button
+				 label="&lt; &lt;"
+				 label_selected="&gt; &gt;"
+				 name="toggle_active_speakers_btn"
+				 tool_tip="顯示在該即時通信會話中活動的參與者。"/>
+			<button
+				 label="發送"
+				 name="send_btn" />
+		</layout_panel>
+	</layout_stack>
+</floater>

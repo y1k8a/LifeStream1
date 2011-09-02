@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="Event" title="事件">
+	<text name="event_name_label">
+		名稱:
+	</text>
+	<text name="event_name">
+		(無)
+	</text>
+	<text name="event_category_label">
+		類別：
+	</text>
+	<text name="event_category">
+		(無)
+	</text>
+	<text name="event_mature_label">
+		輔導級內容：
+	</text>
+	<text name="event_mature_yes">
+		是
+	</text>
+	<text name="event_mature_no">
+		否
+	</text>
+	<text name="event_date_label">
+		日期:
+	</text>
+	<text name="event_date">
+		(無)
+	</text>
+	<text name="event_duration_label">
+		持續時間:
+	</text>
+	<text name="event_duration">
+		(無)
+	</text>
+	<text name="event_runby_label">
+		組織者:
+	</text>
+	<text name="event_runby">
+		(無)
+	</text>
+	<text name="event_location_label">
+		位置:
+	</text>
+	<text name="event_location">
+		(無)
+	</text>
+	<text name="event_cover_label">
+		服務費：
+	</text>
+	<text name="event_cover">
+		(無)
+	</text>
+	<text name="event_desc_label">
+		描述:
+	</text>
+	<button label="瞬間移動" name="teleport_btn"/>
+	<button label="在地圖中顯示" name="map_btn"/>
+	<button label="提醒" name="notify_btn"/>
+	<button label="創建事件..." name="create_event_btn"/>
+	<string name="none">
+		沒有
+	</string>
+	<string name="notify">
+		提醒
+	</string>
+	<string name="dont_notify">
+		不要提醒
+	</string>
+</panel>

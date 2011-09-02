@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="script panel">
+	<button label="儲存" label_selected="儲存" name="Save_btn" />
+	<text_editor type="string" length="1" name="Script Editor">
+		請稍待...
+	</text_editor>
+		<string
+		 name="loading">
+		請稍待......
+	</string>
+	<string
+		 name="can_not_view">
+		你沒有權利查看該腳本。
+	</string>
+	<string
+		 name="public_objects_can_not_run">
+		公共物件不能運行腳本。
+	</string>
+	<string
+		 name="script_running">
+		運行中
+	</string>
+
+	<combo_box
+		 allow_text_entry="false"
+		 label="插入..."
+		 max_chars="20"
+		 name="Insert..." />
+
+	<menu_bar name="script_menu">
+		<menu 
+			label="文件"
+			name="File">
+			<menu_item_call label="儲存" name="Save" />
+			<menu_item_call label="恢復所有更改" name="Revert All Changes" />
+		</menu>
+		<menu 
+			label="編輯"
+			name="Edit">
+			<menu_item_call label="撤銷" name="Undo" />
+			<menu_item_call label="重做" name="Redo" />
+			<menu_item_separator label="-----------" name="separator" />
+			<menu_item_call label="剪貼" name="Cut" />
+			<menu_item_call label="複製" name="Copy" />
+			<menu_item_call label="貼上" name="Paste" />
+			<menu_item_separator label="-----------" name="separator2" />
+			<menu_item_call label="全選" name="Select All" />
+			<menu_item_call label="取消選擇" name="Deselect" />
+			<menu_item_separator label="-----------" name="separator3" />
+			<menu_item_call label="搜尋 / 替換..." name="Search / Replace..." />
+
+		</menu>
+		<menu 
+			label="幫助"
+			name="Help">
+			<menu_item_call label="幫助..." name="Help..." />
+			<menu_item_call
+				 label="福爾摩亞維基 幫助..."
+				 name="LSL Wiki Help..." />
+		</menu>
+	</menu_bar>
+</panel>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="調試工具" name="Debug">
+	<text name="region_text_lbl">
+		區域:
+	</text>
+	<text name="region_text">
+		未知
+	</text>
+	<check_box label="禁用腳本" name="disable_scripts_check" tool_tip="關閉此區域內的所有腳本。"/>
+	<button label="?" name="disable_scripts_help"/>
+	<check_box label="禁用碰撞" name="disable_collisions_check" tool_tip="關閉此區域除化身以外所有的碰撞。"/>
+	<button label="?" name="disable_collisions_help"/>
+	<check_box label="禁用物理" name="disable_physics_check" tool_tip="關閉此區域內所有的物理計算。"/>
+	<button label="?" name="disable_physics_help"/>
+	<button label="應用" name="apply_btn"/>
+	<text name="objret_text_lbl">
+		歸還物件
+	</text>
+	<text name="resident_text_lbl">
+		居民:
+	</text>
+	<line_editor name="target_avatar_name">
+		(無)
+	</line_editor>
+	<button label="選擇..." name="choose_avatar_btn"/>
+	<text name="options_text_lbl">
+		選項:
+	</text>
+	<check_box label="僅歸還有腳本的物件" name="return_scripts" tool_tip="只歸還那些包含腳本的物件。"/>
+	<check_box label="僅歸還在他人土地上的物件" name="return_other_land" tool_tip="只歸還在屬於別人土地上的物件。"/>
+	<check_box label="歸還該地產所有區域中的物件" name="return_estate_wide" tool_tip="在所有組成這個地產的區域中歸還物件。"/>
+	<button label="返還" name="return_btn"/>
+	<button label="得到首要碰撞源..." name="top_colliders_btn" tool_tip="存在潛在碰撞最多物件的清單。"/>
+	<button label="?" name="top_colliders_help"/>
+	<button label="得到首要腳本..." name="top_scripts_btn" tool_tip="腳本運行最費時間物件的清單。"/>
+	<button label="?" name="top_scripts_help"/>
+	<button label="重新開機區域" name="restart_btn" tool_tip="2 分鐘倒計時後，重新開機此區域。"/>
+	<button label="?" name="restart_help"/>
+	<button label="延遲重新啟動" name="cancel_restart_btn" tool_tip="延遲區域重新開機一小時。"/>
+</panel>

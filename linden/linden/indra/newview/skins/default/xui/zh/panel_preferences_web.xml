@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel border="true" bottom="-409" enabled="true" follows="left|top|right|bottom"
+     height="408" hidden="false" label="Web" left="102" mouse_opaque="true"
+     name="web" width="517">
+	<text name="cache_size_label_l">
+		流覽器緩存:
+	</text>
+	<button 
+	     label="現在清除"
+	     name="clear_cache" />
+	<text type="string" name="cookie_label" >
+		Cookie:
+	</text>
+	<check_box label="從網站接受 cookie"
+             name="cookies_enabled" /> 
+	<button 
+	     label="現在清除" 
+	     name="clear_cookies" />
+	<text name="proxy_label">
+		代理伺服器:
+	</text>
+	<check_box 
+		 label="啟用網頁代理伺服器"
+         name="web_proxy_enabled" /> 
+	<text name="proxy_text_label">
+		地址:
+	</text>
+	<line_editor 
+		 name="web_proxy_editor"
+		 tool_tip="你想使用的代理伺服器的名稱或者 IP 位址" />
+	<spinner 
+			 label="埠號:"
+             name="web_proxy_port" />
+	<radio_group name="use_external_browser">
+		 <radio_item
+			 name="external"
+			 tool_tip="使用系統預設網路流覽器打開説明、網頁連結, 等等。\n若全屏顯示則不推薦使用。">
+			使用外部流覽器(Firefox, Safari, Internet Explorer)
+		</radio_item>
+		<radio_item
+			 name="internal"
+			 tool_tip="使用內部流覽器打開説明、網頁連結, 等等。這個流覽器會在第二人生中打開一個新視窗。">
+			使用內建流覽器
+		</radio_item>
+	</radio_group>
+	<text>
+		流覽器主頁:
+	</text>
+	<line_editor name="home_page" tool_tip="首次打開福爾摩亞流覽器時的流覽頁面" />
+	<text>
+		代理伺服器配置:
+	</text>
+	<check_box label="內部流覽器使用代理伺服器" name="proxy_enabled"
+	     tool_tip="請為網際網路網路流覽器指定代理伺服器配置。" />
+	<text>
+		代理伺服器:
+	</text>
+	<line_editor name="proxy_address" tool_tip="請輸入代理伺服器的名稱或IP地址" />
+	<text>
+		埠：
+	</text>
+	<line_editor name="proxy_port" />
+	<text>
+		襪子：
+	</text>
+	<radio_group name="socks_4_5">
+		<radio_item>
+			Socks v4
+		</radio_item>
+		<radio_item>
+			Socks v5
+		</radio_item>
+	</radio_group>
+	<text>
+		對以下內容不使用代理:
+	</text>
+	<line_editor name="proxy_exclusions"
+	     tool_tip="請輸入不想使用代理伺服器替換的名稱或IP位址" />
+	<check_box label="在元件上顯示網頁 (實驗性功能, 需要重啟)"
+	     name="web_pages_on_prims_check" />
+	<text>
+		安全地址：
+（登陸察看）
+	</text>
+	<button label="添加" name="add_trusted" />
+	<line_editor name="trusted_site_entry" tool_tip="增加到安全名單中的網路位址" />
+	<button label="移除" name="rem_trusted" />
+</panel>

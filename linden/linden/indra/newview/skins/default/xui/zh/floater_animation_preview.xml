@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Animation Preview" title="">
+	<text name="name_label">
+		名字:
+	</text>
+	<text name="description_label">
+		描述:
+	</text>
+	<spinner label="優先順序" name="priority" tool_tip="控制哪些動畫可以被該動畫覆蓋。"/>
+	<check_box label="迴圈" name="loop_check" tool_tip="使此動畫迴圈播放."/>
+	<spinner label="始 (%)" name="loop_in_point" tool_tip="選擇迴圈後返回的點。"/>
+	<spinner label="終 (%)" name="loop_out_point" tool_tip="選擇迴圈結束的點。"/>
+	<text name="hand_label">
+		手勢
+	</text>
+	<combo_box label="" name="hand_pose_combo" tool_tip="控制動畫中手的動作。">
+		<combo_item name="Spread">
+			伸展
+		</combo_item>
+		<combo_item name="Relaxed">
+			放鬆
+		</combo_item>
+		<combo_item name="PointBoth">
+			兩手都指
+		</combo_item>
+		<combo_item name="Fist">
+			握拳
+		</combo_item>
+		<combo_item name="RelaxedLeft">
+			左手放鬆
+		</combo_item>
+		<combo_item name="PointLeft">
+			左手指
+		</combo_item>
+		<combo_item name="FistLeft">
+			左手握拳
+		</combo_item>
+		<combo_item name="RelaxedRight">
+			右手放鬆
+		</combo_item>
+		<combo_item name="PointRight">
+			右手指
+		</combo_item>
+		<combo_item name="FistRight">
+			右手握拳
+		</combo_item>
+		<combo_item name="SaluteRight">
+			右手敬禮
+		</combo_item>
+		<combo_item name="Typing">
+			打字中
+		</combo_item>
+		<combo_item name="PeaceRight">
+			右手和平
+		</combo_item>
+	</combo_box>
+	<text name="emote_label">
+		表情
+	</text>
+	<combo_box label="" name="emote_combo" tool_tip="控制在動畫中的表情">
+		<combo_item name="[None]">
+			[None]
+		</combo_item>
+		<combo_item name="Aaaaah">
+			啊啊啊
+		</combo_item>
+		<combo_item name="Afraid">
+			害怕
+		</combo_item>
+		<combo_item name="Angry">
+			生氣
+		</combo_item>
+		<combo_item name="BigSmile">
+			開懷大笑
+		</combo_item>
+		<combo_item name="Bored">
+			無聊
+		</combo_item>
+		<combo_item name="Cry">
+			哭泣
+		</combo_item>
+		<combo_item name="Disdain">
+			遺棄
+		</combo_item>
+		<combo_item name="Embarrassed">
+			窘迫
+		</combo_item>
+		<combo_item name="Frown">
+			蹙眉
+		</combo_item>
+		<combo_item name="Kiss">
+			吻
+		</combo_item>
+		<combo_item name="Laugh">
+			大笑
+		</combo_item>
+		<combo_item name="Plllppt">
+			呸
+		</combo_item>
+		<combo_item name="Repulsed">
+			拒絕
+		</combo_item>
+		<combo_item name="Sad">
+			悲傷
+		</combo_item>
+		<combo_item name="Shrug">
+			聳肩
+		</combo_item>
+		<combo_item name="Smile">
+			微笑
+		</combo_item>
+		<combo_item name="Surprise">
+			驚奇
+		</combo_item>
+		<combo_item name="Wink">
+			眨眼睛
+		</combo_item>
+		<combo_item name="Worry">
+			擔心
+		</combo_item>
+	</combo_box>
+	<text name="preview_label">
+		預覽
+	</text>
+	<combo_box label="" name="preview_base_anim" tool_tip="測試在化身做常見動作同時您的動畫的行為">
+		<combo_item name="Standing">
+			站立
+		</combo_item>
+		<combo_item name="Walking">
+			步行
+		</combo_item>
+		<combo_item name="Sitting">
+			坐下
+		</combo_item>
+		<combo_item name="Flying">
+			起飛
+		</combo_item>
+	</combo_box>
+	<spinner label="漸入 (秒)" name="ease_in_time" tool_tip="動畫漸入的所需時間（秒）"/>
+	<spinner label="漸出 (秒)" name="ease_out_time" tool_tip="動畫漸出的所需時間（秒）"/>
+	<button label="" name="play_btn" tool_tip="播放/暫停你現有的動畫."/>
+	<button label="" name="stop_btn" tool_tip="停止動畫播放"/>
+	<slider label="" name="playback_slider"/>
+	<text name="bad_animation_text">
+		無法閱讀動畫文件
+
+我們推薦從Poser 4軟體中匯出的BVH檔
+	</text>
+	<button label="取消" name="cancel_btn"/>
+	<button label="上傳(F$[AMOUNT])" name="ok_btn"/>
+	<string name="failed_to_initialize">
+		初始化動作失敗。
+	</string>
+	<string name="anim_too_long">
+		動畫文件長度為 [LENGTH] 秒。
+
+最長允許的長度為 [MAX_LENGTH] 秒。
+	</string>
+	<string name="failed_file_read">
+		無法讀取動畫文件。
+
+[STATUS]
+	</string>
+</floater>

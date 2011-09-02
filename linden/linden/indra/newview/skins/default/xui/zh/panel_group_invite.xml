@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="邀請會員" name="invite_panel">
+	<text name="help_text">
+		您可以同時選擇多人並邀請加入到您的社團。點擊"打開人物選擇器"開始。
+	</text>
+	<button label="打開人物選擇器" name="add_button" tool_tip=""/>
+	<name_list name="invitee_list" tool_tip="按住Ctrl鍵然後點擊居民名字來選擇多個項目。"/>
+	<button label="從名單中移除所選項" name="remove_button" tool_tip="將此居民從您的邀請列表中清除。"/>
+	<text name="role_text">
+		為他們選擇什麼角色:
+	</text>
+	<combo_box name="role_name" tool_tip="從這個列表中選擇你可以為會員分配的角色。"/>
+	<button label="發送邀請" name="ok_button"/>
+	<button label="取消" name="cancel_button"/>
+	<string name="confirm_invite_owner_str">
+		您確定要邀請新的所有者麼? 該操作是永久性的！
+	</string>
+	<string name="loading">
+		(載入中...)
+	</string>
+</panel>

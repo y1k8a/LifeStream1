@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="telehub" title="瞬間移動樞紐">
+	<text name="status_text_connected">
+		連接到物件 [OBJECT] 的瞬移樞紐
+	</text>
+	<text name="status_text_not_connected">
+		沒有連接到瞬移樞紐。
+	</text>
+	<text name="help_text_connected">
+		要移除，請點擊斷開連接
+	</text>
+	<text name="help_text_not_connected">
+		選擇一個物件，然後點擊"連接瞬移樞紐"。
+	</text>
+	<button label="連接瞬移樞紐" name="connect_btn" />
+	<button label="斷開連接" name="disconnect_btn" />
+	<text name="spawn_points_text">
+		著陸點 (地點, 不是物件):
+	</text>
+	<button label="增加著陸點" name="add_spawn_point_btn" />
+	<button label="移除著陸點" name="remove_spawn_point_btn" />
+	<text name="spawn_point_help">
+		選擇目標物件，然後點擊添加，來指定位置。
+接下來你可以移動或者刪除該物件。
+位置是與瞬間移動樞紐的相對位置。
+選擇清單中的選項來顯示它在世界中的位置。
+	</text>
+</floater>

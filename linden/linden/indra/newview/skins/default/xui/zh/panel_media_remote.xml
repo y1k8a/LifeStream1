@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="music_remote">
+	<text type="string" length="1" name="text">
+		電影控制
+	</text>
+	<button label="" label_selected="" name="stop_btn" tool_tip="停止播放媒體" />
+	<button label="" label_selected="" name="play_btn" tool_tip="播放媒體" />
+	<button label="" label_selected="" name="pause_btn" tool_tip="停止媒體" />
+	<volume_slider name="volume_slider" tool_tip="使用這個滑動浮標調整音量" />
+</panel>

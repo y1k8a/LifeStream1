@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="Give Money">
+
+	<string name="pay group">
+		그룹 지불:
+	</string>
+	<string name="pay resident">
+		주민 지불:
+	</string>
+
+	<text name="via object">
+		매개 오브젝트: [OBJECT]
+	</text>
+
+	<text name="fastpay text">
+		빠른 지불:
+	</text>
+
+	<text name="amount text">
+		금액:
+	</text>
+
+	<button name="pay btn"    label="지불" />
+	<button name="cancel btn" label="취소" />
+
+</floater>

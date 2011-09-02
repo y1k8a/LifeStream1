@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="bug_reporter" title="報告漏洞">
+	<text name="reporter_title">
+		報告者:
+	</text>
+	<text name="sim_title">
+		模擬器:
+	</text>
+	<text name="pos_title">
+		位置:
+	</text>
+	<text name="select_object_label">
+		點擊按鈕然後點擊物件:
+	</text>
+	<button label="" label_selected="" name="pick_btn"
+	     tool_tip="東東拾取器 - 確認一個東東為此份報告中的一項" />
+	<text name="object_name_label">
+		名字:
+	</text>
+	<text name="owner_name_label">
+		主人:
+	</text>
+	<check_box label="包含螢幕截圖" name="screen_check" />
+	<texture_picker label="工作..." name="screenshot" />
+	<text name="category_label">
+		分類:
+	</text>
+	<combo_box name="category_combo"
+	     tool_tip="Category -- select the category that best describes this report">
+		<combo_item name="Selectcategory">
+			選擇一個分類
+		</combo_item>
+		<combo_item name="Building">
+			建造
+		</combo_item>
+		<combo_item name="Character">
+			角色
+		</combo_item>
+		<combo_item name="Chat/IM">
+			即時聊天
+		</combo_item>
+		<combo_item name="Documentation">
+			文檔
+		</combo_item>
+		<combo_item name="Exploit">
+			漏洞
+		</combo_item>
+		<combo_item name="Graphics">
+			圖像
+		</combo_item>
+		<combo_item name="Inventory">
+			庫存
+		</combo_item>
+		<combo_item name="Lag">
+			延遲
+		</combo_item>
+		<combo_item name="MissingContent">
+			遺失內容
+		</combo_item>
+		<combo_item name="LindenDollars(L$)">
+			福幣 (F$)
+		</combo_item>
+		<combo_item name="Permissions">
+			許可
+		</combo_item>
+		<combo_item name="Physics">
+			物理
+		</combo_item>
+		<combo_item name="Script">
+			腳本
+		</combo_item>
+		<combo_item name="Sound">
+			音效
+		</combo_item>
+		<combo_item name="Stipends">
+			薪水
+		</combo_item>
+		<combo_item name="Userinterface">
+			使用者介面
+		</combo_item>
+		<combo_item name="Miscellaneous">
+			其他
+		</combo_item>
+	</combo_box>
+	<text name="sum_title">
+		總結:
+	</text>
+	<text name="dscr_title">
+		詳細:
+	</text>
+	<text_editor name="details_edit">
+重複漏洞發生的步驟:
+
+觀察到的結果:
+
+期望的結果:
+	</text_editor>
+	<text name="bug_aviso">
+		注意：不完整的報告將不會被調查
+		如果這個漏洞允許你做你不應該做的事情，特別
+		是妨礙到性能或安全，請選擇漏洞一類。謝謝!
+	</text>
+	<button label="報告漏洞" label_selected="報告漏洞" name="send_btn" />
+	<button label="取消" label_selected="取消" name="cancel_btn" />
+</floater>

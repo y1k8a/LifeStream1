@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="item properties" title="物品屬性">
+	<text name="LabelItemNameTitle">
+		名字:
+	</text>
+	<text name="LabelItemDescTitle">
+		描述:
+	</text>
+	<text name="LabelCreatorTitle">
+		創造者:
+	</text>
+	<text name="LabelCreatorName">
+		Andy Formosia
+	</text>
+	<button label="檔案..." label_selected="" name="BtnCreator"/>
+	<text name="LabelOwnerTitle">
+		主人:
+	</text>
+	<text name="LabelOwnerName">
+		Rex Formosia
+	</text>
+	<button label="檔案..." label_selected="" name="BtnOwner"/>
+	<text name="LabelAcquiredTitle">
+		獲得時間:
+	</text>
+	<text name="LabelAcquiredDate">
+		2006年 5月 24日 星期三 12:50:46
+	</text>
+	<text name="OwnerLabel">
+		你可以：
+	</text>
+	<check_box label="修改" name="CheckOwnerModify"/>
+	<check_box label="複製" name="CheckOwnerCopy"/>
+	<check_box label="轉賣/贈與" name="CheckOwnerTransfer"/>
+	<text name="BaseMaskDebug">
+		B:
+	</text>
+	<text name="OwnerMaskDebug">
+		O:
+	</text>
+	<text name="GroupMaskDebug">
+		G:
+	</text>
+	<text name="EveryoneMaskDebug">
+		E:
+	</text>
+	<text name="NextMaskDebug">
+		N:
+	</text>
+	<check_box label="與社團分享" name="CheckShareWithGroup"/>
+	<check_box label="允許任何人複製" name="CheckEveryoneCopy"/>
+	<text name="NextOwnerLabel">
+		下個擁有者可以:
+	</text>
+	<check_box label="修改" name="CheckNextOwnerModify"/>
+	<check_box label="複製" name="CheckNextOwnerCopy"/>
+	<check_box label="轉賣/贈與" name="CheckNextOwnerTransfer"/>
+	<text name="SaleLabel">
+		標記專案為:
+	</text>
+	<check_box label="可出售" name="CheckPurchase"/>
+	<radio_group name="RadioSaleType">
+		<radio_item name="radio">
+			原件
+		</radio_item>
+		<radio_item name="radio2">
+			複製品
+		</radio_item>
+	</radio_group>
+	<text name="TextPrice">
+		價格：F$
+	</text>
+	<string name="unknown">
+		(未知)
+	</string>
+	<string name="public">
+		(公共的)
+	</string>
+	<string name="you_can">
+		你可以:
+	</string>
+	<string name="owner_can">
+		擁有者可以:
+	</string>
+</floater>

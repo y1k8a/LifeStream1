@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="script ed float" title="腳本：新的腳本">
+	<button label="重設" label_selected="重設" name="Reset"/>
+	<check_box label="運行" name="running"/>
+	<check_box label="Mono" name="mono"/>
+	<string name="not_allowed">
+		您無權查看該腳本
+	</string>
+	<string name="script_running">
+		運行
+	</string>
+</floater>

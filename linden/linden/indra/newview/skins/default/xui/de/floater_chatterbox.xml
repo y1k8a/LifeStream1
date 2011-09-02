@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<multi_floater name="floater_chatterbox" title="Unterhalten" />
+  <string name="unread_count_string_singular">
+    Ungelesene IM
+  </string>
+  <string name="unread_count_string_plural">
+    Ungelesene IMs
+  </string>
+</multi_floater>
+

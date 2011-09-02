@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater
+	 min_height="140"
+	 min_width="375"
+	 name="mute by name"
+	 title="按名稱消音物件">
+	<text
+		 name="message"
+		 right="380">
+		按名稱消音只影響物件的公開聊天和私聊，而不會影響到聲音。
+你必須準確地輸入物件的名稱。
+	</text>
+	<line_editor
+		 name="object_name">
+		物件名稱
+	</line_editor>
+	<button
+		 label="確定"
+		 name="OK" />
+	<button
+		 label="取消"
+		 name="Cancel" />
+</floater>
+
+<!--Translated for Second Life 1.19.1 RC3 -->

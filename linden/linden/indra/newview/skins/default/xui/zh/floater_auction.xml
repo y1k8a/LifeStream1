@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_auction" title="開始福爾摩亞土地銷售">
+	<check_box label="包含黃色選擇條" name="fence_check" />
+	<combo_box name="saletype_combo">
+		<combo_item name="Auction">
+			拍賣
+		</combo_item>
+	</combo_box>
+	<button label="快照" label_selected="快照" name="snapshot_btn" />
+	<button label="確定" label_selected="確定" name="ok_btn" />
+	<text name="already for sale">
+		你不能拍賣已經待售的土地。
+	</text>
+</floater>

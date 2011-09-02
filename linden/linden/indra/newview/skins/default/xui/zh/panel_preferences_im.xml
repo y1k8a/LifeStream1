@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="即時消息" name="im">
+	<text type="string" length="1" name="text_box">
+		我的線上狀態: 
+	</text>
+	<check_box
+		 
+		 label="僅我的好友和社群才能看見我的線上狀況"
+		 name="online_visibility" />
+
+	<text name="log_in_to_change">
+		登陸後更改
+	</text>
+	<check_box label="發送即時消息至電子郵件([EMAIL])" name="send_im_to_email" />
+	<check_box label="本地聊天中包含即時通資訊" name="include_im_in_chat_console" />
+	<check_box label="在即時消息中顯示時間" name="show_timestamps_check" />
+    <check_box
+		 label="顯示好友上線通知"
+		 name="friends_online_notify_checkbox" />
+	<check_box label="保存即時通信記錄到我的電腦上" name="log_instant_messages" />
+	<check_box label="保存對話記錄到我的電腦上" name="log_chat" />
+	<check_box label="顯示上次即時通信的結尾" name="log_show_history" />
+	<button label="更改路徑" label_selected="更改路徑" name="log_path_button" />
+	<text
+		 name="text_box3">
+		忙碌模式的自動回復:
+	</text>
+	<text
+		 name="text_box4">
+		聊天記錄選項:
+	</text>
+	<text type="string" length="1" name="text_box2">
+		即時通信選項:
+	</text>
+	<check_box
+		 label="在私聊中顯示時間"
+		 name="log_instant_messages_timestamp" />
+	<check_box
+		 
+		 label="在聊天記錄中顯示時間"
+		 name="log_chat_timestamp" />
+	<check_box
+		 
+		 label="聊天記錄中顯示即時資訊"
+		 name="log_chat_IM" />
+	<check_box
+		 
+		 label="顯示時間時包括日期"
+		 name="log_date_timestamp" />
+
+
+</panel>

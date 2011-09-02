@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="top_objects" title="請稍等...">
+	<text name="title_text">
+		請等待...
+	</text>
+	<scroll_list name="objects_list">
+		<column label="得分" name="score"/>
+		<column label="名稱" name="name"/>
+		<column label="擁有者" name="owner"/>
+		<column label="位置" name="location"/>
+		<column label="時間" name="time"/>
+		<column label="Mono 時間" name="mono_time"/>
+	</scroll_list>
+	<text name="id_text">
+		物件 ID:
+	</text>
+	<button label="顯示信標" name="show_beacon_btn"/>
+	<text name="obj_name_text">
+		物件名稱:
+	</text>
+	<button label="過濾" name="filter_object_btn"/>
+	<text name="owner_name_text">
+		主人姓名:
+	</text>
+	<button label="過濾" name="filter_owner_btn"/>
+	<button label="歸還所選項" name="return_selected_btn"/>
+	<button label="全部歸還" name="return_all_btn"/>
+	<button label="禁用所選項" name="disable_selected_btn"/>
+	<button label="全部禁用" name="disable_all_btn"/>
+	<button label="重新整理" name="refresh_btn"/>
+	<string name="top_scripts_title">
+		首要腳本
+	</string>
+	<string name="top_scripts_text">
+		[COUNT] 個腳本共佔用 [TIME] 毫秒
+	</string>
+	<string name="scripts_score_label">
+		時間
+	</string>
+	<string name="scripts_mono_time_label">
+		Mono 時間
+	</string>
+	<string name="top_colliders_title">
+		首要碰撞源
+	</string>
+	<string name="top_colliders_text">
+		首要 [COUNT] 個物件存在很多潛在的衝突
+	</string>
+	<string name="colliders_score_label">
+		得分
+	</string>
+	<string name="none_descriptor">
+		什麼也沒找到
+	</string>
+</floater>

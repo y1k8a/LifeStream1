@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="chat_bar">
+	<button label="歷史" label_selected="歷史" name="History" tool_tip="點擊這裡查看聊天記錄"/>
+	<line_editor label="點擊這裡開始聊天。" name="Chat Editor" tool_tip="按 Enter 來聊天，Ctrl-Enter 來喊叫"/>
+	<flyout_button label="說" name="Say" tool_tip="(回車)">
+		<flyout_button_item name="shout_item">
+			喊叫
+		</flyout_button_item>
+		<flyout_button_item name="say_item">
+			說
+		</flyout_button_item>
+		<flyout_button_item name="whisper_item">
+			輕聲說
+		</flyout_button_item>
+	</flyout_button>
+	<combo_box label="動作" name="Gesture"/>
+	<string name="gesture_label">
+		動作
+	</string>
+</panel>

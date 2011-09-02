@@ -1,0 +1,103 @@
+<llsd>
+	<map>
+		<!-- default-level can be ALL, DEBUG, INFO, WARN, ERROR, or NONE -->
+		<key>default-level</key>    <string>INFO</string>
+		<key>print-location</key>   <boolean>false</boolean>
+		<key>settings</key>
+			<array>
+				<!-- sample entry for changing settings on specific items -->
+				<map>
+					<key>level</key><string>INFO</string>
+					<key>functions</key>
+						<array>
+						</array>
+					<key>classes</key>
+						<array>
+						</array>
+					<key>files</key>
+						<array>
+						</array>
+					<key>tags</key>
+						<array>
+							<string>AppInit</string>
+              <string>LLKDU</string>
+							<string>SystemInfo</string>
+							<string>TextureCache</string>
+							<string>AppCache</string>
+							<string>Window</string>
+							<string>RenderInit</string>
+						</array>
+				</map>
+				<map>
+					<key>level</key><string>DEBUG</string>
+					<key>functions</key>
+						<array>
+						</array>
+					<key>classes</key>
+						<array>
+						</array>
+					<key>files</key>
+						<array>
+						</array>
+					<key>tags</key>
+						<array>
+
+<!--Unused debug messages below-->
+
+              <!--<string>AppInit</string>-->
+              <!--<string>AppInitStartupState</string>-->
+              <!--<string>DBUS</string>-->
+							<!--<string>OpenAL</string>-->
+              <!--<string>AppCache</string>-->
+							<!--<string>APR</string>-->
+							<!--<string>AudioEngine</string>-->
+							<!--<string>BodyPhysics</string>-->
+              <!--<string>InitInfo</string>-->
+              <!--<string>isOwnedSelf</string>-->
+              <!--<string>Inventory</string>-->
+							<!--<string>HUDEffect</string>-->
+              <!--<string>MarkerFile</string>-->
+							<!--<string>Media</string>-->
+							<string>MediaFilter</string>
+							<!--<string>MediaInfo</string>-->
+							<!--<string>MediaCallback</string>-->
+							<!--<string>MediaBuffering</string>-->
+							<!--<string>MediaManager</string>-->
+							<!--<string>MediaState</string>-->
+
+							<!--<string>Messaging</string>-->
+							
+							<string>NewsBar</string>
+							<!--<string>Notifications</string>-->
+              
+              <!--<string>Plugin</string>-->
+              <!--<string>PluginClassMedia</string>-->
+              <!--<string>PluginInstance</string>-->
+              <!--<string>PluginPipe</string>-->
+              <!--<string>PluginChild</string>-->
+              <!--<string>PluginSpam</string>-->
+              <!--<string>PluginParent</string>-->
+              <!--<string>PluginViewerMedia</string>-->
+
+              <!--<string>Radar</string>-->
+							<!--<string>ShaderLoading</string>-->
+
+							<!--<string>Openjpeg</string>-->
+							<!--<string>RLV</string>-->
+							<!--<string>VOAvatar</string>-->
+							<!--<string>View</string>-->
+							<!--<string>ViewerImages</string>-->
+              <!--<string>TextureCache</string>-->
+              <!--<string>Throttle</string>-->
+							<!--<string>Voice</string>-->
+							<!--<string>VivoxProtocolParser</string>-->
+							<!--<string>Wearable</string>-->
+              <!--<string>WindLight</string>-->
+
+							<!--<string>XMLNode</string>-->
+
+						</array>
+				</map>
+			</array>
+	</map>
+</llsd>

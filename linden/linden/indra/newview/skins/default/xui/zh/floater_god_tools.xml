@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="godtools floater" title="神明工具">
+	<tab_container name="GodTools Tabs">
+		<panel label="網格" name="grid">
+			<button label="踢走所有用戶" label_selected="踢走所有用戶"
+			     name="Kick all users" />
+			<button label="清除該區域的地圖可視性緩存"
+			     label_selected="清除該區域的地圖可視性緩存"
+			     name="Flush This Region&apos;s Map Visibility Caches" />
+		</panel>
+		<panel label="區域" name="region">
+			<text name="Sim Name:">
+				模擬器名稱:
+			</text>
+			<check_box label="序章" name="check prelude"
+			     tool_tip="設定該區域為序章。" />
+			<check_box label="太陽固定" name="check fixed sun"
+			     tool_tip="固定太陽的位置 (和 地區/地產 > 地形 重點的設定相似)" />
+			<check_box label="瞬間移動時重設家" name="check reset home"
+			     tool_tip="當居民瞬間移動離開, 將會使他們的家重設在他們著陸的目的地處." />
+			<check_box label="可見的" name="check visible"
+			     tool_tip="設定此項使此地對非神可視" />
+				 <check_box label="傷害" name="check damage"
+			     tool_tip="設定此項來在此地啟用傷害。" />
+			<check_box label="阻止流量追蹤" name="block dwell"
+			     tool_tip="設定此項使這塊土地不進行流量運算。" />
+			<check_box label="鎖定地形" name="block terraform"
+			     tool_tip="設定此項來禁止人們修改他們土地的地形" />
+			<check_box label="沙盤" name="is sandbox"
+			     tool_tip="設定此處是否是沙箱區域。" />
+			<button label="烘烤" label_selected="烘烤" name="Bake Terrain"
+			     tool_tip="將當前地形保存為預設值。" />
+			<button label="恢復地形" label_selected="恢復地形" name="Revert Terrain"
+			     tool_tip="以預設值取代現有地形。" />
+			<button label="交換地形" label_selected="交換地形" name="Swap Terrain"
+			     tool_tip="將現有土地與預設值互換。" />
+			<text name="estate id">
+				地產ID:
+			</text>
+			<text name="parent id">
+				母區域ID:
+			</text>
+			<line_editor name="parentestate" tool_tip="這是這塊區域的母區域。" />
+			<text name="Grid Pos: ">
+				網格位置
+			</text>
+			<line_editor name="gridposx" tool_tip="這是區域在網格x內的位置。" />
+			<line_editor name="gridposy" tool_tip="這是區域在網格y內的位置。" />
+			<text name="Redirect to Grid: ">
+				重定向到網格:
+			</text>
+			<text name="billable factor text">
+				帳單明細:
+			</text>
+			<text name="land cost text">
+				L$每平方米:
+			</text>
+			<button label="更新" label_selected="更新" name="Refresh"
+			     tool_tip="點擊這裡來更新以上資訊." />
+			<button label="應用" label_selected="應用" name="Apply"
+			     tool_tip="點擊這裡來應用以上的更改." />
+			<button label="選擇區域" label_selected="選擇區域" name="Select Region"
+			     tool_tip="用土地工具選擇整個地區。" />
+			<button label="立刻自動保存" label_selected="立刻自動保存"
+			     name="Autosave now" tool_tip="保存 gzip 壓縮的狀態到自動封存目錄。" />
+		</panel>
+		<panel label="物件" name="objects">
+			<text name="Sim Name:">
+				模擬器名稱:
+			</text>
+			<text name="region name">
+				Welsh
+			</text>
+			<check_box label="無效腳本" name="disable scripts"
+			     tool_tip="設定此項用以關閉此區域內的所有腳本" />
+			<check_box label="無效衝突" name="disable collisions"
+			     tool_tip="設置這裡使得這塊區域內的非代理衝突無效。" />
+			<check_box label="無效物理" name="disable physics"
+			     tool_tip="設定此項以關閉此區域內的所有物理。" />
+			<button label="應用" label_selected="應用" name="Apply"
+			     tool_tip="點擊這裡來應用以上的更改." />
+			<button label="設置目標" label_selected="設置目標" name="Set Target"
+			     tool_tip="為刪除物件設置目標化身" />
+			<text name="target_avatar_name">
+				(沒有目標)
+			</text>
+			<button label="刪除目標於他人土地上有腳本的物件"
+			     label_selected="刪除目標於他人土地上有腳本的物件"
+			     name="Delete Target&apos;s Scripted Objects On Others Land"
+			     tool_tip="刪除他人土地上目標所有有腳本的物件。(不可複製)的物件將被返還。" />
+			<button label="刪除*任何*土地上選中的腳本東東"
+			     label_selected="刪除*任何*土地上選中的腳本東東"
+			     name="Delete Target&apos;s Scripted Objects On *Any* Land"
+			     tool_tip="刪除該區域中目標所有有腳本的物件。(不可複製)的物件將被返還。" />
+			<button label="刪除*所有*選中的東東"
+			     label_selected="刪除*所有*選中的東東"
+			     name="Delete *ALL* Of Target&apos;s Objects"
+			     tool_tip="刪除該區域中目標所有的物件。(不可複製)的物件將被返還。" />
+			<button label="獲取首要碰撞源" label_selected="取最首要碰撞源"
+			     name="Get Top Colliders"
+			     tool_tip="獲取一份短相回叫發生最多的物品的列表。" />
+			<button label="獲取首要腳本" label_selected="獲取首要腳本"
+			     name="Get Top Scripts"
+			     tool_tip="獲取一份最耗時腳本的列表。" />
+			<button label="腳本摘要" label_selected="腳本摘要" name="Scripts digest"
+			     tool_tip="獲取一份所有腳本及其出現次數的列表。" />
+		</panel>
+		<panel label="請求" name="request">
+			<text name="Destination:">
+				目的地:
+			</text>
+			<combo_box name="destination">
+				<combo_item name="Selection">
+					選項
+				</combo_item>
+				<combo_item name="AgentRegion">
+					代理所在區域
+				</combo_item>
+			</combo_box>
+			<text name="Request:">
+				要求:
+			</text>
+			<combo_box name="request">
+				<combo_item name="colliders&lt;steps&gt;">
+					衝突者 &lt;步驟&gt;
+				</combo_item>
+				<combo_item name="scripts&lt;count&gt;,&lt;optionalpattern&gt;">
+					腳本 &lt;計數&gt;,&lt;可選的查詢文字&gt;
+				</combo_item>
+				<combo_item name="objects&lt;pattern&gt;">
+					物件 &lt;查詢文字&gt;
+				</combo_item>
+				<combo_item name="rez&lt;asset_id&gt;">
+					rez &lt;財產_id&gt;
+				</combo_item>
+			</combo_box>
+			<text name="Parameter:">
+				參數:
+			</text>
+			<button label="提出要求" label_selected="提出要求" name="Make Request" />
+		</panel>
+	</tab_container>
+</floater>

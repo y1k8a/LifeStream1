@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="sell land" title="出售土地...">
+	<text name="info_parcel_label">
+		土地:
+	</text>
+	<text name="info_parcel">
+		土地名稱
+	</text>
+	<text name="info_size_label">
+		尺寸:
+	</text>
+	<text name="info_size">
+		[AREA] 平方米
+	</text>
+	<text name="info_action">
+		出售這塊土地:
+	</text>
+	<text name="price_label">
+		設置一個價格:
+	</text>
+	<text name="price_text">
+		為這塊土地選擇一個合適的價位
+	</text>
+	<text name="price_ld">
+		F$
+	</text>
+	<text name="price_per_m">
+		(F$[PER_METER]每平方米)
+	</text>
+	<text name="sell_to_label">
+		把土地出售給:
+	</text>
+	<text name="sell_to_text">
+		選擇是否把地塊出售給任何人或是一個特定的購買者。
+	</text>
+	<combo_box name="sell_to">
+		<combo_item name="--selectone--">
+			-- 選擇用戶 --
+		</combo_item>
+		<combo_item name="Anyone">
+			任何人
+		</combo_item>
+		<combo_item name="Specificuser:">
+			指定用戶：
+		</combo_item>
+	</combo_box>
+	<button label="選擇..." name="sell_to_select_agent" />
+	<text name="sell_objects_label">
+		土地上的物件和土地一起出售嗎？
+	</text>
+	<text name="sell_objects_text">
+		地塊所有人在地塊上的可轉讓的物件，其所有權將會轉讓。
+	</text>
+	<radio_group name="sell_objects">
+		<radio_item name="no">
+			不要，保留物件的所有權
+		</radio_item>
+		<radio_item name="yes">
+			是的，和土地一起出售物件
+		</radio_item>
+	</radio_group>
+	<button label="顯示物件" name="show_objects" />
+	<text name="nag_message_label">
+		請謹記: 所有土地交易都不能撤銷。
+	</text>
+	<button label="設定土地為代售狀態" name="sell_btn" />
+	<button label="取消" name="cancel_btn" />
+</floater>

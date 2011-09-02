@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="皮膚" name="Skins panel">
+	<text name="muting_text">
+		選擇皮膚 (需要重啟動)：
+	</text>
+  <radio_group  name="skin_selection">
+    <radio_item name="default">預設</radio_item>
+    <radio_item name="silver">Silver</radio_item>
+  </radio_group>
+</panel>
+
+

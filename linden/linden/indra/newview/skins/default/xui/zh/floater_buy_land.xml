@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="buy land" title="購買土地">
+	<text name="region_name_label">
+		區域:
+	</text>
+	<text name="region_name_text">
+		(未知)
+	</text>
+	<text name="region_type_label">
+		類型：
+	</text>
+	<text name="region_type_text">
+		（未知）
+	</text>
+	<text name="estate_name_label">
+		地產:
+	</text>
+	<text name="estate_name_text">
+		(未知)
+	</text>
+	<text name="estate_owner_label">
+		地產主人:
+	</text>
+	<text name="estate_owner_text">
+		(未知)
+	</text>
+	<text name="resellable_changeable_label">
+		在這塊區域內購買土地:
+	</text>
+	<text name="resellable_clause">
+		可能可以也可能不可以被重新出售。
+	</text>
+	<text name="changeable_clause">
+		可能可以也可能不可以被合併或劃分。
+	</text>
+	<text name="covenant_text">
+		你必須同意以下的不動產契約合同:
+	</text>
+	<text_editor name="covenant_editor">
+		請等待...
+	</text_editor>
+	<check_box label="我同意以上規定的合約" name="agree_covenant"/>
+	<text name="info_parcel_label">
+		地塊:
+	</text>
+	<text name="info_parcel">
+		Scotopteryx 138,204
+	</text>
+	<text name="info_size_label">
+		尺寸:
+	</text>
+	<text name="info_size">
+		1024m²
+	</text>
+	<text name="info_price_label">
+		價格:
+	</text>
+	<text name="info_price">
+		包括物品共售F$1500
+(F$1.1/m²)
+	</text>
+	<text name="info_action">
+		購買該土地將會:
+	</text>
+	<text name="error_message">
+		事情好像哪裡出了問題。
+	</text>
+	<button label="打開網頁" name="error_web"/>
+	<text name="account_action">
+		你將升級至優先順序會員。
+	</text>
+	<text name="account_reason">
+		只有優先順序會員才能擁有土地。
+	</text>
+	<combo_box name="account_level">
+		<combo_item name="US$9.95/month,billedmonthly">
+			$9.95美元/月, 月付
+		</combo_item>
+		<combo_item name="US$7.50/month,billedquarterly">
+			$7.50美元/月, 季付
+		</combo_item>
+		<combo_item name="US$6.00/month,billedannually">
+			6.00美元/月, 年付
+		</combo_item>
+	</combo_box>
+	<text name="land_use_action">
+		增加你的土地月使用費至40美元/月。
+	</text>
+	<text name="land_use_reason">
+		你持有1309m²土地。
+這塊土地為512m²。
+	</text>
+	<text name="purchase_action">
+		支付祖兒F$4000以購買土地。
+	</text>
+	<text name="currency_reason">
+		你有F$2,100.
+	</text>
+	<text name="currency_action">
+		購買額外的 F$
+	</text>
+	<line_editor name="currency_amt">
+		1000
+	</line_editor>
+	<text name="currency_est">
+		以大約 US$ [AMOUNT2]
+	</text>
+	<text name="currency_balance">
+		你有F$2,100.
+	</text>
+	<check_box label="從團隊配額貢獻中撤去 [AMOUNT] 平方米。" name="remove_contribution" visible="false"/>
+	<button label="購買" name="buy_btn"/>
+	<button label="取消" name="cancel_btn"/>
+	<string name="can_resell">
+		可以被重新出售。
+	</string>
+	<string name="can_not_resell">
+		不可以被重新出售。
+	</string>
+	<string name="can_change">
+		可以被合併或劃分。
+	</string>
+	<string name="can_not_change">
+		不可以被合併或劃分。
+	</string>
+	<string name="cant_buy_for_group">
+		你沒有為目前你的社群購買土地的許可。
+	</string>
+	<string name="no_land_selected">
+		沒有選擇任何土地
+	</string>
+	<string name="multiple_parcels_selected">
+		選擇了多個不同的地塊。請嘗試選擇一塊較小的土地。
+	</string>
+	<string name="no_permission">
+		你沒有為目前你的社群購買土地的許可。
+	</string>
+	<string name="parcel_not_for_sale">
+		所選擇的土地是非賣的。
+	</string>
+	<string name="group_already_owns">
+		社群已經擁有了這塊土地。
+	</string>
+	<string name="you_already_own">
+		你已經擁有了這塊土地。
+	</string>
+	<string name="set_to_sell_to_other">
+		所選的土地被設置成轉賣至他方。
+	</string>
+	<string name="no_public_land">
+		所選中的土地中沒有公共區域。
+	</string>
+	<string name="not_owned_by_you">
+		你選擇了一塊由其他人佔有的土地。請嘗試選擇一塊較小的土地。
+	</string>
+	<string name="processing">
+		處理購買中...
+ 
+(可能要等待一兩分鐘。)
+	</string>
+	<string name="fetching_error">
+		在獲取土地購買資訊的時候出現錯誤。
+	</string>
+	<string name="buying_will">
+		購買該土地將會:
+	</string>
+	<string name="buying_for_group">
+		為社群購買土地將會：
+	</string>
+	<string name="cannot_buy_now">
+		現在無法購買:
+	</string>
+	<string name="not_for_sale">
+		非賣品：
+	</string>
+	<string name="none_needed">
+		一個都不需要
+	</string>
+	<string name="must_upgrade">
+		你的帳戶必須被升級才能擁有自己的土地
+	</string>
+	<string name="cant_own_land">
+		你的帳戶不能擁有土地。
+	</string>
+	<string name="land_holdings">
+		你擁有[BUYER]平方米的土地。
+	</string>
+	<string name="pay_to_for_land">
+		支付F$ [AMOUNT] 至 [SELLER] 購買這塊土地
+	</string>
+	<string name="buy_for_US">
+		以大約US$[AMOUNT2]購買F$[AMOUNT]，
+	</string>
+	<string name="parcel_meters">
+		這塊土地的面積為[AMOUNT]平方米。
+	</string>
+	<string name="premium_land">
+		這是一塊頂級土地，將按[AMOUNT]m²收費。
+	</string>
+	<string name="discounted_land">
+		這是一塊打折土地，將按[AMOUNT]m²收費。
+	</string>
+	<string name="meters_supports_object">
+		[AMOUNT]m²
+可支援[AMOUNT2]物品
+	</string>
+	<string name="sold_with_objects">
+		和物體一起出售
+	</string>
+	<string name="sold_without_objects">
+		物品不包括在其中
+	</string>
+	<string name="info_price_string">
+		F$[PRICE]
+（F$[PRICE_PER_SQM]/m²）
+[SOLD_WITH_OBJECTS]
+	</string>
+	<string name="insufficient_land_credits">
+		在這次購買完成之前，社群[GROUP]將需要足夠的被貢獻的土地所用的信用額度，來覆蓋這片土地。
+	</string>
+	<string name="have_enough_lindens">
+		你有F$ [AMOUNT], 這些錢足夠購買這塊土地。
+	</string>
+	<string name="not_enough_lindens">
+		你只有F$ [AMOUNT], 你還需要 F$ [AMOUNT2]。
+	</string>
+	<string name="balance_left">
+		此項消費後, 你還會有F$ [AMOUNT]結餘.
+	</string>
+	<string name="balance_needed">
+		你需要購買至少 F$ [AMOUNT]來購買這塊土地。
+	</string>
+	<string name="no_parcel_selected">
+		(沒有選擇地塊)
+	</string>
+	<string name="buy_currency">
+		以大約 US$ [USD] 購買 F$ [LINDENS]
+	</string>
+</floater>

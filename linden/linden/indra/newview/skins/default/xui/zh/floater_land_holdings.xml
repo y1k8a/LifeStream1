@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="land holdings floater" title="我的土地">
+	<scroll_list name="parcel list">
+		<column label="土地名稱" name="name"/>
+		<column label="地區" name="location"/>
+		<column label="類型" name="type"/>
+		<column label="面積" name="area"/>
+		<column label="" name="hidden"/>
+	</scroll_list>
+	<button label="瞬間移動" label_selected="瞬間移動" name="Teleport" tool_tip="瞬間移動到該地的中心。"/>
+	<button label="在地圖中顯示" label_selected="在地圖中顯示" name="Show on Map" tool_tip="將該地在世界地圖上顯示出來。"/>
+	<text name="contrib_label">
+		對你的社團的配額貢獻:
+	</text>
+	<scroll_list name="grant list">
+		<column label="社群" name="group"/>
+		<column label="面積" name="area"/>
+	</scroll_list>
+	<text name="allowed_label">
+		當前支付方案下允許的土地持有量:
+	</text>
+	<text name="allowed_text">
+		[AREA] 平方米
+	</text>
+	<text name="current_label">
+		目前持有土地量:
+	</text>
+	<text name="current_text">
+		[AREA] 平方米
+	</text>
+	<text name="available_label">
+		可以購買的土地量:
+	</text>
+	<text name="available_text">
+		[AREA] 平方米
+	</text>
+	<string name="area_string">
+		[AREA] 平方米
+	</string>
+</floater>

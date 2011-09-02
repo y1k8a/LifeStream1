@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater label="(unknown)" min_height="155" min_width="345" name="im_floater" title="(unknown)">
+	<string name="ringing">
+		正在加入語音聊天...
+	</string>
+	<string name="answering">
+		正在連接...
+	</string>
+	<string name="connected">
+		已連接，點擊結束通話來掛斷
+	</string>
+	<string name="hang_up">
+		連接已結束
+	</string>
+	<string name="inventory_item_offered">
+		百寶箱物品已發送
+	</string>
+	<string name="title_string">
+		與 [NAME] 的即時通信
+	</string>
+	<string name="typing_start_string">
+		[NAME] 正在輸入...
+	</string>
+	<string name="session_start_string">
+		正在開始和 [NAME] 的會話，請稍候。
+	</string>
+	<string name="default_text_label">
+		點擊這裡開始即時聊天。
+	</string>
+	<string name="unavailable_text_label">
+		本次通話不可以文字聊天。
+	</string>
+  <flyout_button label="檔案..." name="profile_callee_btn"/>
+	<button label="呼叫" name="start_call_btn"/>
+	<button label="結束呼叫" name="end_call_btn" pad_right="10" visible="false"/>
+	<panel name="speaker_controls">
+		<volume_slider name="speaker_volume"/>
+		<button label="" name="mute_btn" tool_tip="靜音"/>
+	</panel>
+	<text_editor name="im_history"/>
+	<line_editor label="點擊這裡開始即時聊天。" name="chat_editor"/>
+	<button label="發送" name="send_btn"/>
+	<string name="live_help_dialog">
+		*** 歡迎來到幫助請求 *** 
+    請首先按 F1 參閱我們的福爾摩亞説明頁面，或訪問知識庫 http://secondlife.com/knowledgebase/ 
+若你找不到所需的答案，請輸入你的問題，然後等待可用的工作人員的回復。
+    -=-=- 反應時間不固定，特別在高峰時期 -=-=-
+	</string>
+</floater>

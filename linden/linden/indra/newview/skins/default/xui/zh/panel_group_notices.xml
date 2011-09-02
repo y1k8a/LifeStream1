@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="通知" name="notices_tab">
+	<string name="help_text">
+		通知是社群中快速交流聯繫的方法。通知會向社群中發佈一條消息，並且可以附加一條物品。通知僅會到達社群中被授予具有接受通知能力角色的會員那裡。你可以在一般控制桌面上關掉通知。
+	</string>
+	<string name="no_notices_text">
+		這裡沒有過去的通知。
+	</string>
+	<button label="?" label_selected="?" name="help_button"/>
+	<text name="lbl">
+		社群通知存檔
+	</text>
+	<text name="lbl2">
+		通知只會被保留 14 日。點擊下麵你想查看的通知。選擇'刷新'按鈕檢查是否
+有新的通知。通知每天每社群限發送 200 條。
+	</text>
+	<scroll_list name="notice_list">
+		<column label="" name="icon"/>
+		<column label="主題" name="subject"/>
+		<column label="來自" name="from"/>
+		<column label="日期" name="date"/>
+	</scroll_list>
+	<text name="notice_list_none_found">
+		沒有找到。
+	</text>
+	<button label="創建新的通知" label_selected="創建新的通知" name="create_new_notice"/>
+	<button label="重新整理" label_selected="重新整理" name="refresh_notices"/>
+	<panel label="創建新的通知" name="panel_create_new_notice">
+		<text name="lbl">
+			創建一條通知
+		</text>
+		<text name="lbl2">
+			您必須輸入主題才能發送通知。您可以將單個百寶箱條目拖動到
+該面板上來附加這個條目。附件必須可以複製以及轉讓，
+並且您不能發送資料夾。
+		</text>
+		<text name="lbl3">
+			主題:
+		</text>
+		<text name="lbl4">
+			信息:
+		</text>
+		<text name="lbl5">
+			附件:
+		</text>
+		<button label="移除附件" label_selected="移除附件" name="remove_attachment"/>
+		<button label="發送通知" label_selected="發送通知" name="send_notice"/>
+		<panel name="drop_target2" tool_tip="將百寶箱條目拖動到訊息方塊上和通知一起送出去。要將物件和通知一起送出，您必須有複製和轉讓物件的許可權。"/>
+		<panel name="drop_target" tool_tip="拖動一個百寶箱物件到消息內並以通知方式發送. 注意您必須有拷貝和發送物件的許可權才能發送通知。"/>
+	</panel>
+	<panel label="查看過去的通知" name="panel_view_past_notice">
+		<text name="lbl">
+			存檔的通知
+		</text>
+		<text name="lbl2">
+			要發送新的通知，請點擊上面的'創建新的通知'按鈕。
+		</text>
+		<text name="lbl3">
+			主題:
+		</text>
+		<text name="lbl4">
+			消息:
+		</text>
+		<button label="打開附件" label_selected="打開附件" name="open_attachment"/>
+	</panel>
+</panel>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="LLScrollingPanelParam">
+	<text type="string" length="1" name="Loading...">
+		請稍待...
+	</text>
+	<text type="string" length="1" name="Loading...2">
+		請稍待...
+	</text>
+	<button label="" label_selected="更少" name="less" />
+	<button label="" label_selected="更多" name="more" />
+	<slider label="[DESC]" name="param slider" />
+</panel>

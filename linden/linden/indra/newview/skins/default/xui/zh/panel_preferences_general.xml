@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="一般選項" name="general_panel">
+	<radio_group draw_border="false" name="default_start_location">
+		<radio_item name="MyHome" tool_tip="預設登錄到我的家。">
+			我的家
+		</radio_item>
+		<radio_item name="MyLastLocation" tool_tip="默認登錄到我最後的位置。">
+			我最後所在位置
+		</radio_item>
+	</radio_group>
+	<check_box label="在登陸介面上顯示起始位置" name="show_location_checkbox"/>
+	<combo_box name="fade_out_combobox">
+		<combo_item name="Never">
+			從不顯示
+		</combo_item>
+		<combo_item name="Show Temporarily">
+			暫時顯示
+		</combo_item>
+		<combo_item name="Always">
+			總是顯示
+		</combo_item>
+	</combo_box>
+	<check_box label="化身名字使用小號字體" name="small_avatar_names_checkbox"/>
+	<check_box label="在我的螢幕上隱藏我的名字" name="show_my_name_checkbox"/>
+	<text name="group_titles_textbox">
+		社群頭銜:
+	</text>
+	<check_box label="隱藏所有社群頭銜" name="show_all_title_checkbox"/>
+	<check_box label="隱藏我的社群頭銜" name="show_my_title_checkbox"/>
+	<color_swatch label="" name="effect_color_swatch" tool_tip="點擊這裡來打開色彩選擇器"/>
+	<text name="UI Size:">
+		介面尺寸:
+	</text>
+	<check_box bottom="-236" label="使用解析度無關尺寸" left="148" name="ui_auto_scale" width="256"/>
+	<spinner label="離開休息計時:" name="afk_timeout_spinner"/>
+	<check_box label="在付出或收到福幣 (F$) 時提醒我" name="notify_money_change_checkbox"/>
+	<text name="maturity_desired_label">
+		分級：
+	</text>
+	<text name="maturity_desired_prompt">
+		我希望獲的土地存取權限：
+	</text>
+	<combo_box name="maturity_desired_combobox">
+		<combo_item name="Desired_Adult">
+			 普遍級，輔導級和成人
+		</combo_item>
+		<combo_item name="Desired_Mature">
+			普遍級和輔導級
+		</combo_item>
+		<combo_item name="Desired_PG">
+			僅限普遍級
+		</combo_item>
+	</combo_box>
+	<text name="maturity_desired_textbox">
+		僅限普遍級
+	</text>
+	<text length="1" name="start_location_textbox" type="string">
+		起始位置:
+	</text>
+	<text length="1" name="show_names_textbox" type="string">
+		顯示名字:
+	</text>
+	<text length="1" name="effects_color_textbox" type="string">
+		我的效果顏色:
+	</text>
+	<text length="1" name="seconds_textbox" type="string">
+		秒
+	</text>
+	<text length="1" name="crash_report_textbox" type="string">
+		崩潰報告:
+	</text>
+	<text length="1" name="language_textbox" type="string">
+		語言:
+	</text>
+	<text length="1" name="language_textbox2" type="string">
+		（要使更改完全生效，需重新開機程式）
+	</text>
+	<string name="region_name_prompt">
+		&lt;輸入地功能變數名稱&gt;
+	</string>
+	<combo_box name="crash_behavior_combobox">
+		<combo_item length="1" name="Askbeforesending" type="string">
+			在發送之前詢問
+		</combo_item>
+		<combo_item length="1" name="Alwayssend" type="string">
+			總是發送
+		</combo_item>
+		<combo_item length="1" name="Neversend" type="string">
+			從不發送
+		</combo_item>
+	</combo_box>
+	<combo_box name="language_combobox">
+		<combo_item name="System Default Language">
+			系統預設值
+		</combo_item>
+		<combo_item name="English">
+			English （英語）
+		</combo_item>
+		<combo_item name="Danish">
+			Dansk （丹麥）- 測試版
+		</combo_item>
+		<combo_item name="Deutsch(German)">
+			Deutsch （德語）- 測試版
+		</combo_item>
+		<combo_item name="Spanish">
+			Español （西班牙語）- 測試版
+		</combo_item>
+		<combo_item name="French">
+			Français （法語）- 測試版
+		</combo_item>
+		<combo_item name="Italian">
+			Italiano （義大利語）- 測試版
+		</combo_item>
+		<combo_item name="Hungarian">
+			Magyar 馬劄兒語（匈牙利）- 測試版
+		</combo_item>
+		<combo_item name="Dutch">
+			Nederlands （荷蘭語）- 測試版
+		</combo_item>
+		<combo_item name="Polish">
+			Polski （波蘭）- 測試版
+		</combo_item>
+		<combo_item name="Portugese">
+			Português （葡萄牙語）- 測試版
+		</combo_item>
+		<combo_item name="Russian">
+			Русский （俄羅斯語）- 測試版
+		</combo_item>
+		<combo_item name="Turkish">
+			Türkçe （土耳其語）- 測試版
+		</combo_item>
+		<combo_item name="Ukrainian">
+			Українська （烏克蘭語）- 測試版
+		</combo_item>
+		<combo_item name="Chinese">
+			中文 （繁體）- 測試版
+		</combo_item>
+		<combo_item name="(Japanese)">
+			日本語 （日語）- 測試版
+		</combo_item>
+		<combo_item name="(Korean)">
+			한국어 （朝鮮語）- 測試版
+		</combo_item>
+	</combo_box>
+	<check_box label="與物件共用語言" name="language_is_public" tool_tip="這使得世界內的物件可以知道你偏好的語言。"/>
+</panel>

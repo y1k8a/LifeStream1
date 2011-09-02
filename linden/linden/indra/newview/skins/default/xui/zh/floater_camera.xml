@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater
+	 name="move floater"
+	 title="">
+	<!-- 圖示是代碼中的自定按鈕(寫死的) -->
+	<string name="rotate_tooltip">圍繞焦點旋轉攝像機</string>
+	<string name="zoom_tooltip">朝著焦點縮放攝像機</string>
+	<string name="move_tooltip">上下左右移動攝像機</string>
+</floater>
+
+

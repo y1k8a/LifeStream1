@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="提議" name="voting_tab">
+	<text name="help_text">
+社群提議可以用來瞭解社群想要做的事，或者是社群對某些事情的看法。如果你有合適的權力，你就可以創建提議、投票表決開放的提議，以及查看舊的提議。
+	</text>
+	<text name="proposal_header">
+		開放的社群提議
+	</text>	
+	<text name="proposal_instructions">
+		按兩下你願意投票的決議，點擊創建決議， 以創建一個新的決議。
+	</text>
+	<text name="proposal_lbl">
+		提議描述
+	</text>
+	<text
+		 name="proposal_voting_lbl"
+		 visible="true">
+		 提議                                                                投票結束                        已經投票？
+	</text>
+	<button label="創建提議" label_selected="創建提議" name="btn_proposal" />
+	<button label="查看提議" label_selected="查看提議" name="btn_view_proposal_item" />
+	<button label="查看名單" label_selected="查看名單" name="btn_view_proposal_list" />
+	<text name="proposals_header_view_txt">
+		開放的社群提議
+	</text>
+	<text name="proposals_header_create_txt">
+		創建提議
+	</text>
+	<text name="proposals_header_vote_txt">
+		對提議投票
+	</text>
+	<text name="empty_proposal_txt">
+		你正在嘗試創建的提議是空的。請在創建之前填好你的提議。
+	</text>
+
+
+
+
+	<text name="quorum_lbl">
+		法定人數:
+	</text>
+	<spinner name="quorum" tool_tip="為選舉結果有效需要最少的人數。" />
+	<text name="quorum_text">
+		位團員必須投票（總共 [MEMBERS]人）
+	</text>
+	<text name="duration_lbl">
+		持續時間:
+	</text>
+	<spinner name="duration" tool_tip="投票持續的天數" />
+	<text name="duration_text">
+		天
+	</text>
+	<radio_group name="majority" tool_tip="投票成功需要的人數。">
+		簡單多數
+		2/3 多數
+		全票通過
+	</radio_group>
+	<text name="start_lbl">
+		投票開始:
+	</text>
+	<text name="end_lbl">
+		投票結束 :
+	</text>
+	<button label="提交提議" label_selected="提交提議" name="btn_submit" />
+	<button label="取消" label_selected="取消" name="btn_cancel" />
+	<button label="是" label_selected="是" name="btn_yes" />
+	<button label="否" label_selected="否" name="btn_no" />
+	<button label="棄權" label_selected="棄權" name="btn_abstain" />
+	<text name="txt">
+		社群選舉史
+	</text>
+	<text name="instructions">
+		按兩下通過投票表決，或者選擇一個並點擊查看項目來查看投票表決結果。
+	</text>
+	<text name="history_list_lbl">
+		通過表決                                                        投票表決終止
+	</text>
+	<button label="查看項目" label_selected="查看項目"
+	     name="btn_view_history_item" />
+	<text name="vote_text_lbl">
+		投票結果:
+	</text>
+	<button label="查看名單" label_selected="查看名單" name="btn_view_history_list" />
+	<string
+		 name="proposals_header_view_inst">
+		按兩下你想要投票的提議，或者按'創建提議'來創建新的提議。
+	</string>
+	<string
+		 name="proposals_header_create_inst">
+		輸入新的提議的描述。您可以更改最少投票人數、時間以及需要通過投票的人數類別。
+	</string>
+	<string
+		 name="proposals_header_vote_inst">
+		按'是'或'否'來對提議投票，或者選擇在此提議上棄權。
+	</string>
+	<string
+		 name="proposals_header_voted_inst">
+		您選擇了: [VOTE]
+	</string>
+<string
+		 name="proposals_submit_yes_txt">
+		正在提交同意票...
+	</string>
+	<string
+		 name="proposals_submit_no_txt">
+		正在提交反對票...
+	</string>
+	<string
+		 name="proposals_submit_abstain_txt">
+		正在提交棄權票...
+	</string>
+	<string
+		 name="proposals_submit_new_txt">
+		正在提交新的提議...
+	</string>
+	<string
+		 name="vote_recorded">
+		您的投票已經收到。
+	</string>
+	<string
+		 name="vote_previously_recorded">
+		您已經投過票了。一次提議只能投票一次。
+	</string>
+</panel>

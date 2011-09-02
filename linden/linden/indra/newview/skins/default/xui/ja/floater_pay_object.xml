@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="Give Money">
+
+	<string name="pay group">
+		グループへの支払い：
+	</string>
+	<string name="pay resident">
+		住人への支払い：
+	</string>
+
+	<text name="via object">
+		オブジェクトを介して： [OBJECT]
+	</text>
+
+	<text name="fastpay text">
+		一括払い：
+	</text>
+
+	<text name="amount text">
+		金額：
+	</text>
+
+	<button label="支払い"   name="pay btn"    />
+	<button label="取り消し" name="cancel btn" />
+
+</floater>

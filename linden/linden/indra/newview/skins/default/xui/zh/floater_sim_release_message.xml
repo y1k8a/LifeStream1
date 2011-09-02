@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater
+	 name="floaterreleasemessage"
+	 title="正在進入地區">
+	<button
+		 label="關閉"
+		 name="close_btn"/>
+	<string
+		 name="in-world_help_title">
+		世界內幫助
+	</string>
+	<string
+		 name="additional_help_title">
+		附加幫助
+	</string>
+</floater>
+

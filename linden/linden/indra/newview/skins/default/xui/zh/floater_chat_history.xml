@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="chat floater" title="本地聊天">
+	<string name="ringing">
+		正在連接到世界內語音聊天...
+	</string>
+	<string name="connected">
+		已連接。
+	</string>
+	<string name="unavailable">
+		當前位置語音不可用。
+	</string>
+	<string name="hang_up">
+		從世界內語音聊天掛掉
+	</string>
+	<string name="IM_logging_string">
+		-- 打開即時通信日誌 --
+	</string>
+	<string name="IM_end_log_string">
+		-- 日誌結束 --
+	</string>
+  <string name="ScriptQuestionCautionChatGranted">
+	'[OBJECTNAME]', 主人為 '[OWNERNAME]' 的物件, 位於 [REGIONNAME] 地區  [REGIONPOS], 已被授予以下權利： [PERMISSIONS]。
+  </string>
+  <string name="ScriptQuestionCautionChatDenied">
+	'[OBJECTNAME]', 主人為 '[OWNERNAME]' 的物件, 位於 [REGIONNAME] 地區  [REGIONPOS], 已被拒絕以下權利： [PERMISSIONS]。
+  </string>
+  <string name="ScriptTakeMoney">
+	從您那裡取走福幣(F$)
+  </string>
+  <string name="ActOnControlInputs">
+	對您的控制輸入做出反應
+  </string>
+  <string name="RemapControlInputs">
+	重新佈置你的控制按鍵
+  </string>
+  <string name="AnimateYourAvatar">
+	在您的化身上播放動畫
+  </string>
+  <string name="AttachToYourAvatar">
+	裝備到您的身上
+  </string>
+  <string name="ReleaseOwnership">
+	放棄主人權利並成為公眾物品
+  </string>
+  <string name="LinkAndDelink">
+	建立或解除與其他物品的連結
+  </string>
+  <string name="AddAndRemoveJoints">
+	增加或移除與其他物件之間的連接點
+  </string>
+  <string name="ChangePermissions">
+	更改其許可權利
+  </string>
+  <string name="TrackYourCamera">
+	追蹤您的視角
+  </string>
+  <string name="ControlYourCamera">
+	控制您的視角
+  </string>
+	<layout_stack name="panels">
+		<layout_panel min_width="275" name="im_contents_panel">
+			<combo_box label="動作" name="Gesture">
+				<combo_item name="Gestures">
+					動作
+				</combo_item>
+			</combo_box>
+			<check_box label="顯示幕蔽的文字" name="show mutes"/>
+			<button label="&lt; &lt;" label_selected="&gt; &gt;" name="toggle_active_speakers_btn" tool_tip="顯示在該即時通信會話中活動的參與者。"/>
+			<panel name="chat_panel">
+				<string name="gesture_label">
+					動作
+				</string>
+				<line_editor label="點擊這裡開始聊天。" name="Chat Editor"/>
+				<flyout_button label="說" name="Say" tool_tip="(回車鍵)">
+					<flyout_button_item name="shout_item">
+						喊叫
+					</flyout_button_item>
+					<flyout_button_item name="say_item">
+						說
+					</flyout_button_item>
+					<flyout_button_item name="whisper_item">
+						輕聲說
+					</flyout_button_item>
+				</flyout_button>
+			</panel>
+		</layout_panel>
+	</layout_stack>
+</floater>

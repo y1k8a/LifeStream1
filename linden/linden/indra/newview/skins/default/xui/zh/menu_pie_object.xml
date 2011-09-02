@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<pie_menu name="Object Pie">
+	<menu_item_call label="打開" name="Open"/>
+	<menu_item_call label="創造" name="Create"/>
+	<menu_item_call label="觸摸" name="Object Touch">
+		<on_enable userdata="觸摸" name="EnableTouch"/>
+	</menu_item_call>
+	<menu_item_call label="坐在這裡" name="Object Sit">
+		<on_enable userdata="坐在這裡,起身" name="EnableSitOrStand"/>
+	</menu_item_call>
+	<menu_item_call label="拿走" name="Pie Object Take">
+		<on_enable userdata="購買,拿走" name="EnableBuyOrTake"/>
+	</menu_item_call>
+	<menu_item_call label="付款..." name="Pay..."/>
+	<pie_menu label="更多 &gt;" name="More &gt;">
+		<menu_item_call label="刪除" name="Delete"/>
+		<menu_item_call label="穿上" name="Wear"/>
+		<menu_item_call label="拿走副本" name="Take Copy"/>
+		<pie_menu label="裝上到HUD &gt;" name="Object Attach HUD"/>
+		<pie_menu label="裝備到&gt;" name="Object Attach"/>
+		<menu_item_call label="歸還..." name="Return..."/>
+		<pie_menu label="更多 &gt;" name="Rate Menu">
+			<menu_item_call label="報告..." name="Report Abuse..."/>
+			<menu_item_call label="消音" name="Object Mute"/>
+			<menu_item_call label="審查" name="Object Inspect"/>
+		</pie_menu>
+		<menu_item_call label="購買..." name="Buy..."/>
+	</pie_menu>
+	<menu_item_call label="編輯..." name="Edit..."/>
+</pie_menu>

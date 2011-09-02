@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_about" title="세컨드라이프 정보">
+	<text name="you_are_at">
+		[POSITION]에 있습니다.
+	</text>
+</floater>

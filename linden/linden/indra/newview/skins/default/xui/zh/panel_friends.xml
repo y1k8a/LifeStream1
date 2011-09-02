@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="friends">
+	<string name="Multiple">
+		多位好友...
+	</string>
+	<scroll_list name="friend_list" tool_tip="點擊時按住 shift 或 control 鍵來選擇多個好友">
+		<column name="icon_online_status" tool_tip="線上狀態"/>
+		<column label="名字" name="friend_name" tool_tip="名稱"/>
+		<column name="icon_visible_online" tool_tip="好友可以看見你是否線上"/>
+		<column name="icon_visible_map" tool_tip="好友可以在地圖上找到你"/>
+		<column name="icon_edit_mine" tool_tip="好友可以編輯你的物件"/>
+		<column name="icon_edit_theirs" tool_tip="你可以編輯這位元好友的物件"/>
+	</scroll_list>
+	<button label="聊天/呼叫" name="im_btn" tool_tip="打開即時通信會話"/>
+	<button label="檔案" name="profile_btn" tool_tip="顯示圖片、社群和其他資訊"/>
+	<button label="瞬間移動..." name="offer_teleport_btn" tool_tip="邀請該好友瞬間移動到你的當前位置"/>
+	<button label="付款..." name="pay_btn" tool_tip="給這位好友林登幣 (F$)"/>
+	<button label="移除..." name="remove_btn" tool_tip="將這個人從你的好友群中去除"/>
+	<button label="增加..." name="add_btn" tool_tip="邀請其他居民成為你的好友"/>
+</panel>

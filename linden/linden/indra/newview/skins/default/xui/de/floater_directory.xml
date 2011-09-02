@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="directory" title="Suche">
+	<tab_container name="Directory Tabs">
+		<panel label="All" name="find_all_old_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+			<button label="&lt; Vor" label_selected="&lt; Vor" name="&lt; Prev" />
+			<button label="Weiter &gt;" label_selected="Weiter &gt;" name="Next &gt;" />
+			<text name="find">
+				Finden:
+			</text>
+			<line_editor name="name" />
+			<button label="Suchen" label_selected="Suchen" name="Search" />
+			<check_box control_name="ShowPGSearchAll" label="„PG“-Inhalt" name="incpg" />
+			<check_box control_name="ShowMatureSearchAll" label="Inhalt „Reif“" name="incmature" />
+			<check_box control_name="ShowAdultSearchAll" label="Inhalt „Erwachsen“" name="incadult" />
+			<scroll_list name="results">
+				<column label="" name="icon" width="24" />
+				<column label="Name" name="name" width="235" />
+				<column label="Preis" name="price" width="90" />
+				<column label="Datum" name="date" width="90" />
+				<column label="Zeit" name="time" width="-1" />
+				<column label="Traffic" name="dwell" width="90" />
+				<column label="Bereich" name="area" width="90" />
+				<column label="[CURRENCY]/qm" name="per_meter" width="90" />
+				<column label="Online" name="online" width="90" />
+				<column label="Mitglieder" name="members" width="90" />
+			</scroll_list>
+			<text name="result_text" />
+		</panel>
+		<panel label="Alle" name="find_all_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+			<text name="find">
+				Finden:
+			</text>
+			<line_editor label="Suche" name="search_editor" tool_tip="Das Internet durchsuchen" />
+			<button label="Zurück" name="back_btn"/>
+			<button label="Weiter" name="forward_btn"/>
+			<button label="Suchen" name="search_btn"/>
+			<combo_box name="Category">
+			<combo_box name="Category">
+				<combo_item name="AnyCategory">
+					Alle Kategorien
+				</combo_item>
+				<combo_item name="Events">
+					Events
+				</combo_item>
+				<combo_item name="Groups">
+					Gruppen
+				</combo_item>
+				<combo_item name="People">
+					Leute
+				</combo_item>
+				<combo_item name="Places">
+					Orte
+				</combo_item>
+				<combo_item name="Wiki">
+					Wiki
+				</combo_item>
+			</combo_box>
+			<check_box control_name="ShowPGSearchAll" label="„PG“-Inhalt" name="incpg" />
+			<check_box control_name="ShowMatureSearchAll" label="Inhalt „Reif“" name="incmature" />
+			<check_box control_name="ShowAdultSearchAll" label="Inhalt „Erwachsen“" name="incadult" />
+	                <button label="?" label_selected="?" name="?" />
+			<web_browser name="find_browser" />
+			<text name="status_text" />
+			<string name="loading_text">
+				Wird geladen...
+			</string>
+			<string name="done_text">
+				Fertig
+			</string>
+			<string name="redirect_404_url">
+				http://secondlife.com/app/search/notfound.html
+			</string>
+      <string name="default_search_page">"http://secondlife.com/app/search/index.php?"</string>
+    </panel>
+		<panel label="Anzeigen" name="classified_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+			<text name="find">
+				Finden:
+			</text>
+			<line_editor name="name" />
+			<check_box control_name="ShowPGClassifieds" label="„PG“-Inhalt" name="incpg" />
+			<check_box control_name="ShowMatureClassifieds" label="Inhalt „Reif“" name="incmature" />
+			<check_box control_name="ShowAdultClassifieds" label="Inhalt „Erwachsen“" name="incadult" />
+			<combo_box name="Category">
+				<combo_item name="AnyCategory" value="0">
+					Alle Kategorien
+				</combo_item>
+				<combo_item name="Shopping" value="1">
+					Einkaufen 
+				</combo_item>
+				<combo_item name="LandRental" value="2">
+					Land mieten
+				</combo_item>
+				<combo_item name="PropertyRental" value="3">
+					Grundstück mieten
+				</combo_item>
+				<combo_item name="SpecialAttraction" value="4">
+					Attraktionen
+				</combo_item>
+				<combo_item name="NewProducts" value="5">
+					Neue Produkte
+				</combo_item>
+				<combo_item name="Employment" value="6">
+					Stellenangebote 
+				</combo_item>
+				<combo_item name="Wanted" value="7">
+					Gesucht 
+				</combo_item>
+				<combo_item name="Service" value="8">
+					Dienstleistungen
+				</combo_item>
+				<combo_item name="Personal" value="9">
+					Persönlich
+				</combo_item>
+			</combo_box>
+			<button label="Durchsuchen" label_selected="Durchsuchen" name="Browse"/>
+			<button label="Suchen" label_selected="Suchen" name="Search"/>
+			<button label="Anzeige aufgeben..." label_selected="Anzeige aufgeben..." name="Place an Ad..."/>
+			<button label="Löschen" label_selected="Löschen" name="Delete"/>
+			<scroll_list name="results">
+				<column label="" name="icon" width="24" />
+				<column label="" name="type" width="-1" />
+				<column label="Name" name="name" width="225" />
+				<column label="Preis" name="price" width="55" />
+			</scroll_list>
+			<text name="result_text" />
+			<button label="Weiter &gt;" label_selected="Weiter &gt;" name="Next &gt;" />
+			<button label="&lt; Vor" label_selected="&lt; Vor"
+			     name="&lt; Prev" />
+		</panel>
+		<panel label="Events" left="1" name="events_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+			<text name="text2">
+				Finden:
+			</text>
+			<line_editor name="event_search_text" />
+			<radio_group name="date_mode">
+				<radio_item name="current">
+					Stattfindend und anstehend
+				</radio_item>
+				<radio_item name="date">
+					Datum
+				</radio_item>
+			</radio_group>
+			<button label="&lt;&lt;" label_selected="&lt;&lt;" name="&lt;&lt;" tool_tip="Einen Tag zurück" />
+			<text name="date_text">
+				6/6
+			</text>
+			<button label="&gt;&gt;" label_selected="&gt;&gt;" name="&gt;&gt;" tool_tip="Einen Tag weiter" />
+			<button label="Heute" label_selected="Heute" name="Today" tool_tip="Heutige Events anzeigen" />
+			<text name="text">
+				Kategorie: 
+			</text>
+			<combo_box name="category combo" width="195" left="222">
+				<combo_item name="All">
+					Alle Kategorien
+				</combo_item>
+				<combo_item name="Discussion">
+					Diskussion
+				</combo_item>
+				<combo_item name="Sports">
+					Sport
+				</combo_item>
+				<combo_item name="LiveMusic">
+					Live Musik
+				</combo_item>
+				<combo_item name="Commercial">
+					Kommerziell
+				</combo_item>
+				<combo_item name="Nightlife/Entertainment">
+					Nachtleben/Unterhaltung
+				</combo_item>
+				<combo_item name="Games/Contests">
+					Spiele/Wettbewerbe
+				</combo_item>
+				<combo_item name="Pageants">
+					Schönheitswettbewerbe
+				</combo_item>
+				<combo_item name="Education">
+					Bildung
+				</combo_item>
+				<combo_item name="ArtsandCulture">
+					Kunst und Kultur
+				</combo_item>
+				<combo_item name="Charity/SupportGroups">
+					Wohltätigkeits-/Support-Gruppen
+				</combo_item>
+				<combo_item name="Miscellaneous">
+					Sonstiges
+				</combo_item>
+			</combo_box>
+			<check_box control_name="ShowPGEvents" label="„PG“-Inhalt" name="incpg" />
+			<check_box control_name="ShowMatureEvents" label="Inhalt „Reif“" name="incmature" />
+			<check_box control_name="ShowAdultEvents" label="Inhalt „Erwachsen“" name="incadult" />
+			<button label="Suchen" label_selected="Suchen" name="Search" />
+			<button label="Löschen" label_selected="Löschen" name="Delete" />
+			<scroll_list name="results">
+				<column label="" name="icon" width="24" />
+				<column label="" name="type" width="-1" />
+				<column dynamicwidth="true" label="Name" name="name" />
+				<column label="Datum" name="date" sort="time" width="106" />
+				<column label="" name="event_id" width="-1" />
+				<column label="Zeit" name="time" width="-1" />
+			</scroll_list>
+			<text name="result_text" />
+			<button label="Weiter &gt;" label_selected="Weiter &gt;" name="Next &gt;" />
+			<button label="&lt; Vor" label_selected="&lt; Vor"
+			     name="&lt; Prev" />
+		</panel>
+		<panel label="Showcase" name="showcase_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+			<button label="Zurück" name="back_btn"/>
+			<button label="Weiter" name="forward_btn"/>
+        <!-- No mature content checkbox, showcase is all PG -->
+        <web_browser name="showcase_browser" />
+        <text name="status_text" />
+			<string name="loading_text">
+				Wird geladen...
+			</string>
+			<string name="done_text">
+				Fertig
+			</string>
+        <string name="redirect_404_url">http://secondlife.com/app/search/notfound.html</string>
+        <string name="default_search_page">"http://secondlife.com/app/showcase/index.php?"</string>
+    </panel>
+		<panel label="Landverkauf" name="land_sales_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+			<string name="land_help_text">
+				Land kann direkt für in-Welt Geld oder bei einer Auktion für echtes oder in-Welt Geld erworben werden.
+Um direkt zu kaufen, klicken Sie auf dem betreffenden Land in der Titelleiste auf den Namen.
+			</string>
+			<text name="find" v_pad="0" width="50">
+				Finden:
+			</text>
+			<check_box control_name="ShowPGLand" label="„PG“-Inhalt" name="incpg" />
+			<check_box control_name="ShowMatureLand" label="Inhalt „Reif“" name="incmature" />
+			<check_box control_name="ShowAdultLand" label="Inhalt „Erwachsen“" name="incadult" />
+			<combo_box name="type">
+			<combo_box name="type" width="135">
+				<combo_item name="AllTypes">
+					Alle Typen
+				</combo_item>
+				<combo_item name="Auction">
+					Auktion
+				</combo_item>
+				<combo_item name="MainlandSales">
+					Verkauf - Mainland
+				</combo_item>
+				<combo_item name="EstateSales">
+					Verkauf - Grundstück
+				</combo_item>
+			</combo_box>
+			<check_box control_name="FindLandPrice" label="Preis &#8804; " name="pricecheck" />
+			<text name="pricecheck_symbol">
+        [CURRENCY]
+      </text>
+			<check_box control_name="FindLandArea" label="Bereich &#8805; " name="areacheck" />
+			<text name="areacheck_symbol">
+				m²
+			</text>
+			<line_editor name="priceedit" />
+			<line_editor name="areaedit" />
+			<button label="Suchen" label_selected="Suchen" name="Search" />
+			<scroll_list name="results">
+				<column label="" name="icon" width="24" />
+				<column label="" name="type" width="-1" />
+				<column dynamicwidth="true" label="Name" name="name" />
+				<column label="Type" name="landtype" width="50" />
+				<column label="Preis in [CURRENCY]" name="price" width="65" />
+				<column label="Bereich" name="area" width="50" />
+				<column label="[CURRENCY]/m²" name="per_meter" />
+			</scroll_list>
+			<text name="result_text" />
+			<button label="Weiter &gt;" label_selected="Weiter &gt;" name="Next &gt;" />
+			<button label="&lt; Vor" label_selected="&lt; Vor"
+			     name="&lt; Prev" />
+		</panel>
+		<panel label="Orte" name="places_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+			<text name="find">
+				Finden:
+			</text>
+			<line_editor name="name" />
+			<check_box control_name="ShowPGSims" label="„PG“-Inhalt" name="incpg" />
+			<check_box control_name="ShowMatureSims" label="Inhalt „Reif“" name="incmature" />
+			<check_box control_name="ShowAdultSims" label="Inhalt „Erwachsen“" name="incadult" />
+			<combo_box name="Category">
+				<combo_item name="AnyCategory" value="any">
+					Alle Kategorien
+				</combo_item>
+				<combo_item name="LindenLocation" value="linden">
+					Linden-Position
+				</combo_item>
+				<combo_item name="Arts&amp;Culture" value="arts">
+					Kunst &amp; Kultur
+				</combo_item>
+				<combo_item name="Business" value="store">
+					Gewerbe
+				</combo_item>
+				<combo_item name="Educational" value="educational">
+					Bildung
+				</combo_item>
+				<combo_item name="Gaming" value="game">
+					Spielen
+				</combo_item>
+				<combo_item name="Hangout" value="gather">
+					Treffpunkt
+				</combo_item>
+				<combo_item name="NewcomerFriendly" value="newcomer">
+					Anfängergerecht
+				</combo_item>
+				<combo_item name="Parks&amp;Nature" value="park">
+					Parks &amp; Natur
+				</combo_item>
+				<combo_item name="Residential" value="home">
+					Wohngebiet
+				</combo_item>
+				<combo_item name="Shopping" value="shopping">
+					Einkaufen
+				</combo_item>
+				<combo_item name="Other" value="other">
+					Sonstige
+				</combo_item>
+			</combo_box>
+			<!-- This is used only during the AO transition and can be deleted once the AO transition is
+			complete. It is identical to the combo box above except that it has the Adult category. 
+			You might also want to set it back to default visible and enabled. -->
+			<combo_box allow_text_entry="false" bottom="-46" enabled="false" follows="right|top" height="18" left="230"
+			     max_chars="20" mouse_opaque="true" name="Category_Adult" width="128" visible="false">
+				<combo_item name="AnyCategory" value="any">
+					Alle Kategorien
+				</combo_item>
+				<combo_item name="LindenLocation" value="linden">
+					Linden-Position
+				</combo_item>
+				<combo_item name="Adult" value="adult">
+					Erwachsen
+				</combo_item>
+				<combo_item name="Arts&amp;Culture" value="arts">
+					Kunst &amp; Kultur
+				</combo_item>
+				<combo_item name="Business" value="store">
+					Gewerbe
+				</combo_item>
+				<combo_item name="Educational" value="educational">
+					Bildung
+				</combo_item>
+				<combo_item name="Gaming" value="game">
+					Spielen
+				</combo_item>
+				<combo_item name="Hangout" value="gather">
+					Treffpunkt
+				</combo_item>
+				<combo_item name="NewcomerFriendly" value="newcomer">
+					Anfängergerecht
+				</combo_item>
+				<combo_item name="Parks&amp;Nature" value="park">
+					Parks &amp; Natur
+				</combo_item>
+				<combo_item name="Residential" value="home">
+					Wohngebiet
+				</combo_item>
+				<combo_item name="Shopping" value="shopping">
+					Einkaufen
+				</combo_item>
+				<combo_item name="Other" value="other">
+					Sonstige
+				</combo_item>
+			</combo_box>
+			<button label="Suchen" label_selected="Suchen" name="Search" />
+			<scroll_list name="results">
+				<column label="" name="icon" width="24" />
+				<column label="" name="type" width="-1" />
+				<column dynamicwidth="true" label="Name" name="name" />
+				<column label="Traffic" name="dwell" width="75" />
+			</scroll_list>
+			<text name="result_text" />
+			<button label="Weiter &gt;" label_selected="Weiter &gt;" name="Next &gt;" />
+			<button label="&lt; Vor" label_selected="&lt; Vor"
+			     name="&lt; Prev" />
+		</panel>
+    <panel label="Leute" name="people_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+      <text name="find">
+        Finden:
+      </text>
+	  <line_editor name="name" />
+		<button label="Suchen" label_selected="Suchen" name="Search" />
+      <scroll_list name="results">
+        <column label="" name="icon" width="24" />
+        <column label="" name="type" width="-1" />
+        <column label="Name" name="name" width="274" />
+      </scroll_list>
+			<text name="result_text" />
+			<button label="Weiter &gt;" label_selected="Weiter &gt;" name="Next &gt;" />
+      		<button label="&lt; Vor" label_selected="&lt; Vor"
+			     name="&lt; Prev" />
+		</panel>
+    <panel label="Gruppen" name="groups_panel">
+			<string name="searching_text">
+				Suchen...
+			</string>
+			<string name="not_found_text">
+				Nicht gefunden.
+			</string>
+			<button label="Weiter &gt;" label_selected="Weiter &gt;" name="Next &gt;" />
+      		<button label="&lt; Vor" label_selected="&lt; Vor"
+			     name="&lt; Prev" />
+			<text name="find">
+				Finden:
+			</text>
+			<line_editor name="name" />
+			<button label="Suchen" label_selected="Suchen" name="Search" />
+			<check_box control_name="ShowPGGroups" label="„PG“-Inhalt" name="incpg" />
+			<check_box control_name="ShowMatureGroups" label="Inhalt „Reif“" name="incmature" />
+			<check_box control_name="ShowAdultGroups" label="Inhalt „Erwachsen“" name="incadult" />
+			<scroll_list name="results">
+				<column label="" name="icon" sort="score" sort_ascending="false" width="24" />
+				<column label="" name="type" width="-1" />
+				<column dynamicwidth="true" label="Name" name="name" />
+				<column label="Mitglieder" name="members" />
+				<column label="" name="score" width="-1" />
+			</scroll_list>
+			<text name="result_text" />
+		</panel>
+	</tab_container>
+	<panel name="classified_details_panel" />
+	<panel name="Panel Avatar" />
+	<panel name="event_details_panel" />
+	<panel name="group_details_panel_holder" />
+	<panel name="group_details_panel" />
+	</panel>
+	<panel name="place_details_panel" />
+	<panel name="place_details_small_panel" />
+</floater>

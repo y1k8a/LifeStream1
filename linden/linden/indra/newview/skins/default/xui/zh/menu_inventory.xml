@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<menu name="Popup">
+	<menu_item_call label="購買" name="Task Buy"/>
+	<menu_item_call label="打開" name="Task Open"/>
+	<menu_item_call label="播放" name="Task Play"/>
+	<menu_item_call label="屬性" name="Task Properties"/>
+	<menu_item_call label="重新命名" name="Task Rename"/>
+	<menu_item_call label="刪除" name="Task Remove"/>
+	<menu_item_call label="清空回收站" name="Empty Trash"/>
+	<menu_item_call label="清空失物招領" name="Empty Lost And Found"/>
+	<menu_item_call label="新建資料夾" name="New Folder"/>
+	<menu_item_call label="新建腳本" name="New Script"/>
+	<menu_item_call label="新建記事卡" name="New Note"/>
+	<menu_item_call label="新建動作" name="New Gesture"/>
+	<menu name="New Clothes">
+		<menu_item_call label="新建襯衫" name="New Shirt"/>
+		<menu_item_call label="新建褲子" name="New Pants"/>
+		<menu_item_call label="新建鞋子" name="New Shoes"/>
+		<menu_item_call label="新建襪子" name="New Socks"/>
+		<menu_item_call label="新建夾克" name="New Jacket"/>
+		<menu_item_call label="新建短裙" name="New Skirt"/>
+		<menu_item_call label="新建手套" name="New Gloves"/>
+		<menu_item_call label="新建內衣" name="New Undershirt"/>
+		<menu_item_call label="新建內褲" name="New Underpants"/>
+	</menu>
+	<menu name="New Body Parts">
+		<menu_item_call label="新建體型" name="New Shape"/>
+		<menu_item_call label="新建皮膚" name="New Skin"/>
+		<menu_item_call label="新建頭髮" name="New Hair"/>
+		<menu_item_call label="新建眼睛" name="New Eyes"/>
+	</menu>
+	<menu_item_call label="瞬間移動" name="Landmark Open"/>
+	<menu_item_call label="打開" name="Animation Open"/>
+	<menu_item_call label="打開" name="Sound Open"/>
+	<menu_item_call label="清除物件" name="Purge Item"/>
+	<menu_item_call label="恢復物件" name="Restore Item"/>
+	<menu_item_call label="打開" name="Open"/>
+	<menu_item_call label="屬性" name="Properties"/>
+	<menu_item_call label="重命名" name="Rename"/>
+	<menu_item_call label="複製資產UUID" name="Copy Asset UUID"/>
+	<menu_item_call label="複製" name="Copy"/>
+	<menu_item_call label="貼上" name="Paste"/>
+	<menu_item_call label="刪除" name="Delete"/>
+	<menu_item_call label="脫下物品" name="Take Off Items"/>
+	<menu_item_call label="添加至裝束" name="Add To Outfit"/>
+	<menu_item_call label="替換服飾" name="Replace Outfit"/>
+	<menu_item_call label="開始會話" name="Conference Chat Folder"/>
+	<menu_item_call label="播放" name="Sound Play"/>
+	<menu_item_call label="關於地標" name="Teleport To Landmark"/>
+	<menu_item_call label="在世界中播放" name="Animation Play"/>
+	<menu_item_call label="本地播放" name="Animation Audition"/>
+	<menu_item_call label="發送即時消息" name="Send Instant Message"/>
+	<menu_item_call label="邀請瞬間移動..." name="Offer Teleport..."/>
+	<menu_item_call label="開始會議聊天" name="Conference Chat"/>
+	<menu_item_call label="啟動" name="Activate"/>
+	<menu_item_call label="解除啟動" name="Deactivate"/>
+	<menu_item_call label="從自己身上卸下" name="Detach From Yourself"/>
+	<menu_item_call label="恢復至上一位置" name="Restore to Last Position"/>
+	<menu_item_call label="穿上" name="Object Wear"/>
+	<menu label="裝備至" name="Attach To"/>
+	<menu label="裝備到HUD" name="Attach To HUD"/>
+	<menu_item_call label="編輯" name="Wearable Edit"/>
+	<menu_item_call label="穿上" name="Wearable Wear"/>
+	<menu_item_call label="脫掉" name="Take Off"/>
+	<menu_item_call label="--無可用選項--" name="--no options--"/>
+</menu>

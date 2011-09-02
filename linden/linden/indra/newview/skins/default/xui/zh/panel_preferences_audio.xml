@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="音訊和視頻" name="Media panel">
+	<text length="1" name="muting_text" type="string">
+		音量:
+	</text>
+	<text name="streaming_prefs_text">
+		多媒體首選項:
+	</text>
+	<text name="audio_prefs_text">
+		音訊首選項:
+	</text>
+	<panel label="音量" name="Volume Panel"/>
+	<check_box label="當音樂可用時播放音樂(會佔用更多頻寬)" name="streaming_music"/>
+	<check_box label="當視頻可用時播放視頻(會佔用更多頻寬)" name="streaming_video"/>
+	<check_box label="自動播放媒體" name="auto_streaming_video"/>
+	<check_box label="當視窗最小化時消音聲音" name="mute_when_minimized"/>
+	<slider label="多普勒效應" name="Doppler Effect" width="250"/>
+	<slider label="距離係數" name="Distance Factor"/>
+	<slider label="衰減係數:" name="Rolloff Factor"/>
+	<spinner label="F$ 變化閾值" name="L$ Change Threshold"/>
+	<spinner label="生命值變化值" name="Health Change Threshold"/>
+</panel>

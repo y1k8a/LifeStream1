@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="gesture_preview" title="動作">
+	<string name="stop_txt">
+		停止
+	</string>
+	<string name="preview_txt">
+		預覽
+	</string>
+	<string name="none_text">
+		-- 沒有 --
+	</string>
+	<text name="desc_label">
+		描述:
+	</text>
+	<text name="trigger_label">
+		命令:
+	</text>
+	<text name="replace_text" tool_tip="將命令詞用這些詞替換。例如說，命令'你好'替換為'好呀！' 將會將對話 '我想說你好' 變成 '我想說好呀！' 並同時播放動作。">
+		替換為:
+	</text>
+	<line_editor name="replace_editor" tool_tip="將命令詞用這些詞替換。例如說，命令'你好'替換為'好呀！' 將會將對話 '我想說你好' 變成 '我想說好呀！' 並同時播放動作。"/>
+	<text name="key_label">
+		快速鍵:
+	</text>
+	<combo_box label="無" name="modifier_combo"/>
+	<combo_box label="無" name="key_combo"/>
+	<text name="library_label">
+		庫:
+	</text>
+	<text name="steps_label">
+		階段：
+	</text>
+	<scroll_list name="library_list">
+		動畫
+聲音
+聊天
+等待
+	</scroll_list>
+	<button label="增加&gt;&gt;" name="add_btn"/>
+	<button label="上移" name="up_btn"/>
+	<button label="下移" name="down_btn"/>
+	<button label="移除" name="delete_btn"/>
+	<text name="help_label">
+		所有的步驟都同時發生，
+除非你增加了等待步驟。
+	</text>
+	<radio_group name="animation_trigger_type">
+		<radio_item name="start">
+			開始
+		</radio_item>
+		<radio_item name="stop">
+			停止
+		</radio_item>
+	</radio_group>
+	<check_box label="直到動畫完成" name="wait_anim_check"/>
+	<check_box label="等待時間, 以秒計" name="wait_time_check"/>
+	<check_box label="啟動" name="active_check" tool_tip="啟動的動作可以被命令或快速鍵啟動。動作一般當按鍵衝突時會成為不啟動的狀態。"/>
+	<button label="預覽" name="preview_btn"/>
+	<button label="儲存" name="save_btn"/>
+</floater>

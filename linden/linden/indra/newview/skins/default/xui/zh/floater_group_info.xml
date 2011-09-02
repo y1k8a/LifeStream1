@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!-- deprecated - doesn't seem to be used -->
+<floater name="groupinfo" title="福爾摩亞家族-社群訊息">
+	<tab_container name="tab">
+		<panel label="一般" name="gen">
+			<text name="title_box">
+				社群訊息
+			</text>
+			<text name="txt">
+				社群是你和朋友們合作的有趣的途徑。
+			</text>
+			<text name="txt2">
+				社群使你擁有頭銜，徽章和進行選舉的能力。
+			</text>
+			<text name="txt3">
+				任何人都可以創建社群。但每個人最多只能參加15個社群。
+			</text>
+			<text name="txt4">
+				社群至少應有三名成員才能保持運轉。
+			</text>
+			<text name="group_create_text">
+				創建社群需要100L$。
+			</text>
+			<text name="lbl">
+				名字:
+			</text>
+			<text name="founder_label">
+				創辦人:
+			</text>
+			<text name="lbl2">
+				規章:
+			</text>
+			<check_box label="在社群名單中顯示" name="sho" />
+			<check_box label="在社群名單中顯示成員" name="sho_mem" />
+			<check_box label="在網上公佈" name="allow_publish"
+			     tool_tip="將簡介發佈到網上。" />
+			<button label="?" label_selected="?" name="publish_help_btn" />
+			<check_box name="mature" />
+		</panel>
+		<panel label="頭銜" name="tit">
+			<text name="txt">
+				社群頭銜
+			</text>
+			<text name="txt2">
+				社群的官員和成員都可以有特殊的頭銜。
+			</text>
+			<text name="txt3">
+				頭銜將在世界裡、聊天時和即時通消息裡出現在名字之前。
+			</text>
+			<text name="lbl">
+				官員頭銜:
+			</text>
+			<text name="lbl2">
+				成員頭銜:
+			</text>
+			<text name="lbl3">
+				從庫存中拖出材質來設置社群徽章。
+			</text>
+			<texture_picker name="insig" tool_tip="點擊這裡來選擇圖片" />
+		</panel>
+		<panel label="成員" name="mem">
+			<text name="txt">
+				社群成員
+			</text>
+			<text name="txt2">
+				當前社群官員和成員。
+			</text>
+			<text name="txt3">
+				點擊姓名察看會員資料。
+			</text>
+			<text name="lbl">
+				官員：
+			</text>
+			<text name="members_label">
+				成員:
+			</text>
+			<button label="驅逐成員" label_selected="驅逐成員" name="eject_member_btn" />
+		</panel>
+		<panel label="投票" name="voting">
+			<tab_container name="tab">
+				<panel label="Election" name="recall">
+					<text name="txt">
+						社群選舉
+					</text>
+					<text name="instructions">
+						按下開始選舉鍵開始新的選舉。
+候選人包括所有非官員的社群成員。
+					</text>
+					<text name="lbl">
+						候選人:
+					</text>
+					<button label="投票" label_selected="投票" name="btn_vote" />
+					<button label="放棄" label_selected="放棄" name="btn_abstain" />
+					<button label="開始表決" label_selected="開始表決" name="btn_start_election" />
+					<text name="lbl2">
+						法定人數:
+					</text>
+					<spinner name="quorum" tool_tip="# 人為選舉結果有效還需要的人數。" />
+					<text name="quorum_text">
+						在全部111名成員之外
+					</text>
+					<text name="lbl3">
+						大多數:
+					</text>
+					<radio_group name="majority" tool_tip="Majority of total votes needed to win.">
+						<radio_item name="radio">
+							簡單多數
+						</radio_item>
+						<radio_item name="radio2">
+							2/3 多數 
+						</radio_item>
+						<radio_item name="radio3">
+							一致同意
+						</radio_item>
+					</radio_group>
+					<text name="duration_lbl">
+						持續時間:
+					</text>
+					<spinner name="duration" tool_tip="#天為選舉還將持續的天數。" />
+					<text name="duration_days">
+						天
+					</text>
+					<text name="start_lbl">
+						選舉開始:
+					</text>
+					<text name="end_lbl">
+						選舉結束:
+					</text>
+				</panel>
+				<panel label="Proposal" name="panel_group_proposals">
+					<text name="txt">
+						社群建議
+					</text>
+					<text name="instructions">
+						沒有可以使用的建議。按提出建議按鈕來創建
+一個新建議。
+					</text>
+					<text name="proposal_lbl">
+						建議:
+					</text>
+					<button label="是" label_selected="是" name="btn_yes" />
+					<button label="否" label_selected="否" name="btn_no" />
+					<button label="放棄" label_selected="放棄" name="btn_abstain" />
+					<button label="查看名單" label_selected="查看名單" name="btn_view_list" />
+					<button label="查看物品欄" label_selected="查看物品欄" name="btn_view_item" />
+					<button label="創造提議" label_selected="創造提議" name="btn_proposal" />
+					<button label="提交" label_selected="提交" name="btn_submit" />
+					<text name="quorum_lbl">
+						法定人數:
+					</text>
+					<spinner name="quorum" tool_tip="# 人為選舉結果有效還需要的人數。" />
+					<text name="quorum_text">
+						在全部111名成員之外
+					</text>
+					<text name="majority_lbl">
+						大多數:
+					</text>
+					<radio_group name="majority" tool_tip="Majority of total votes needed to win.">
+						<radio_item name="radio">
+							簡單多數
+						</radio_item>
+						<radio_item name="radio2">
+							2/3 多數 
+						</radio_item>
+						<radio_item name="radio3">
+							一致同意
+						</radio_item>
+					</radio_group>
+					<text name="duration_lbl">
+						持續時間:
+					</text>
+					<spinner name="duration" tool_tip="#天為選舉還將持續的天數。" />
+					<text name="duration_text">
+						天
+					</text>
+					<text name="start_lbl">
+						選舉開始:
+					</text>
+					<text name="end_lbl">
+						選舉結束 :
+					</text>
+				</panel>
+				<panel label="歷史" name="History">
+					<text name="txt">
+						社群選舉史
+					</text>
+					<text name="instructions">
+						選擇'選舉'你就可以流覽上次社群選舉結果。
+					</text>
+					<text name="instructions2">
+						按下流覽條目
+					</text>
+					<text name="history_list_lbl">
+						上一次選舉：
+					</text>
+					<text name="vote_text_lbl">
+						選舉結果:
+					</text>
+					<button label="查看名單" label_selected="查看名單" name="btn_view_list" />
+					<button label="查看物品欄" label_selected="查看物品欄" name="btn_view_item" />
+				</panel>
+			</tab_container>
+		</panel>
+		<panel label="邀請" name="inv">
+			<text name="txt">
+				社群邀請
+			</text>
+			<text name="txt2">
+				邀請函通過即時消息方式發出。
+			</text>
+			<text name="txt3">
+				點擊添加按鈕以增添新的使用者到名單。
+			</text>
+			<text name="lbl">
+				官員：
+			</text>
+			<button label="新增官員..." label_selected="新增官員..." name="add_officer_btn" />
+			<button label="移除所選定項目" label_selected="移除所選定項目"
+			     name="remove_officer_btn" />
+			<text name="lbl2">
+				成員:
+			</text>
+			<button label="新增成員..." label_selected="新增成員..." name="add_member_btn" />
+			<button label="移除所選定項目" label_selected="移除所選定項目"
+			     name="remove_member_btn" />
+			<text name="lbl3">
+				署名費:
+			</text>
+			<check_box label="放開通行(無需發出邀請)" name="open" />
+		</panel>
+		<panel label="土地" name="land">
+			<text name="txt">
+				社群所有土地
+			</text>
+			<text name="lbl">
+				分發的全部土地:
+			</text>
+			<button label="地圖..." label_selected="地圖..." name="map_btn" />
+			<text name="lbl2">
+				使用中的全部土地:
+			</text>
+			<text name="lbl3">
+				可售土地:
+			</text>
+			<button label="設定捐獻" label_selected="設定捐獻" name="set_contrib_btn" />
+			<text name="warning_label">
+				警告：社群擁有太多的土地。社群成員需要捐出更多土地。
+			</text>
+		</panel>
+		<panel label="金錢" name="mon">
+			<tab_container name="group money history tab">
+				<panel label="計畫" name="money panel" />
+				<panel label="詳細" name="money panel2">
+					<button label="&lt;較早" label_selected="&lt;較早" name="&lt; Earlier"
+					     tool_tip="時間倒退" />
+					<button label="延遲 &gt;" label_selected="延遲 &gt;" name="Later &gt;"
+					     tool_tip="時間前進" />
+				</panel>
+				<panel label="出售" name="money panel3">
+					<button label="&lt;較早" label_selected="&lt;較早" name="&lt; Earlier"
+					     tool_tip="時間返回" />
+					<button label="延遲 &gt;" label_selected="延遲 &gt;" name="Later &gt;"
+					     tool_tip="時間前進" />
+				</panel>
+			</tab_container>
+		</panel>
+	</tab_container>
+	<button label="確認" label_selected="確認" name="OK" />
+	<button label="取消" label_selected="取消" name="Cancel" />
+</floater>

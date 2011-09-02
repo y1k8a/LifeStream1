@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="overlay">
+	<layout_stack name="overlay_layout_panel">
+		<layout_panel min_width="420" name="main_panel">
+			<layout_stack name="chatbar_and_buttons">
+				<layout_panel name="state_buttons">
+					<button label="已收到即時消息" label_selected="已收到即時消息" name="IM Received" tool_tip="你有一個未察看的即時消息。請點擊察看"/>
+					<button label="取消忙碌狀態" label_selected="取消忙碌狀態" name="Set Not Busy" tool_tip="聊天與即時消息模式已對你隱藏。 點擊這裡來設定你不在忙碌模式下"/>
+					<button label="三維流覽" label_selected="三維流覽" name="Flycam" tool_tip="你的手柄當前被手柄所控制，點擊這裡釋放。"/>
+					<button label="第一人稱視角" label_selected="第一人稱視角" name="Mouselook" tool_tip="使用滑鼠控制螢幕。如果你有槍，點擊則可以射擊。"/>
+					<button label="起身" label_selected="起身" name="Stand Up" tool_tip="點擊這裡來站立"/>
+				</layout_panel>
+			</layout_stack>
+		</layout_panel>
+	</layout_stack>
+</panel>

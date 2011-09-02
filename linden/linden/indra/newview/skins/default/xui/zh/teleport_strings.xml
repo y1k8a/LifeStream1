@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<teleport_messages>
+	<message_set
+		 name="errors">
+		<message
+			 name="invalid_tport">
+			處理您的瞬間移動請求時發生錯誤。您可能需要重新登入以後才能瞬間移動。
+如果您仍繼續遇到這條消息，請到以下位址參考技術支持常見問題:
+www.secondlife.com/support
+		</message>
+		<message
+			 name="invalid_region_handoff">
+			處理您的區域變換時發生錯誤。您可能需要重新登入以後才能瞬間移動。
+如果您仍繼續遇到這條消息，請到以下位址參考技術支持常見問題:
+www.secondlife.com/support
+		</message>
+		<message
+			 name="blocked_tport">
+			抱歉，當前不允許瞬間移動。請稍候再試。
+如果您仍然不能瞬間移動，請登出後重新登錄解決問題。
+		</message>
+		<message
+			 name="nolandmark_tport">
+			抱歉，系統無法找到地標目的地。
+		</message>
+		<message
+			 name="timeout_tport">
+			抱歉，系統無法完成瞬間移動連接。
+請稍候再試。
+		</message>
+		<message
+			 name="noaccess_tport">
+			抱歉，您不能訪問瞬間移動目標。
+		</message>
+		<message
+			 name="missing_attach_tport">
+			您的裝備還沒有到齊。請再等幾秒鐘，或者登出後重新登錄以後再試著瞬間移動。
+		</message>
+		<message
+			 name="too_many_uploads_tport">
+			該區域內的資產佇列當前堵塞，所以您的瞬間移動請求將不能按時完成。
+請稍候再試，或前往較空閒的區域再試。
+		</message>
+		<message
+			 name="expired_tport">
+			抱歉，系統無法按時地完成您的瞬間移動請求。請稍候再試。
+		</message>
+		<message
+			 name="expired_region_handoff">
+			抱歉，系統無法按時地完成您的區域變換請求。請稍候再試。
+		</message>
+		<message
+			 name="no_host">
+			無法找到瞬間移動目標。目標可能暫時不可用，或者已不存在。請稍後再試。
+		</message>
+		<message
+			 name="no_inventory_host">
+			百寶箱系統當前不可用。
+		</message>
+	</message_set>
+	<message_set
+		 name="progress">
+		<message
+			 name="sending_dest">
+			正在發送到目標地點。
+		</message>
+		<message
+			 name="redirecting">
+			正在重定向到新的地點。
+		</message>
+		<message
+			 name="relaying">
+			正在轉達到目標地點。
+		</message>
+		<message
+			 name="sending_home">
+			發送家位置請求。
+		</message>
+		<message
+			 name="sending_landmark">
+			正在發送地標位置請求。
+		</message>
+		<message
+			 name="completing">
+			正在完成瞬間移動。
+		</message>
+		<message
+			 name="resolving">
+			正在解析目標。
+		</message>
+		<message
+			 name="contacting">
+			正在聯繫新的區域。
+		</message>
+		<message
+			 name="arriving">
+			正在抵達……
+		</message>
+		<message
+			 name="requesting">
+			正在請求瞬間移動……
+		</message>
+	</message_set>
+</teleport_messages>
+
+

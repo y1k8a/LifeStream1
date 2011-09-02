@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel name="Classified" title="分類的">
+	<line_editor name="given_name_editor" tool_tip="名字必須以字母或數位開始，不可用標點。"/>
+	<line_editor name="location_editor" tool_tip="設置分類廣告的位置到你當前的位置。"/>
+	<button label="調節位置" name="set_location_btn"/>
+	<button label="瞬間移動" name="classified_teleport_btn"/>
+	<button label="在地圖中顯示" name="classified_map_btn"/>
+	<button label="檔案" name="classified_profile_btn"/>
+	<combo_box name="classified_mature_check">
+		<combo_item name="select_mature">
+			-選擇輔導級-
+		</combo_item>
+		<combo_item name="mature">
+			輔導級內容
+		</combo_item>
+		<combo_item name="pg">
+			普遍級內容
+		</combo_item>
+	</combo_box>
+	<combo_box label="" name="classified_category_combo"/>
+	<button label="更新" name="classified_update_btn"/>
+	<string name="ad_placed_paid">
+		廣告地址：[DATE],發佈付款 F$[AMT]
+	</string>
+	<string name="update_txt">
+		更新
+	</string>
+	<string name="publish_txt">
+		發佈...
+	</string>
+</panel>

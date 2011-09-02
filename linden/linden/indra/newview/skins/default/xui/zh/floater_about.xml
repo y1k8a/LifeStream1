@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_about" title="關於福爾摩亞">
+	<string name="you_are_at">
+		您現在位於 [POSITION]
+	</string>
+</floater>

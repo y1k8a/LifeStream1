@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="Give Money" title="支払い先： [FIRST] [LAST]">
+
+	<text name="fastpay text">
+		一括払い：
+	</text>
+
+	<text name="amount text">
+		金額：
+	</text>
+
+	<button label="支払い"   name="pay btn"    />
+	<button label="取り消し" name="cancel btn" />
+
+</floater>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel 
+	 label="音量"
+     name="Media panel">
+	<check_box 
+	     label="靜音" 
+		 name="disable audio" />
+
+	<slider name="System Volume" 
+	     label="總體" />
+	<slider name="Music Volume" 
+	     label="音樂" />
+	<slider 
+	     name="Media Volume" 
+	     label="多媒體" />
+	<slider 
+	     name="Voice Volume" 
+	     label="語音" />
+
+	<slider 
+		 name="SFX Volume" 
+	     label="音效" />
+	<slider 
+		 name="Wind Volume" 
+	     label="環境"  />
+	<slider name="UI Volume"
+	     label="介面" />
+		 
+</panel>
+<!--Translated by Geneko Nemeth for Second Life 1.19.0 (79185)-->

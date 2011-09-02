@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<floater
+	 name="Hardware Settings Floater"
+	 title="硬體設置">
+
+	<text
+		 name="Filtering:">
+		過濾:
+	</text>
+	<check_box
+		 
+		 label="各向異性過濾 (打開會減低速度)"
+		 name="ani" />
+	<text
+		 name="Antialiasing:">
+    反鋸齒:
+  </text>
+  <combo_box
+		 
+		 label="Antialiasing"
+		 name="fsaa">
+    <combo_item
+			 name="FSAADisabled"
+			 >
+      關閉
+    </combo_item>
+    <combo_item
+			 name="2x"
+			 >
+      2×
+    </combo_item>
+    <combo_item
+			 name="4x"
+			 >
+      4×
+    </combo_item>
+    <combo_item
+			 name="8x"
+			 >
+      8×
+    </combo_item>
+    <combo_item
+			 name="16x"
+			 >
+      16×
+    </combo_item>
+	</combo_box>
+	<spinner
+		 label="Gamma:"
+		 name="gamma" />
+	<text
+		 name="(brightness, lower is brighter)">
+		(亮度，越低越亮, 0=使用預設值)
+	</text>
+	<spinner
+		 label="夜間亮度:"
+		 name="nighttime_brightness" />
+	<text name="(higher is brighter, 1.0 is default)">(越高越亮，預設為1.0)</text>
+	<text name="Enable VBO:">啟用 VBO:</text>
+	<check_box
+		 
+		 label="啟用 OpenGL 頂點緩存對象(Vertex Buffer Objects)"
+		 name="vbo"
+		 tool_tip="較新的硬體上打開這個選項將可使性能提升。不過，較舊的硬體通常對VBO支援不佳，打開的話您可能會遇到程式崩潰。" />
+
+	<slider
+		 label="材質記憶體 (MB):"
+		 name="GrapicsCardTextureMemory"
+		 tool_tip="分配給圖像的記憶體的數量。預設為全部顯卡記憶體。減少該選項也許可以改進性能，但也許也同時會使材質變得模糊。" />
+
+	<spinner
+		 label="霧距離比率:"
+		 name="fog" />
+
+	<button
+		 label="確定"
+		 label_selected="確定"
+		 name="OK"
+		 scale_image="true" />
+
+</floater>

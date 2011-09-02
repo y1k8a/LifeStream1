@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater
+	 name="beacons"
+	 title="信標">
+	<panel
+		 name="beacons_panel">
+  	<check_box
+			 name="touch_only"
+			 label="有觸摸腳本的物件" />
+    <check_box
+			 name="scripted"
+			 label="有腳本的物件" />
+    <check_box
+			 name="physical"
+			 label="物理物件" />
+    <check_box
+			 name="sounds"
+			 label="聲音源" />
+    <check_box
+			 name="particles"
+			 label="粒子源" />
+    <check_box
+			 name="highlights"
+			 label="渲染高亮" />
+    <check_box
+			 name="beacons"
+			 label="渲染信標" />
+  	<text
+			 name="beacon_width_label">
+  		信標寬度:
+  	</text> 
+	</panel>
+</floater>
+
+
+

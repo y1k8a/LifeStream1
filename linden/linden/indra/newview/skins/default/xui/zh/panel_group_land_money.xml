@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="土地和 L$" name="land_money_tab">
+	<string name="help_text">
+		社群所擁有的土地在捐獻清單中詳細列出。當使用土地總量少於或者等於總捐獻量時，將有警告提示。"計畫"，"詳細"以及"在售"欄提供社群的財政狀況。
+	</string>
+	<button label="?" name="help_button"/>
+	<string name="cant_view_group_land_text">
+		你沒有查看這個社群所擁有土地的許可權。
+	</string>
+	<string name="cant_view_group_accounting_text">
+		你沒有查看這個社群帳戶資訊的許可權。
+	</string>
+	<string name="loading_txt">
+		載入...
+	</string>
+	<text name="group_land_heading">
+		社群所持有土地
+	</text>
+	<scroll_list name="group_parcel_list">
+		<column label="地塊名稱" name="name"/>
+		<column label="區域" name="location"/>
+		<column label="類型" name="type"/>
+		<column label="面積" name="area"/>
+		<column label="" name="hidden"/>
+	</scroll_list>
+	<button label="在地圖中顯示" label_selected="在地圖中顯示" name="map_button"/>
+	<text name="total_contributed_land_label">
+		總貢獻額:
+	</text>
+	<text name="total_contributed_land_value">
+		[AREA] 平方米
+	</text>
+	<text name="total_land_in_use_label">
+		使用中的土地面積:
+	</text>
+	<text name="total_land_in_use_value">
+		[AREA] 平方米
+	</text>
+	<text name="land_available_label">
+		可用土地:
+	</text>
+	<text name="land_available_value">
+		[AREA] 平方米
+	</text>
+	<text name="your_contribution_label">
+		你的貢獻:
+	</text>
+	<string name="land_contrib_error">
+		無法設置您的土地捐獻.
+	</string>
+	<text name="your_contribution_max_value">
+		平方米 (最多[AMOUNT])
+	</text>
+	<text name="group_over_limit_text">
+		社群成員必須貢獻更多的土地額度，來支持土地的使用。
+	</text>
+	<text name="group_money_heading">
+		社群資產 F$
+	</text>
+	<tab_container name="group_money_tab_container">
+		<panel label="計畫" name="group_money_planning_tab">
+			<text_editor name="group_money_planning_text">
+				計算中...
+			</text_editor>
+		</panel>
+		<panel label="細節" name="group_money_details_tab">
+			<text_editor name="group_money_details_text">
+				計算中...
+			</text_editor>
+			<button label="&lt;較早" label_selected="&lt;較早" name="earlier_details_button" tool_tip="時間返回"/>
+			<button label="較近 &gt;" label_selected="較近 &gt;" name="later_details_button" tool_tip="時間前進"/>
+		</panel>
+		<panel label="銷售" name="group_money_sales_tab">
+			<text_editor name="group_money_sales_text">
+				計算中...
+			</text_editor>
+			<button label="&lt;較早" label_selected="&lt;較早" name="earlier_sales_button" tool_tip="時間返回"/>
+			<button label="較近 &gt;" label_selected="較近 &gt;" name="later_sales_button" tool_tip="時間前進"/>
+		</panel>
+	</tab_container>
+</panel>

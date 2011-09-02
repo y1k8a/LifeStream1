@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<menu name="Text Edit Menu">
+  <menu_item_call label="剪切" name="Cut Text" />
+  <menu_item_call label="复制" name="Copy Text" />
+  <menu_item_call label="粘贴" name="Paste Text" />
+  <menu_item_call label="删除" name="Delete Text" />
+  <menu_item_call label="全选" name="Select All Text" />
+  <menu name="Translation Options" label="翻译为...">
+  <!--
+    <menu_item_call label="英语" name="Translate Text" />
+    <menu_item_call label="丹麦语" name="Translate Text" />
+    <menu_item_call label="德语"  name="Translate Text" />
+    <menu_item_call label="西班牙语" name="Translate Text" />
+    <menu_item_call label="法语" name="Translate Text" /> 
+    <menu_item_call label="意大利语" name="Translate Text" />
+    <menu_item_call label="匈牙利语 " name="Translate Text" />
+    <menu_item_call label="荷兰语" name="Translate Text" />
+    <menu_item_call label="波兰语" name="Translate Text" />
+    <menu_item_call label="葡萄牙语" name="Translate Text" />
+    <menu_item_call label="俄语" name="Translate Text" />
+    <menu_item_call label="土耳其语" name="Translate Text" />
+    <menu_item_call label="乌克兰语" name="Translate Text" />
+    <menu_item_call label="中文" name="Translate Text" />
+    <menu_item_call label="日语" name="Translate Text" />
+    <menu_item_call label="韩语/朝鲜语" name="Translate Text" />
+  -->
+  </menu>
+</menu>
+
+

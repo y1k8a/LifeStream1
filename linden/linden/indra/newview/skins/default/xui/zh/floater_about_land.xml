@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floaterland" title="關於土地">
+	<tab_container name="landtab">
+		<panel label="一般" name="land_general_panel">
+			<text length="1" name="Name:" type="string">
+				名字:
+			</text>
+			<text length="1" name="Description:" type="string">
+				描述:
+			</text>
+			<text name="LandType">
+				類型：
+			</text>
+			<text name="LandTypeText">
+				大陸/家園
+			</text>
+			<text name="ContentRating">
+				分級：
+			</text>
+			<text name="ContentRatingText">
+				成人
+			</text>
+			<text length="1" name="Owner:" type="string">
+				主人:
+			</text>
+			<text length="1" name="OwnerText" type="string">
+				Linda Formosia
+			</text>
+			<button label="檔案..." label_selected="檔案..." name="Profile..."/>
+			<text length="1" name="Group:" type="string">
+				社群:
+			</text>
+			<button label="更改..." label_selected="更改..." name="Set..."/>
+			<check_box label="允許轉讓給社群" name="check deed" tool_tip="一個社群管理員可以轉讓這塊土地至社群，使其被社群的土地配額支持。"/>
+			<button label="轉讓..." label_selected="轉讓..." name="Deed..." tool_tip="只有你是所選社群管理員的時候才能轉讓土地。"/>
+			<check_box label="土地擁有者通過轉讓土地來貢獻" name="check contrib" tool_tip="當土地轉讓到社群，原土地擁有者將需貢獻足夠的土地來支持。"/>
+			<text length="1" name="For Sale:" type="string">
+				出售:
+			</text>
+			<text length="1" name="Not for sale." type="string">
+				非賣狀態。
+			</text>
+			<text length="1" name="For Sale: Price F$[PRICE]." type="string">
+				價格: F$[PRICE]（F$[PRICE_PER_SQM]/m²）。
+			</text>
+			<button label="出售土地..." label_selected="出售土地..." name="Sell Land..."/>
+			<text length="1" name="For sale to" type="string">
+				出售給: [BUYER]
+			</text>
+			<text length="1" name="Sell with landowners objects in parcel." type="string">
+				出售中包括物件。
+			</text>
+			<text length="1" name="Selling with no objects in parcel." type="string">
+				出售中不包括物件。
+			</text>
+			<button label="取消土地出售" label_selected="取消土地出售" name="Cancel Land Sale"/>
+			<text length="1" name="Claimed:" type="string">
+				認購時間:
+			</text>
+			<text length="1" name="DateClaimText" type="string">
+				星期二 八月15日 13:47:25 2006年
+			</text>
+			<text length="1" name="PriceLabel" type="string">
+				面積：
+			</text>
+			<text length="1" name="PriceText" type="string">
+				4048m²
+			</text>
+			<text length="1" name="Traffic:" type="string">
+				流量:
+			</text>
+			<text length="1" name="DwellText" type="string">
+				0
+			</text>
+			<button label="購買土地..." label_selected="購買土地..." name="Buy Land..."/>
+			<button label="為社群購買..." label_selected="為社群購買..." name="Buy For Group..."/>
+			<button label="購買通行證..." label_selected="購買通行證..." name="Buy Pass..." tool_tip="通行證讓你可以暫時訪問這塊土地。"/>
+			<button label="放棄土地..." label_selected="放棄土地..." name="Abandon Land..."/>
+			<button label="回認土地..." label_selected="回認土地..." name="Reclaim Land..."/>
+			<button label="福爾摩亞出售..." label_selected="福爾摩亞出售..." name="Linden Sale..." tool_tip="土地必需有主人， 設定內容以及不可被拍賣。"/>
+			<string name="new users only">
+				僅限新用戶
+			</string>
+			<string name="anyone">
+				任何人
+			</string>
+			<string name="area_text">
+				面積
+			</string>
+			<string name="area_size_text">
+				[AREA]m²
+			</string>
+			<string name="auction_id_text">
+				拍賣 ID: [ID]
+			</string>
+			<string name="need_tier_to_modify">
+				您必須確認購買才能修改這塊土地。
+			</string>
+			<string name="group_owned_text">
+				(社群所有)
+			</string>
+			<string name="profile_text">
+				檔案...
+			</string>
+			<string name="info_text">
+				信息...
+			</string>
+			<string name="public_text">
+				(公共)
+			</string>
+			<string name="none_text">
+				(無)
+			</string>
+			<string name="sale_pending_text">
+				(等待出售中)
+			</string>
+			<string name="no_selection_text">
+				沒有選中的地塊。
+請到 世界菜單 &gt; 關於土地 或選擇另一塊地塊來顯示詳細資料。
+			</string>
+		</panel>
+		<panel label="契約合同" name="land_covenant_panel">
+			<text name="estate_section_lbl">
+				地產：
+			</text>
+			<text length="1" name="estate_name_lbl" type="string">
+				名稱：
+			</text>
+			<text length="1" name="estate_name_text" type="string">
+				大陸
+			</text>
+			<text length="1" name="estate_owner_lbl" type="string">
+				擁有者：
+			</text>
+			<text length="1" name="estate_owner_text" type="string">
+				(無)
+			</text>
+			<text_editor length="1" name="covenant_editor" type="string">
+				這塊地產沒有提供任何契約合同。
+			</text_editor>
+			<text length="1" name="covenant_timestamp_text" type="string">
+				上次修改時間 星期三12 月3 1日 16:00:00 1969年
+			</text>
+			<text name="region_section_lbl">
+				地區：
+			</text>
+			<text length="1" name="region_name_lbl" type="string">
+				名稱：
+			</text>
+			<text length="1" name="region_name_text" type="string">
+				leyla
+			</text>
+			<text name="region_landtype_lbl">
+				分類：
+			</text>
+			<text name="region_landtype_text">
+				大陸/家園
+			</text>
+			<text name="region_maturity_lbl">
+				分級：
+			</text>
+			<text name="region_maturity_text">
+				Adult
+			</text>
+			<text name="resellable_lbl">
+				轉售：
+			</text>
+			<text length="1" name="resellable_clause" type="string">
+				此地區內購買的土地不能被重新出售。
+			</text>
+			<text name="changeable_lbl">
+				劃分：
+			</text>
+			<text length="1" name="changeable_clause" type="string">
+				此地區內購買的土地不能被合併或劃分。
+			</text>
+			<string name="can_resell">
+				這塊區域內被購買的土地可以被重新出售.
+			</string>
+			<string name="can_not_resell">
+				這塊區域內被購買的土地不能被重新出售。
+			</string>
+			<string name="can_change">
+				這塊區域內被購買的土地可以被合併/劃分。
+			</string>
+			<string name="can_not_change">
+				這塊區域內被購買的土地不能被合併/劃分。
+			</string>
+		</panel>
+		<panel label="物件" name="land_objects_panel">
+			<text name="parcel_object_bonus">
+				區域額外物件因數: [BONUS]
+			</text>
+			<text length="1" name="Simulator primitive usage:" type="string">
+				模擬器元件使用情況:
+			</text>
+			<text left="146" name="objects_available">
+				[COUNT] 個, 最多 [MAX] 個 (還剩 [AVAILABLE] 個)
+			</text>
+			<string name="objects_available_text">
+				[COUNT] 個, 最多 [MAX] 個 (還剩 [AVAILABLE] 個)
+			</string>
+			<string name="objects_deleted_text">
+				[COUNT] 個, 最多 [MAX] 個 ([DELETED] 個將會被刪除)
+			</string>
+			<text length="1" name="Primitives parcel supports:" type="string">
+				地塊支持元件數:
+			</text>
+			<text left="146" length="1" name="object_contrib_text" type="string" width="222">
+				[COUNT] 個
+			</text>
+			<text length="1" name="Primitives on parcel:" type="string">
+				地塊上的元件數:
+			</text>
+			<text left="146" length="1" name="total_objects_text" type="string" width="58">
+				[COUNT] 個
+			</text>
+			<text length="1" name="Owned by parcel owner:" type="string">
+				土地擁有者所有:
+			</text>
+			<text left="146" length="1" name="owner_objects_text" type="string" width="58">
+				[COUNT] 個
+			</text>
+			<button label="顯示" label_selected="顯示" name="ShowOwner"/>
+			<button label="歸還..." label_selected="歸還..." name="ReturnOwner..." tool_tip="將物件歸還其主人。"/>
+			<text length="1" name="Set to group:" type="string">
+				設為社群的元件數:
+			</text>
+			<text left="146" length="1" name="group_objects_text" type="string" width="58">
+				[COUNT] 個
+			</text>
+			<button label="顯示" label_selected="顯示" name="ShowGroup"/>
+			<button label="歸還..." label_selected="歸還..." name="ReturnGroup..." tool_tip="將物件歸還其主人。"/>
+			<text length="1" name="Owned by others:" type="string">
+				為其他人所有:
+			</text>
+			<text left="146" length="1" name="other_objects_text" type="string" width="58">
+				[COUNT] 個
+			</text>
+			<button label="顯示" label_selected="顯示" name="ShowOther"/>
+			<button label="歸還..." label_selected="歸還..." name="ReturnOther..." tool_tip="將物件歸還其主人。"/>
+			<text length="1" name="Selected / sat upon:" type="string">
+				被選擇 / 被坐上的:
+			</text>
+			<text left="146" length="1" name="selected_objects_text" type="string" width="58">
+				[COUNT] 個
+			</text>
+			<text length="1" name="Autoreturn" type="string">
+				自動歸還其他居民的物件 (分鐘, 0為關閉):
+			</text>
+			<line_editor name="clean other time" right="-170"/>
+			<text length="1" name="Object Owners:" type="string">
+				物件主人:
+			</text>
+			<button label="更新名單" label_selected="更新名單" left="78" name="Refresh List"/>
+			<button label="歸還物件..." label_selected="歸還物件..." left="190" name="Return objects..."/>
+			<name_list name="owner list">
+				<column label="輸入" name="type"/>
+				<column name="online_status"/>
+
+				<column label="名稱" name="name"/>
+				<column label="數目" name="count"/>
+				<column label="最近" name="mostrecent"/>
+			</name_list>
+		</panel>
+		<panel label="選項" name="land_options_panel">
+			<text length="1" name="allow_label" type="string">
+				允許其他居民:
+			</text>
+			<check_box label="編輯地形" name="edit land check" tool_tip="如果選中的話，誰都能編輯您的土地地形。最好是不要選中這項，因為您總可以編輯您自己的土地。"/>
+			<check_box label="創造地標" name="check landmark"/>
+			<check_box label="飛翔" name="check fly" tool_tip="如果選中的話，居民可以在您的土地上飛行。如果不選中的話，他們只能飛入或飛過您的土地。"/>
+			<text name="allow_label2">
+				創建物件:
+			</text>
+			<check_box label="所有居民" name="edit objects check"/>
+			<check_box label="社群" name="edit group objects check"/>
+			<text name="allow_label3">
+				帶入物件:
+			</text>
+			<check_box label="所有居民" name="all object entry check"/>
+			<check_box label="社群" name="group object entry check"/>
+			<text name="allow_label4">
+				運行腳本:
+			</text>
+			<check_box label="所有居民" name="check other scripts"/>
+			<check_box label="社群" name="check group scripts"/>
+			<text length="1" name="land_options_label" type="string">
+				土地選項:
+			</text>
+			<check_box label="安全 (不會受傷)" name="check safe" tool_tip="如果選中的話，土地設置為安全，禁用格鬥傷害。不選中的話，啟用格鬥傷害。"/>
+			<check_box label="不允許推動" name="PushRestrictCheck" tool_tip="防止腳本進行推動。選中該項也許對防止在您的土地上發生擾亂行為有幫助。llPushObject 將只能通過土地主人的腳本代碼運行，或者通過推動源本身是腳本所有者的腳本。"/>
+			<check_box label="顯示在搜索中 (F$30/周)，分類為" name="ShowDirectoryCheck" tool_tip="在查詢結果中顯示該土地"/>
+			<string name="search_enabled_tooltip">
+				允許此地塊在搜索結果中顯示
+			</string>
+			<string name="search_disabled_small_tooltip">
+				此選項因為地塊面積小於或等於128m²而被禁止使用。只有面積大於此值的地塊會被列在搜索結果中。
+			</string>
+			<string name="search_disabled_permissions_tooltip">
+				此選項因您無權修改地塊資訊而被禁止使用。
+			</string>
+			<combo_box name="land category with adult">
+				<combo_item name="AnyCategory">
+					任意分類
+				</combo_item>
+				<combo_item name="LindenLocation">
+					福爾摩亞實驗室的地點
+				</combo_item>
+				<combo_item name="Adult">
+					Adult
+				</combo_item>
+				<combo_item name="Arts&amp;Culture">
+					藝術與文化
+				</combo_item>
+				<combo_item name="Business">
+					商業
+				</combo_item>
+				<combo_item name="Educational">
+					教育
+				</combo_item>
+				<combo_item name="Gaming">
+					博彩/遊戲
+				</combo_item>
+				<combo_item name="Hangout">
+					聚會
+				</combo_item>
+				<combo_item name="NewcomerFriendly">
+					易於新居民使用
+				</combo_item>
+				<combo_item name="Parks&amp;Nature">
+					公園和大自然
+				</combo_item>
+				<combo_item name="Residential">
+					居住區
+				</combo_item>
+				<combo_item name="Shopping">
+					購物
+				</combo_item>
+				<combo_item name="Other">
+					其他
+				</combo_item>
+			</combo_box>
+			<combo_box name="land category">
+				<combo_item name="AnyCategory">
+					任意分類
+				</combo_item>
+				<combo_item name="LindenLocation">
+					福爾摩亞實驗室的地點
+				</combo_item>
+				<combo_item name="Arts&amp;Culture">
+					藝術和文化
+				</combo_item>
+				<combo_item name="Business">
+					商業
+				</combo_item>
+				<combo_item name="Educational">
+					教育
+				</combo_item>
+				<combo_item name="Gaming">
+					博彩/遊戲
+				</combo_item>
+				<combo_item name="Hangout">
+					聚會
+				</combo_item>
+				<combo_item name="NewcomerFriendly">
+					初行者友好
+				</combo_item>
+				<combo_item name="Parks&amp;Nature">
+					公園和大自然
+				</combo_item>
+				<combo_item name="Residential">
+					居住區
+				</combo_item>
+				<combo_item name="Shopping">
+					購物
+				</combo_item>
+				<combo_item name="Other">
+					其他
+				</combo_item>
+			</combo_box>
+			<button label="?" label_selected="?" name="?"/>
+			<check_box label="Mature內容。" name="MatureCheck" tool_tip=""/>
+			<string name="mature_check_mature">
+				輔導級內容
+			</string>
+			<string name="mature_check_adult">
+				成人內容
+			</string>
+			<string name="mature_check_mature_tooltip">
+				您的地塊資訊或其內容被認為是輔導級內容。
+			</string>
+			<string name="mature_check_adult_tooltip">
+				您的地塊資訊或其內容被認為是成人內容。
+			</string>
+			<text length="1" name="Snapshot:" type="string">
+				快照:
+			</text>
+			<texture_picker label="" name="snapshot_ctrl" tool_tip="點擊這裡來選擇圖片"/>
+			<text length="1" name="landing_point" type="string">
+				著陸點: [LANDING]
+			</text>
+			<string name="landing_point_none">
+				（無）
+			</string>
+			<button label="設置" label_selected="設置" name="Set" tool_tip="設置訪問者抵達時的著陸點。將會設置到您化身在該地塊內的位置。"/>
+			<button label="清除" label_selected="清除" name="Clear" tool_tip="清除著陸點"/>
+			<text length="1" name="Teleport Routing: " type="string">
+				瞬間移動傳送路線:
+			</text>
+			<combo_box name="landing type" tool_tip="Teleport Routing -- 選擇如何應對到你的土地的瞬間移動。">
+				<combo_item length="1" name="Blocked" type="string">
+					不允許
+				</combo_item>
+				<combo_item length="1" name="LandingPoint" type="string">
+					著陸點
+				</combo_item>
+				<combo_item length="1" name="Anywhere" type="string">
+					任意位置
+				</combo_item>
+			</combo_box>
+			<string name="push_restrict_text">
+				不允許推動
+			</string>
+			<string name="push_restrict_region_text">
+				不允許推動 (區域強制)
+			</string>
+		</panel>
+		<panel label="媒體" name="land_media_panel">
+			<text name="with media:">
+				媒體類型:
+			</text>
+			<combo_box allow_text_entry="false" max_chars="20" name="media type" tool_tip="指定該網址是動畫，網頁，或者其它媒體"/>
+			<text name="at URL:">
+				多媒體網址:
+			</text>
+			<button label="設置..." label_selected="設置..." name="set_media_url"/>
+			<text name="Description:">
+				描述:
+			</text>
+			<line_editor name="url_description" tool_tip="在播放/載入按鈕旁顯示的文字"/>
+			<text length="1" name="Media texture:" type="string">
+				媒體 材質:
+			</text>
+			<texture_picker label="" name="media texture" tool_tip="點擊這裡來選擇圖片"/>
+			<text name="replace_texture_help">
+				(點擊播放按鈕後使用該材質的物件將會
+顯示選擇的動畫或網頁。)
+			</text>
+			<text name="Options:">
+				媒體 選項:
+			</text>
+			<check_box label="自動調整內容大小 " name="media_auto_scale" tool_tip="打開此項將自動縮放該地塊上的內容。其速度和品質可能會稍稍降低，但不會需要任何其他的材質縮放或對齊。"/>
+			<check_box label="迴圈播放" name="media_loop" tool_tip="迴圈播放媒體。當媒體播放完畢時，它將從開始處重新播放。"/>
+			<check_box label="隱藏媒體 URL" name="hide_media_url" tool_tip="打開該選項將對未經允許的土地資訊察看者隱藏媒體 URL。請注意該選項不適用於 HTML 類型。"/>
+			<check_box label="隱藏音樂 URL" name="hide_music_url" tool_tip="打開該選項將對未經允許的土地資訊察看者隱藏音樂 URL。"/>
+			<text name="media_size" tool_tip="渲染媒體的尺寸，設為 0 使用預設值">
+				媒體尺寸:
+			</text>
+			<spinner name="media_size_width" tool_tip="渲染媒體的尺寸，設為 0 使用預設值"/>
+			<spinner name="media_size_height" tool_tip="渲染媒體的尺寸，設為 0 使用預設值"/>
+			<text name="pixels" right="-10">
+				圖元
+			</text>
+			<text name="MusicURL:">
+				音樂網址:
+			</text>
+			<line_editor name="music_url" right="-15"/>
+			<text name="Sound:">
+				聲音:
+			</text>
+			<check_box label="動作和物品的聲音只存在於此地塊。" name="check sound local"/>
+			<button label="?" label_selected="?" name="?"/>
+			<text name="Voice settings:">
+				語音:
+			</text>
+			<check_box label="使用語音功能" name="parcel_enable_voice_channel"/>
+			<check_box label="允許使用地產聲音頻道（由地產所創建）" name="parcel_enable_voice_channel_is_estate_disabled"/>
+			<check_box label="限制聲音於地塊私有頻道" name="parcel_enable_voice_channel_parcel"/>
+		</panel>
+		<panel label="訪問" name="land_access_panel">
+			<text length="1" name="Limit access to this parcel to:" type="string">
+				對該地塊的訪問
+			</text>
+			<check_box label="允許公眾訪問" name="public_access"/>
+			<text name="Only Allow">
+				禁止以下居民訪問:
+			</text>
+			<check_box label="沒有給福爾摩亞實驗室提供支付資訊的居民" name="limit_payment" tool_tip="禁止未識別的居民進入。"/>
+			<check_box label="沒有年齡確認為成年人的居民" name="limit_age_verified" tool_tip="禁止沒有驗證年齡的居民進入。詳細資訊參見 support.secondlife.com 。"/>
+			<string name="estate_override">
+				這些選項中的一個或多個在地產級別被設定
+			</string>
+			<check_box label="允許社群訪問: [GROUP]" name="GroupCheck" tool_tip="請在一般標籤頁中設定社群。"/>
+			<check_box label="向以下出售通行證" name="PassCheck" tool_tip="允許臨時訪問該地塊"/>
+			<combo_box name="pass_combo">
+				<combo_item name="Anyone">
+					任何人
+				</combo_item>
+				<combo_item name="Group">
+					社群
+				</combo_item>
+			</combo_box>
+			<spinner label="F$ 標價:" name="PriceSpin"/>
+			<spinner label="存取時間:" name="HoursSpin"/>
+			<text label="總是允許" name="AllowedText">
+				被允許的居民
+			</text>
+			<name_list name="AccessList" tool_tip="(已列出 [LISTED] 名, 最多[MAX] 名)"/>
+			<button label="增加..." label_selected="增加..." name="add_allowed"/>
+			<button label="刪除" label_selected="刪除" name="remove_allowed"/>
+			<text label="Ban" name="BanCheck">
+				被禁止的居民
+			</text>
+			<name_list name="BannedList" tool_tip="(已列出 [LISTED] 名, 最多[MAX] 名)"/>
+			<button label="增加..." label_selected="增加..." name="add_banned"/>
+			<button label="刪除" label_selected="刪除" name="remove_banned"/>
+		</panel>
+	</tab_container>
+</floater>

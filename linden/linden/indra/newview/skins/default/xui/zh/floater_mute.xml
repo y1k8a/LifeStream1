@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater
+	 name="mute floater"
+	 short_title="消音列表"
+	 title="消音居民和物件">
+<scroll_list name="mutes" tool_tip="當前消音的居民列表" />
+	<button label="消音居民..." label_selected="消音居民..."
+	     name="Mute resident..." tool_tip="選擇一個居民並消音此人" />
+	<button label="按名稱消音物件..."
+	     label_selected="按名稱消音物件..." name="Mute object by name..." />
+	<button label="解除消音" label_selected="解除消音" name="Unmute"
+	     tool_tip="從消音欄中將居民或物件刪除。" />
+</floater>

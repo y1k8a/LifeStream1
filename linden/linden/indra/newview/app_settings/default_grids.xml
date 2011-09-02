@@ -1,0 +1,23 @@
+<llsd>
+  <array>
+    <map>
+      <key>default_grids_version</key><string>33</string>
+    </map>
+
+    <!-- iStream -->
+    <map>
+      <key>gridnick</key><string>iStream</string>
+      <key>gridname</key><string>iStream</string>
+      <key>platform</key><string>OpenSim</string>
+      <key>loginuri</key><string>http://www.istream.com.tw:8002</string>
+      <key>loginpage</key><string></string>
+      <key>helperuri</key><string></string>
+      <key>website</key><string></string>
+      <key>support</key><string></string>
+      <key>register</key><string></string>
+      <key>password</key><string></string>
+      <key>version</key><string>0</string>
+    </map>
+
+  </array>
+</llsd>

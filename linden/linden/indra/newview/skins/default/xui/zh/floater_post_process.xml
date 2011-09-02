@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater
+	 min_height="400"
+	 min_width="300"
+	 name="Post-Process Floater"
+	 title="後期處理設定">
+	<tab_container
+		 name="Post-Process Tabs">
+		<panel
+			 label="顏色篩檢程式"
+			 name="wmiColorFilterPanel">
+			<check_box
+				 
+				 label="啟用"
+				 name="wmiColorFilterToggle" />
+			<text
+				 name="wmiColorFilterBrightnessText">
+				亮度
+			</text>
+			<text
+				 name="wmiColorFilterSaturationText">
+				飽和度
+			</text>
+			<text
+				 name="wmiColorFilterContrastText">
+				對比度
+			</text>
+			<text
+				 name="wmiColorFilterBaseText">
+				對比度基調
+			</text>
+			<slider
+				 label="R"
+				 name="wmiColorFilterBaseR"
+				 />
+			<slider
+				 label="G"
+				 name="wmiColorFilterBaseG"
+				 />
+			<slider
+				 label="B"
+				 name="wmiColorFilterBaseB"
+				 />
+			<slider
+				 label="I"
+				 name="wmiColorFilterBaseI"
+				 />
+		</panel>
+		<panel
+			 label="夜間視覺"
+			 name="wmiNightVisionPanel">
+			<check_box
+				 label="啟用"
+				 name="wmiNightVisionToggle" />
+			<text
+				 name="wmiNightVisionBrightMultText">
+				光線放大倍數
+			</text>
+			<text
+				 name="wmiNightVisionNoiseSizeText">
+				噪點尺寸
+			</text>
+			<text
+				 name="wmiNightVisionNoiseStrengthText">
+				雜訊強度
+			</text>
+		</panel>
+		<panel
+			 label="Bloom"
+			 name="wmiBloomPanel">
+			<check_box
+				 
+				 label="Enable"
+				 name="wmiBloomToggle" />
+			<text
+				 name="wmiBloomExtractText">
+				明度提取
+			</text>
+			<slider
+				 label=""
+				 name="wmiBloomExtract"
+				 />
+			<text
+				 name="wmiBloomSizeText">
+				輝光尺寸
+			</text>
+			<slider
+				 label=""
+				 name="wmiBloomSize"
+				 />
+			<text
+				 name="wmiBloomStrengthText">
+				輝光強度
+			</text>
+			<slider
+				 label=""
+				 name="wmiBloomStrength"
+				 />
+		</panel>
+		<panel
+			 label="額外選項"
+			 name="Extras">
+			<button
+				 label="讀取效果"
+				 label_selected="讀取效果"
+				 name="PPLoadEffect" />
+			<button
+				 label="保存效果"
+				 label_selected="保存效果"
+				 name="PPSaveEffect" />
+			<line_editor
+				 label="效果名稱"
+				 name="PPEffectNameEditor" />
+		</panel>
+	</tab_container>
+</floater>
+

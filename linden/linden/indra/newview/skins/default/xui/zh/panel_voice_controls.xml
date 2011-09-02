@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="voice_controls">
+	<button label="" name="speakers_btn"
+	     tool_tip="顯示你周圍使用語音聊天的居民" />
+	<button label="交談" name="push_to_talk" tool_tip="按住按鈕來通話" />
+	<button label="" name="ptt_lock" tool_tip="點擊鎖來切換到通話模式" />
+	<button label="" name="show_channel" tool_tip="顯示當前的語音頻道" />
+</panel>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="build options floater" title="網格選項">
+	<spinner label="網格單位 (米)" name="GridResolution" />
+	<spinner label="網格寬度 (米)" name="GridDrawSize" />
+	<check_box
+		 
+		 label="啟用子單位對齊"
+		 name="GridSubUnit" />
+	<check_box
+		 
+		 label="顯示剖面"
+		 name="GridCrossSection" />
+	<slider label="格子透明度" name="GridOpacity" />
+</floater>

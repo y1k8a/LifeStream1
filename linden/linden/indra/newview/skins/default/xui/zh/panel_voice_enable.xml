@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="content_panel">
+
+	<text_editor name="voice_intro_text1" word_wrap="true">
+		歡迎使用 Second Life 語音聊天! 語音聊天讓你可以與其他居民進行口頭交流。該嚮導會説明你完成設置語音聊天的各個步驟。請注意語音聊天需要帶麥克風的身歷聲耳機；點擊説明按鈕瞭解更多資訊。
+	</text_editor>
+
+	<text_editor name="voice_intro_text2" word_wrap="true">
+		您現在想要啟用語音聊天嗎？
+	</text_editor>
+	<radio_group name="voice_enable">
+		<radio_item name="1">當然，啟用語音聊天。</radio_item>
+		<radio_item name="0">不要就是不要，現在不啟用語音聊天</radio_item>
+	</radio_group>
+
+		<text_editor
+		 name="voice_intro_text3"
+		 word_wrap="true">你可以在任何時候，在偏好設置的語音聊天選項卡中啟用啟用語音聊天。</text_editor>
+
+		<text_editor
+		 name="voice_intro_text4"
+		 word_wrap="true">點擊繼續按鈕來設置語音聊天選項，或者點擊完成繼續使用 Second Life。</text_editor>
+
+	</panel>

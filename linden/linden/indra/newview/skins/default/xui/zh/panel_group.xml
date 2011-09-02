@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="GroupInfo" title="社群訊息">
+	<text name="default_needs_apply_text">
+		在目前的標籤頁上有還沒有套用的更改。
+	</text>
+	<text name="want_apply_text">
+		您是否願意現在就套用這些更改?
+	</text>
+	<button label="套用" label_selected="套用" name="btn_apply" />
+	<button label="取消" label_selected="取消" name="btn_cancel" />
+	<button label="確定" label_selected="確定" name="btn_ok" />
+	<button label="重新整理" label_selected="重新整理"
+	     name="btn_refresh" />
+</panel>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<role_actions>
+	<action_set
+	     description="這些能力包括添加或移除社群成員，以及允許新團員不經過邀請就可以加入的權利。"
+	     name="Membership">
+		<action description="邀請加入社群"
+		     longdescription="使用 '會員和角色' 標籤頁 &gt; '會員'子標籤頁下的 '邀請一個新人 ...' 按鈕邀請別人加入這個社群。"
+		     name="member invite" />
+		<action description="從社群驅逐團員"
+		     longdescription="使用 '會員和角色' 標籤頁 &gt; '會員' 子標籤頁下的 '從社群中驅逐' 按鈕將團員從社群關於土地 &gt; 一般踢出。一位 '團長' 可以驅逐除了另一位 '團長' 以外的所有人。如果您不是 '團長'，團員只有當且僅當他們只有 '普通人' 角色，而 *沒有* 其他角色的時候，才可以被驅逐。要將團員從角色移除，你需要有 '從角色移除會員' 的能力。"
+		     name="member eject" />
+		<action description="切換 '公開註冊' 並更改 '註冊費用' "
+		     longdescription="切換 '公開註冊' 來讓新會員不需要邀請就可以加入，並且更改一般標籤頁下社群偏好設定一欄中的 '註冊費用'。"
+		     name="member options" />
+	</action_set>
+	<action_set
+	     description="這些能力包括添加，移除或改變社群角色的權利，從角色中添加或移除組員的權利，以及為角色分配能力的權利"
+	     name="Roles">
+		<action description="創建新角色"
+		     longdescription="在 '會員和角色' 標籤頁 &gt; '角色' 子標籤頁下創建角色。"
+		     name="role create" />
+		<action description="刪除角色"
+		     longdescription="在 '會員和角色' 標籤頁 &gt; '角色' 子標籤頁下刪除角色。"
+		     name="role delete" />
+		<action description="改變角色的名字, 頭銜和其他描述"
+		     longdescription="選擇角色後，在 '會員和角色' 標籤頁 &gt; '角色' 子標籤頁下改變角色的名字、頭銜和其他描述。"
+		     name="role properties" />
+		<action description="給會員分配分配者的角色"
+		     longdescription="在 '會員和角色' 標籤頁 &gt; '會員' 子標籤頁下給團員分配 '已分配的角色' 一欄中的角色。有這個能力的團員只能給團員添加分配者已經有的角色。"
+		     name="role assign member limited" />
+		<action description="給會員分配任何角色"
+		     longdescription="在 '會員和角色' 標籤頁 &gt; '會員' 子標籤頁下給團員分配任意角色。 *警告* 任何具有該角色的會員擁有這項能力後，都可以給他們自己——以及任何其他的會員各種角色——分配權利比他們目前所擁有的權利大得多的角色，並可能提拔他們自己到相近于團長權利的位置上。請在分配這項能力之前確定自己這麼做將帶來的後果。"
+		     name="role assign member" />
+		<action description="禁止會員繼續扮演該項角色"
+		     longdescription="在 '會員和角色' 標籤頁 &gt; '角色' 子標籤頁下從移除會員的角色。團長不能被移除。"
+		     name="role remove member"  />
+		<action description="分配或移除角色能力"
+		     longdescription="在 '會員和角色' 標籤頁 &gt; '角色' 子標籤頁下為角色分配或移除能力的能力。*警告* 任何具有該角色的會員擁有這項能力後，都可以給他們自己——或者其他會員——分配所有的能力，甚至可以提拔他們自己到相近于團長權利的位置上。請在分配這項能力之前確定自己這麼做將帶來的後果。"
+		     name="role change actions" />
+	</action_set>
+	<action_set
+	     description="這些能力包括修改社群標識的權利，例如更改公眾可見度、憲章和徽章"
+	     name="Group Identity">
+		<action
+		     description="改變憲章、徽章、 '在搜索中顯示'"
+		     longdescription="改變憲章、徽章、 '在搜索中顯示'。這些動作在 '一般' 標籤頁中完成。"
+		     name="group change identity" />
+	</action_set>
+	<action_set
+	     description="這些能力包括轉讓、修改、並出售社群所擁有的土地的權利。要轉到 "關於土地" 視窗，在地面上點擊右鍵並選擇 "關於土地..."，或者點擊在功能表條上的土地資訊。"
+	     name="Parcel Management">
+		<action description="轉讓土地或購買土地給社群"
+		     longdescription="轉讓土地，以及為社群購買土地。這在 關於土地 &gt; 一般 標籤頁中完成。"
+		     name="land deed" />
+<!-- 不是說過 Governor Linden 不翻譯嗎?! -->
+		<action description="把土地放棄還給 Governor Linden"
+		     longdescription="放棄土地，轉移所有權給 Governor Linden。  *警告* 任何具有該角色的會員擁有這項能力後，都可以在 關於土地 &gt; 一般 選項卡中放棄土地，將其返還為林登所有而不需要通過交易! 請在分配這項能力之前確定自己這麼做將帶來的後果。"
+		     name="land release" />
+		<action description="設置土地待售資訊"
+		     longdescription="設置土地待售資訊。 *警告*  任何具有該角色的會員擁有這項能力後都可以在 關於土地 &gt; 一般 選項卡中任意銷售社群擁有的土地! 請在分配這項能力之前確定自己這麼做將帶來的後果。"
+		     name="land set sale info" />
+		<action description="分割及合併土地"
+		     longdescription="分割及合併地塊。 右鍵點擊地面，選擇 '編輯地形'，然後拖動滑鼠選擇土地。要分割土地，選擇想要分割的區域然後點擊 '分割...'。 要合併，選擇兩個或兩個以上相鄰的地塊，然後點擊 '合併...'。"
+		     name="land divide join" />
+	</action_set>
+	<action_set
+	     description="這些能力包括改變土地名稱和發佈設置，查找目的地可見度，選擇著陸點和閃電傳運點的路線的權利。"
+	     name="Parcel Identity">
+		<action description="切換 '在查找地點中顯示' 並設定分類"
+		     longdescription="關於土地 &gt; 選項 標籤頁中切換 '在查找地點中顯示'，並設定地塊的分類。"
+		     name="land find places" />
+		<action
+		     description="改變土地名稱、描述和 '在網路上發佈' 的設置"
+		     longdescription="改變土地名稱、描述和 '在網路上發佈' 的設置。這些動作在 關於土地 &gt; 選項 標籤頁中完成。"
+		     name="land change identity" />
+		<action description="設置著陸點並設置瞬間移動路徑"
+		     longdescription="在社群用有的地塊上，具有擁有這項能力的角色的會員可以設定著陸點，也就是瞬間移動抵達的位置，以及詳細控制瞬間移動路徑。這些動作在 關於土地 &gt; 選項 標籤頁中完成。"
+		     name="land set landing point" />
+	</action_set>
+	<action_set
+	     description="這些能力包括影響影響土地選項的權利，例如 "創建物體"，"編輯地形"，音樂和媒體設置等。"
+	     name="Parcel Settings">
+		<action description="改變音樂和多媒體設置"
+		     longdescription="在關於土地 &gt; 選項 標籤頁中改變音樂和多媒體設置。"
+		     name="land change media" />
+		<action description="切換 &apos;編輯地形&apos;"
+		     longdescription="切換 &apos;編輯地形&apos;。 *警告* 關於土地 &gt; 選項 &gt; 編輯地形 允許任何人編輯土地的地形，以及放置或移動林登植被。請在分配這項能力之前確定自己這麼做將帶來的後果。編輯地形 在 關於土地 &gt; 選項 下。"
+		     name="land edit" />
+		<action description="編輯各種 關於土地 &gt; 選項 下的設置"
+		     longdescription="在關於土地 &gt; 選項 標籤頁中切換 '安全 (無損傷)'、 '飛翔', 以及允許其他居民在社群所擁有的土地上: '創建物體'、 '編輯地形'、 '創造地標'、 以及 '運行腳本'。"
+		     name="land options" />
+	</action_set>
+	<action_set
+	     description="這些能力包括允許團員繞過社群擁有土地上的限制的許可權。"
+	     name="Parcel Powers">
+		<action description="永遠允許 &apos;編輯地形&apos;"
+		     longdescription="具有擁有這項能力的角色的會員可以在社群擁有的地塊上編輯地形，即使 關於土地 &gt; 選項 中的相關設置被關閉。"
+		     name="land allow edit land" />
+		<action description="永遠允許 &apos;飛翔&apos;"
+		     longdescription="具有擁有這項能力的角色的會員可以在社群擁有的地塊上飛行，即使 關於土地 &gt; 選項 中的相關設置被關閉。"
+		     name="land allow fly" />
+		<action description="永遠允許&apos;創建物體&apos;"
+		     longdescription="具有擁有這項能力的角色的會員可以在社群擁有的地塊上創建物體，即使 關於土地 &gt; 選項 中的相關設置被關閉。"
+		     name="land allow create" />
+		<action description="永遠允許 &apos;創建地標&apos;"
+		     longdescription="具有擁有這項能力的角色的會員可以創建社群擁有的地塊的地標，即使 關於土地 &gt; 選項 中的相關設置被關閉。"
+		     name="land allow landmark" />
+		<action description="允許在社群土地上&apos;把家建在這裡&apos;"
+		     longdescription="具有擁有這項能力的角色的會員可以在社群的土地上使用 世界功能表 &gt; 把家設在這裡 (無論是捐獻的還是持有的)。"
+		     name="land allow set home" />
+	</action_set>
+	<action_set
+	     description="這些能力包括允許或限制訪問社群擁有的土地的許可權，包括凍結和驅逐居民的許可權。"
+	     name="Parcel Access">
+		<action description="管理土地允許進入名單"
+		     longdescription="在 關於土地 &gt; 訪問 標籤頁下管理允許進入名單。"
+		     name="land manage allowed" />
+		<action description="管理土地禁止進入名單"
+		     longdescription="在 關於土地 &gt; 訪問 標籤頁下管理禁止進入名單。"
+		     name="land manage banned" />
+		<action description="改變土地上 '出售通行證...' 的設置"
+		     longdescription="在 關於土地 &gt; 訪問 標籤頁下改變 '出售通行證...' 的設置。"
+		     name="land manage passes" />
+		<action description="從土地上驅逐或凍結居民"
+		     longdescription="具有擁有這項能力的角色的會員可以對不受歡迎的居民使用右鍵點擊，選擇"更多 &gt; 凍結..." 或者 "驅逐..."。"
+		     name="land admin" />
+	</action_set>
+	<action_set
+	     description="這些能力包括允許組員返還物體、放置或移動林登植被。這在組員清理垃圾和美化景觀時很有用，但這些能力在使用時應該注意，因為一旦物體歸還就無法撤銷。"
+	     name="Parcel Content">
+		<action description="歸還社群擁有的物體"
+		     longdescription="在 關於土地 &gt; 物體 標籤頁下歸還社群擁有的土地上社群所擁有的物體。"
+		     name="land return group owned" />
+		<action description="歸還放置在社群處的物體"
+		     longdescription="在 關於土地 &gt; 物體 標籤頁下歸還社群土地上設置到社群的物體。"
+		     name="land return group set" />
+		<action description="歸還非社群所有的物體"
+		     longdescription="在 關於土地 &gt; 物體 標籤頁下歸還社群土地上非社群的物體。"
+		     name="land return non group" />
+		<action description="使用林登植物美化土地"
+		     longdescription="放置和移動林登樹木、花草。這些東西可以在你的庫存的 Library &gt; Objects 資料夾下找到，也可以用 建造 按鈕創建。"
+		     name="land gardening" />
+	</action_set>
+	<action_set
+	     description="這些能力包括轉讓、修改和銷售社群擁有的物體的許可權。這些更改在 編輯工具 &gt; 一般標籤頁中完成。右鍵點擊物體選擇 '編輯' 來查看設置。"
+	     name="Object Management">
+		<action description="轉讓物體給社群"
+		     longdescription="在 編輯工具 &gt; 一般 標籤頁下轉讓物體。"
+		     name="object deed" />
+		<action description="處理 (移動、複製、修改) 社群擁有的物體"
+		     longdescription="在 編輯工具 &gt; 一般 標籤頁下處理 (移動、複製、修改) 社群擁有的物體。"
+		     name="object manipulate" />
+		<action description="把社群擁有的物體設為待售"
+		     longdescription="在 編輯工具 &gt; 一般 標籤頁下設定社群擁有的物體予以出售。"
+		     name="object set sale" />
+	</action_set>
+	<action_set
+	     description="這些能力包括要求組員償還社群貸款和獲得社群紅利，以及限制訪問社群帳號歷史紀錄的權利。"
+	     name="Accounting">
+		<action description="償還社群債務/獲得社群紅利"
+		     longdescription="具有擁有這項能力的角色的會員將會自動社群債務及取得社群紅利。這意味著他們將每天收到社群土地銷售額的一部分，以及為例如地塊刊登費等的東西掏腰包。"
+		     name="accounting accountable" />
+	</action_set>
+	<action_set
+	     description="這些能力包括允許組員發送，接受和流覽社群通知的權利"
+	     name="Notices">
+		<action description="發送通知"
+		     longdescription="具有擁有這項能力的角色的會員可以在 社群資訊 &gt; 通知 標籤頁中發送通知。"
+		     name="notices send" />
+		<action description="接受通知/回顧原來的通知"
+		     longdescription="具有擁有這項能力的角色的會員可以在 社群資訊 &gt; 通知 標籤頁中接受和查看以前的通知。"
+		     name="notices receive" />
+	</action_set>
+	<action_set
+	     description="這些能力包括允許組員提出議案，為議案投票，和流覽投票歷史紀錄的權利"
+	     name="Proposals">
+		<action description="創建議案"
+		     longdescription="具有擁有這項能力的角色的會員可以在 社群資訊 &gt; 議案 標籤頁中創建議案以供投票。"
+		     name="proposal start" />
+		<action description="為議案投票"
+		     longdescription="具有擁有這項能力的角色的會員可以在 社群資訊 &gt; 議案 標籤頁中對議案投票。"
+		     name="proposal vote" />
+	</action_set>
+	<action_set
+		 description="這些能力包括允許或限制社群聊天會話及社群語音會話的許可權。"
+		 name="Chat">
+		<action
+			 description="加入社群聊天"
+			 longdescription="具有擁有這項能力的角色的會員可以加入社群文字或語音聊天。"
+			 name="join group chat"
+			 />
+		<action
+			 description="加入社群語音聊天"
+			 longdescription="具有擁有這項能力的角色的會員可以加入社群語音聊天會話。注意: 需要加入社群聊天能力 才能訪問語音聊天會話。"
+			 name="join voice chat"
+			 />	
+		<action
+			 description="管理社群聊天"
+			 longdescription="具有擁有這項能力的角色的會員可以控制社群文字和語音聊天的訪問，並且可以管理社群和語音聊天。"
+			 name="moderate group chat"
+			 />
+	</action_set>
+
+</role_actions>

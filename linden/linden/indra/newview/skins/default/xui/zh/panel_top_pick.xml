@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="Pick" title="撿起">
+	<button label="設定位置" name="set_location_btn" />
+	<button label="閃電傳送" name="pick_teleport_btn" />
+	<button label="在地圖中顯示" name="pick_map_btn" />
+	<text name="sort_order_text">
+		種類:
+	</text>
+	<check_box label="Enabled" name="enabled_check" />
+</panel>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="buy currency" title="購買貨幣">
+	<text name="info_buying">
+		購買貨幣:
+	</text>
+	<text name="info_cannot_buy">
+		現在無法購買:
+	</text>
+	<text name="info_need_more">
+		你需要更多的貨幣:
+	</text>
+	<text name="error_message">
+		事情好像不大對頭。
+	</text>
+	<button label="去網頁" name="error_web"/>
+	<text name="contacting">
+		正在連接 LindeX...
+	</text>
+	<text name="buy_action_unknown">
+		在 LindeX 貨幣交換所購買 F$
+	</text>
+	<text name="buy_action">
+		[NAME] F$ [PRICE]
+	</text>
+	<text name="currency_action">
+		購買F$
+	</text>
+	<line_editor name="currency_amt">
+		1234
+	</line_editor>
+	<text name="currency_est">
+		需要大概 US$ [USD]
+	</text>
+	<text name="getting_data">
+		獲取資料...
+	</text>
+	<text name="balance_label">
+		你目前有
+	</text>
+	<text name="balance_amount">
+		F$ [AMT]
+	</text>
+	<text name="buying_label">
+		你正在購買
+	</text>
+	<text name="buying_amount">
+		F$ [AMT]
+	</text>
+	<text name="total_label">
+		你的帳戶結餘是
+	</text>
+	<text name="total_amount">
+		F$ [AMT]
+	</text>
+	<text name="purchase_warning_repurchase">
+		確認此次操作只會購買現鈔。
+你需要重試該操作。
+	</text>
+	<text name="purchase_warning_notenough">
+		你沒有購買足夠的貨幣。請增加購買的額度。
+	</text>
+	<button label="取消" name="cancel_btn"/>
+	<button label="購買" name="buy_btn"/>
+	<string name="buy_currency">
+		以大約 US$ [USD] 購買 F$ [LINDENS]
+	</string>
+</floater>

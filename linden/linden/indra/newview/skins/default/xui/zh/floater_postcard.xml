@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="Postcard" title="發送快照">
+	<text name="to_label">
+		收件人電子郵寄地址:
+	</text>
+	<text name="from_label">
+		你的電子郵寄地址:
+	</text>
+	<text name="name_label">
+		你的姓名:
+	</text>
+	<text name="subject_label">
+		主題:
+	</text>
+	<line_editor label="在此輸入您的主題." name="subject_form"/>
+	<text name="msg_label">
+		正文:
+	</text>
+	<text_editor name="msg_form">
+		在這裡鍵入你的資訊。
+	</text_editor>
+	<text name="fine_print">
+		如果你的收件人加入福爾摩亞，你會得到一份介紹獎勵。
+	</text>
+	<button label="取消" name="cancel_btn"/>
+	<button label="發送" name="send_btn"/>
+	<string name="default_subject">
+		來自福爾摩亞的明信片
+	</string>
+	<string name="default_message">
+		瞧瞧這個!
+	</string>
+	<string name="upload_message">
+		發送中……
+	</string>
+</floater>

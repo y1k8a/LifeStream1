@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="buy currency" title="Geld kaufen">
+	<text name="info_buying">
+		Kaufe Geld:
+	</text>
+	<text name="info_cannot_buy">
+		Kaufen jetzt nicht möglich:
+	</text>
+	<text name="info_need_more">
+		Sie brauchen mehr Geld:
+	</text>
+	<text name="error_message">
+		Irgendetwas stimmt nicht.
+	</text>
+	<button label="Gehe zu Website" name="error_web" />
+	<text name="contacting">
+		Geldwechsler wird kontaktiert...
+	</text>
+	<text name="buy_action_unknown">
+		[CURRENCY] am Geldwechsler kaufen
+	</text>
+	<text name="buy_action">
+		[NAME] [CURRENCY] [PRICE]
+	</text>
+	<text name="currency_action" width="90">
+		[CURRENCY] kaufen
+	</text>
+	<line_editor left_delta="55" name="currency_amt">
+		1234
+	</line_editor>
+	<text name="currency_est">
+		für ca. [REALCURRENCY] [USD]
+	</text>
+	<text name="getting_data">
+		Daten werden geladen...
+	</text>
+	<text name="balance_label">
+		Sie haben zurzeit
+	</text>
+	<text name="balance_amount">
+		[AMT] [CURRENCY] 
+	</text>
+	<text name="buying_label">
+		Sie kaufen
+	</text>
+	<text name="buying_amount">
+		[AMT] [CURRENCY] 
+	</text>
+	<text name="total_label">
+		Ihr neuer Kontostand:
+	</text>
+	<text name="total_amount">
+		[AMT] [CURRENCY] 
+	</text>
+	<text name="purchase_warning_repurchase">
+		Best�tigen dieses Kaufs erwirbt ausschließlich Geld.
+Wiederholen Sie den Vorgang.
+	</text>
+	<text name="purchase_warning_notenough">
+		Sie kaufen nicht genügend Geld.
+Erhöhen Sie den Betrag.
+	</text>
+	<button label="Kaufen" name="buy_btn" />
+	<button label="Abbrechen" name="cancel_btn" />
+	<text name="buy_currency">
+		[CURRENCY] [LINDENS] für ca. [REALCURRENCY] [USD]
+kaufen
+	</text>
+</floater>

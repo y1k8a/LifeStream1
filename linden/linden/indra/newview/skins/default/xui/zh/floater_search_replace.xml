@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="script search" title="搜尋/ 替换">
+	<check_box label="不區分大小寫" name="case_text" />
+	<button label="搜尋" label_selected="搜尋" name="search_btn" />
+	<button label="替换" label_selected="替换" name="replace_btn" />
+	<button label="全部替换" label_selected="全部替换" name="replace_all_btn" />
+	<text type="string" length="1" name="txt">
+		搜尋</text>
+	<text type="string" length="1" name="txt2">
+		替换
+	</text>
+</floater>

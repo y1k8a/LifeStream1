@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="notifications_console" title="Konsole: Meldungen">
+	<combo_box label="Meldungsart auswählen" name="notification_types" width="412" />
+	<button label="Hinzufügen" name="add_notification" left="417" width="78" />
+  <button name="reload_notifications" left="497" width="85" label="Alle Neuladen"/>
+  <layout_stack name="notification_channels">
+  </layout_stack>
+</floater>

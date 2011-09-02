@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel
+	 label="快顯視窗"
+	 name="popups"
+	 title="快顯視窗">
+	<text name="dont_show_label">
+		不顯示這些快顯視窗:
+	</text>
+	<scroll_list
+		 name="disabled_popups" />
+	<button
+		 label="啟用該快顯視窗"
+		 name="enable_popup" />
+	<text name="show_label">
+		顯示這些快顯視窗:
+	</text>
+	<scroll_list
+		 name="enabled_popups" />
+	<text
+		 name="text_box2">
+		其他人給與的記事卡、材質和地標:
+	</text>
+	<check_box
+		 label="自動接受"
+		 name="accept_new_inventory" />
+	<check_box
+		 label="接受後自動打開"
+		 name="show_new_inventory" />
+	<check_box label="在百寶箱中自動顯示新接收的物體" 
+	     name="show_in_inventory" />
+	<button  width="225"
+		 label="顯示所有的"下次不再顯示"對話方塊..."
+		 name="reset_dialogs_btn"
+		 tool_tip="啟用所有可選的快顯視窗及"首次使用"提示。" />
+	<button  width="225"
+		 label="隱藏所有的"下次不再顯示"對話方塊..."
+		 name="skip_dialogs_btn"
+		 tool_tip="禁用所有可選的快顯視窗及"首次使用"提示。" />
+</panel>

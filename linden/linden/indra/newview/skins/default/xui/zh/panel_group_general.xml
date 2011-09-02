@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="一般" name="general_tab">
+	<string name="help_text">
+		一般標籤頁包含關於社群的一般資訊，社群擁有者和可見會員的名單，一般的社群偏好設定和會員選項。
+
+滑鼠停留在選項上獲取更多説明。
+	</string>
+	<string name="group_info_unchanged">
+		社群一般資訊已經改變。
+	</string>
+	<button label="?" label_selected="?" name="help_button"/>
+	<line_editor label="在此輸入您的新社群名稱" name="group_name_editor"/>
+	<text name="group_name">
+		在此鍵入你的新社群名稱
+	</text>
+	<text name="prepend_founded_by">
+		創始人
+	</text>
+	<text name="founder_name">
+		(等待中)
+	</text>
+	<text name="group_charter_label">
+		社群憲章
+	</text>
+	<texture_picker label="社群徽章" name="insignia" tool_tip="點擊這裡來選擇圖片"/>
+	<text_editor name="charter">
+		社群憲章
+	</text_editor>
+	<button label="加入(L$0)" label_selected="加入(L$0)" name="join_button"/>
+	<button label="詳細視圖" label_selected="詳細察看" name="info_button"/>
+	<text name="text_owners_and_visible_members">
+		擁有者和可見的會員
+	</text>
+	<text name="text_owners_are_shown_in_bold">
+		(擁有者的名字以粗體標注)
+	</text>
+	<name_list name="visible_members">
+		<column label="會員名稱" name="name"/>
+		<column label="頭銜" name="title"/>
+		<column label="最後登入" name="online"/>
+	</name_list>
+	<text name="text_group_preferences">
+		社群偏好設定
+	</text>
+	<panel name="preferences_container">
+		<check_box label="在搜索中顯示" name="show_in_group_list" tool_tip="讓別人在搜索結果中看到這個社群。"/>
+		<check_box label="公開註冊" name="open_enrollement" tool_tip="設置該社群是否允許新會員加入而不需要被邀請。"/>
+		<check_box label="註冊費用: L$" name="check_enrollment_fee" tool_tip="設定是否收將取社群入會費。"/>
+		<spinner name="spin_enrollment_fee" tool_tip="如果選擇了註冊費用的話，新會員加入社群時必須付出這筆費用。"/>
+		<combo_box name="group_mature_check" tool_tip="設置是否應將社群資訊看作Mature內容。">
+			<combo_item name="select_mature">
+				- 選擇限制級 -
+			</combo_item>
+			<combo_item name="mature">
+				普遍級內容
+			</combo_item>
+			<combo_item name="pg">
+				輔導級內容
+			</combo_item>
+		</combo_box>
+		<panel name="title_container">
+			<text name="active_title_label">
+				我的頭銜
+			</text>
+			<combo_box name="active_title" tool_tip="設置當該社群啟動時，在化身姓名標籤中顯示的頭銜。"/>
+		</panel>
+		<check_box label="接受社群通知" name="receive_notices" tool_tip="設置您是否想要從該社群接受通知。如果這個社群向您亂髮垃圾資訊，那就取消選擇這項。"/>
+		<check_box label="在我的檔案中列出該社群" name="list_groups_in_profile" tool_tip="設置您是否想要在檔案中列出該社群"/>
+	</panel>
+	<string name="incomplete_member_data_str">
+		重新獲取會員資訊
+	</string>
+	<string name="confirm_group_create_str">
+		創建這個社群將花費F$100. 
+你真的，真的，真----的----確定要花費F$100來創建這個社群嗎?
+請注意如果沒有別人在48小時內加入該社群，它將會被解散，並且這個社群名字將來將不能使用。
+	</string>
+</panel>

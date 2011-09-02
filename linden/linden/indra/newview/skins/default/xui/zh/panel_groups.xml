@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel name="groups">
+	<text name="groupdesc" >
+		您當前啟動的社群以粗體表示。
+	</text>
+	<text name="groupcount" >
+		您現在屬於 [COUNT] 個社群 (最大 [MAX] 個)。
+	</text>
+	<button
+		 label="聊天/呼叫"
+		 name="IM"
+		 tool_tip="打開即時通信會話" />
+	<button
+		 label="信息"
+		 name="Info" />
+	<button
+		 label="啟動"
+		 name="Activate" />
+	<button
+		 label="離開"
+		 name="Leave" />
+	<button
+		 label="創建..."
+		 name="Create" />
+	<button
+		 label="搜索..."
+		 name="Search..." />
+</panel>
+<!--Translated for Second Life 1.19.0 (79185)-->

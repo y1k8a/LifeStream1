@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_lagmeter" title="延遲計量器">
+	<button label="" label_selected="" name="client_lagmeter" tool_tip="用戶端延遲狀況"/>
+	<text name="client">
+		用戶端:
+	</text>
+	<text name="client_text" right="-10">
+		正常
+	</text>
+	<text name="client_lag_cause" right="-32"/>
+	<button label="" label_selected="" name="network_lagmeter" tool_tip="網路延遲狀況"/>
+	<text name="network">
+		網路:
+	</text>
+	<text name="network_text" right="-10">
+		正常
+	</text>
+	<button label="" label_selected="" name="server_lagmeter" tool_tip="伺服器延遲狀況"/>
+	<text name="server">
+		伺服器:
+	</text>
+	<text name="server_text" right="-10">
+		正常
+	</text>
+	<string name="max_title_msg">
+		延遲計量器
+	</string>
+	<string name="max_width_px">
+		360
+	</string>
+	<string name="min_title_msg">
+		延遲
+	</string>
+	<string name="min_width_px">
+		90
+	</string>
+	<string name="client_text_msg">
+		用戶端
+	</string>
+	<string name="client_frame_rate_critical_fps">
+		10
+	</string>
+	<string name="client_frame_rate_warning_fps">
+		15
+	</string>
+	<string name="client_frame_time_window_bg_msg">
+		正常，視窗處於後臺狀態
+	</string>
+	<string name="client_frame_time_critical_msg">
+		用戶端每秒幀數在 [CLIENT_FRAME_RATE_CRITICAL] 以下
+	</string>
+	<string name="client_frame_time_warning_msg">
+		用戶端每秒幀數在 [CLIENT_FRAME_RATE_CRITICAL] 到 [CLIENT_FRAME_RATE_WARNING] 之間
+	</string>
+	<string name="client_frame_time_normal_msg">
+		正常
+	</string>
+	<string name="client_draw_distance_cause_msg">
+		可能原因：描繪距離設置過高
+	</string>
+	<string name="client_texture_loading_cause_msg">
+		可能原因：圖像載入中
+	</string>
+	<string name="client_texture_memory_cause_msg">
+		可能原因：記憶體中圖像過多
+	</string>
+	<string name="client_complex_objects_cause_msg">
+		可能原因：場景中複雜物體過多
+	</string>
+	<string name="network_text_msg">
+		網路
+	</string>
+	<string name="network_packet_loss_critical_pct">
+		10
+	</string>
+	<string name="network_packet_loss_warning_pct">
+		5
+	</string>
+	<string name="network_packet_loss_critical_msg">
+		網路連接正在丟棄 [NETWORK_PACKET_LOSS_CRITICAL]% 以上的資料包
+	</string>
+	<string name="network_packet_loss_warning_msg">
+		網路連接正在丟棄 [NETWORK_PACKET_LOSS_WARNING]%-[NETWORK_PACKET_LOSS_CRITICAL]% 的數據包
+	</string>
+	<string name="network_performance_normal_msg">
+		正常
+	</string>
+	<string name="network_ping_critical_ms">
+		600
+	</string>
+	<string name="network_ping_warning_ms">
+		300
+	</string>
+	<string name="network_ping_critical_msg">
+		連接回應時間大於 [NETWORK_PING_CRITICAL] 毫秒
+	</string>
+	<string name="network_ping_warning_msg">
+		連接回應時間介於 [NETWORK_PING_WARNING]-[NETWORK_PING_CRITICAL] 毫秒
+	</string>
+	<string name="network_packet_loss_cause_msg">
+		有可能是連接問題，或"頻寬"設置過高。
+	</string>
+	<string name="network_ping_cause_msg">
+		有可能是連接問題，或正使用檔共用下載程式。
+	</string>
+	<string name="server_text_msg">
+		伺服器
+	</string>
+	<string name="server_frame_rate_critical_fps">
+		20
+	</string>
+	<string name="server_frame_rate_warning_fps">
+		30
+	</string>
+	<string name="server_single_process_max_time_ms">
+		20
+	</string>
+	<string name="server_frame_time_critical_msg">
+		模擬器每秒幀數在 [SERVER_FRAME_RATE_CRITICAL] 以下
+	</string>
+	<string name="server_frame_time_warning_msg">
+		模擬器每秒幀數在 [SERVER_FRAME_RATE_CRITICAL] 和 [SERVER_FRAME_RATE_WARNING] 之間
+	</string>
+	<string name="server_frame_time_normal_msg">
+		正常
+	</string>
+	<string name="server_physics_cause_msg">
+		可能原因：物理物體過多
+	</string>
+	<string name="server_scripts_cause_msg">
+		可能原因：有腳本的物體過多
+	</string>
+	<string name="server_net_cause_msg">
+		可能原因：網路流量過大
+	</string>
+	<string name="server_agent_cause_msg">
+		可能原因：區域中移動的人太多
+	</string>
+	<string name="server_images_cause_msg">
+		可能原因：圖像計算過多
+	</string>
+	<string name="server_generic_cause_msg">
+		可能原因：模擬器負載過大
+	</string>
+</floater>

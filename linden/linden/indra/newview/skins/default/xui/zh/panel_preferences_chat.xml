@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<panel label="聊天" name="chat">
+	<text type="string" length="1" name="text_box">
+		聊天字體大小:
+	</text>
+	<radio_group name="chat_font_size">
+		<radio_item type="string" length="1" name="radio">
+			小號
+		</radio_item>
+		<radio_item type="string" length="1" name="radio2">
+			中號
+		</radio_item>
+		<radio_item type="string" length="1" name="radio3">
+			大號
+		</radio_item>
+	</radio_group>
+	<text type="string" length="1" name="text_box2">
+		聊天顏色:
+	</text>
+	<!--Geneko Nemeth: 最多只能寫三個字。/Maximum 3 Chinese characters.-->
+	<color_swatch
+		 label="您"
+		 name="user" />
+	<color_swatch
+		 label="其他人"
+		 name="agent" />
+	<color_swatch
+		 label="即時"
+		 name="im" />
+	<color_swatch label="系統" name="system" />
+	<color_swatch label="錯誤" name="script_error" />
+	<color_swatch label="用戶" name="users" />
+	<color_swatch label="物件" name="objects" />
+	<color_swatch label="主人" name="owner" />
+	<color_swatch label="氣球" name="background" />
+	<color_swatch label="連結" name="links" />
+	<text type="string" length="1" name="text_box3">
+		聊天控制台:
+	</text>
+	<spinner label="對話時間淡出" name="fade_chat_time" />
+	<text type="string" length="1" name="text_box4">
+		(秒)
+	</text>
+	<text type="string" length="1" name="text_box5">
+		(行)
+	</text>
+	<slider label="透明度" name="console_opacity" />
+	<check_box
+		 label="使用全屏寬度  (需要重啟動)"
+		 name="chat_full_width_check" />
+	<text type="string" length="1" name="text_box6">
+		聊天選項:
+	</text>
+	<check_box label="用全屏寬度聊天 (需重啟)" name="chat_full_width_check" />
+	<check_box label="按回車鍵關閉聊天欄" name="close_chat_on_return_check" />
+	<check_box label="聊天時方向鍵總是移動你的化身"
+	     name="arrow_keys_move_avatar_check" />
+	<check_box label="本地聊天時顯示時間戳記" name="show_timestamps_check" />
+	<check_box
+		 label="聊天時播放打字動畫"
+		 name="play_typing_animation" />
+	<text type="string" length="1" name="text_box7">
+		聊天氣球:
+	</text>
+	<check_box label="使用氣球聊天" name="bubble_text_chat" />
+	<slider label="透明度" name="bubble_chat_opacity" />
+	<text type="string" length="1" name="text_box8">
+		腳本錯誤:
+	</text>
+	<check_box label="以聊天形式顯示腳本錯誤和警告" name="script_errors_as_chat" />
+
+</panel>

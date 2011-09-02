@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<panel label="圖像" name="Display panel">
+	<button label="?" name="GraphicsPreferencesHelpButton"/>
+	<check_box label="在視窗中運行" name="windowed mode"/>
+	<text_editor name="FullScreenInfo">
+		若不選中，檢視器在登入時將全屏顯示。
+	</text_editor>
+	<text name="WindowSizeLabel">
+		視窗尺寸:
+	</text>
+	<combo_box name="windowsize combo">
+		<combo_item name="640x480">
+			640x480
+		</combo_item>
+		<combo_item name="800x600">
+			800x600
+		</combo_item>
+		<combo_item name="720x480">
+			720x480 (NTSC)
+		</combo_item>
+		<combo_item name="768x576">
+			768x576 (PAL)
+		</combo_item>
+		<combo_item name="1024x768">
+			1024x768
+		</combo_item>
+	</combo_box>
+	<text name="DisplayResLabel">
+		顯示器解析度:
+	</text>
+	<combo_box name="fullscreen combo"/>
+	<text name="AspectRatioLabel1" tool_tip="寬 / 高">
+		全屏寬高比:
+	</text>
+	<combo_box name="aspect_ratio" tool_tip="寬 / 高">
+		<combo_item name="4:3(StandardCRT)">
+			4:3 (標準顯示器)
+		</combo_item>
+		<combo_item name="5:4(1280x1024LCD)">
+			5:4 (1280x1024 液晶顯示器)
+		</combo_item>
+		<combo_item name="8:5(Widescreen)">
+			8:5 (寬屏)
+		</combo_item>
+		<combo_item name="16:9(Widescreen)">
+			16:9 (寬螢幕)
+		</combo_item>
+	</combo_box>
+	<check_box label="自動檢測" name="aspect_auto_detect"/>
+	<text name="HigherText">
+		品質和
+	</text>
+	<text name="QualityText" width="95">
+		性能:
+	</text>
+	<text bg_visible="false" border_drop_shadow_visible="false" border_visible="false" bottom="-86" drop_shadow_visible="true" enabled="true" follows="left|top" font="SansSerifSmall" h_pad="0" halign="left" height="12" hidden="false" left="115" length="1" mouse_opaque="true" name="FasterText" type="string" v_pad="0" width="80">
+		更快
+	</text>
+	<text name="ShadersPrefText">
+		低
+	</text>
+	<text name="ShadersPrefText2">
+		中
+	</text>
+	<text name="ShadersPrefText3">
+		高
+	</text>
+	<text name="ShadersPrefText4">
+		最高
+	</text>
+	<text name="HigherText2">
+		更高
+	</text>
+	<text name="QualityText2">
+		品質
+	</text>
+	<slider label="" name="QualityPerformanceSelection"/>
+	<check_box label="自訂" name="CustomSettings"/>
+	<view_border name="GraphicsBorder"/>
+	<text name="ShadersText">
+		著色器:
+	</text>
+	<check_box label="凹凸貼圖和光澤" name="BumpShiny"/>
+	<check_box label="基本著色器" name="BasicShaders" tool_tip="禁用該選項也許可以防止某些顯卡驅動程式崩潰。" width="315"/>
+	<check_box label="大氣著色器" name="WindLightUseAtmosShaders"/>
+	<check_box label="水面反射" name="Reflections"/>
+	<text name="ReflectionDetailText">
+		反射細節:
+	</text>
+	<radio_group name="ReflectionDetailRadio">
+		<radio_item name="0">
+			地面和樹木
+		</radio_item>
+		<radio_item name="1">
+			所有靜態物體
+		</radio_item>
+		<radio_item name="2">
+			所有化身和物體
+		</radio_item>
+		<radio_item name="3">
+			一切東西
+		</radio_item>
+	</radio_group>
+	<text name="AvatarRenderingText" width="128">
+		化身渲染:
+	</text>
+	<check_box label="化身替身" name="AvatarImpostors" width="256"/>
+	<check_box label="硬體 Skinning" name="AvatarVertexProgram" width="256"/>
+	<check_box label="化身衣物效果" name="AvatarCloth" width="256"/>
+	<text name="DrawDistanceMeterText1" width="128">
+		m
+	</text>
+	<text name="DrawDistanceMeterText2">
+		m
+	</text>
+	<slider label="描繪距離:" name="DrawDistance"/>
+	<slider label="最大粒子數:" name="MaxParticleCount"/>
+	<slider label="後期處理品質:" name="RenderPostProcess"/>
+	<text name="MeshDetailText" width="128">
+		模型細節:
+	</text>
+	<slider label="  物體:" label_width="140" name="ObjectMeshDetail" width="223"/>
+	<slider label="  活動元件:" label_width="140" name="FlexibleMeshDetail" width="223"/>
+	<slider label="  樹木:" label_width="140" name="TreeMeshDetail" width="223"/>
+	<slider label="  化身:" label_width="140" name="AvatarMeshDetail" width="223"/>
+	<slider label="  地面:" name="TerrainMeshDetail" width="223"/>
+	<slider label="  天空:" label_width="140" name="SkyMeshDetail" width="223"/>
+	<text name="PostProcessText">
+		低
+	</text>
+	<text name="ObjectMeshDetailText">
+		低
+	</text>
+	<text name="FlexibleMeshDetailText">
+		低
+	</text>
+	<text name="TreeMeshDetailText">
+		低
+	</text>
+	<text name="AvatarMeshDetailText">
+		低
+	</text>
+	<text name="TerrainMeshDetailText">
+		低
+	</text>
+	<text name="SkyMeshDetailText">
+		低
+	</text>
+	<text name="LightingDetailText">
+		光照細節:
+	</text>
+	<radio_group name="LightingDetailRadio">
+		<radio_item name="SunMoon">
+			僅有日月光效
+		</radio_item>
+		<radio_item name="LocalLights">
+			附近的燈光
+		</radio_item>
+	</radio_group>
+	<text name="TerrainDetailText">
+		地面細節:
+	</text>
+	<radio_group name="TerrainDetailRadio">
+		<radio_item name="0">
+			低
+		</radio_item>
+		<radio_item name="2">
+			高
+		</radio_item>
+	</radio_group>
+	<button label="建議預設" name="Defaults"/>
+	<button label="硬體選項" label_selected="硬體選項" name="GraphicsHardwareButton"/>
+	<string hidden="true" name="resolution_format">
+		[RES_X] x [RES_Y]
+	</string>
+	<string hidden="true" name="aspect_ratio_text">
+		[NUM]:[DEN]
+	</string>
+</panel>

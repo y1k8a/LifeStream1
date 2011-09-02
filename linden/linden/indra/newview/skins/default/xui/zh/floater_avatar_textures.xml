@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="avatar_texture_debug" title="化身材質">
+	<text name="baked_label">
+		烘焙紋理
+	</text>
+	<text name="composite_label">
+		複合材質
+	</text>
+	<texture_picker label="頭部" name="baked_head"/>
+	<texture_picker label="化妝" name="head_bodypaint"/>
+	<texture_picker label="頭髮" name="hair"/>
+	<button label="轉存" label_selected="轉存" name="Dump"/>
+	<texture_picker label="雙眼" name="baked_eyes"/>
+	<texture_picker label="眼睛" name="eye_texture"/>
+	<texture_picker label="上身" name="baked_upper_body"/>
+	<texture_picker label="上身紋身" name="upper_bodypaint"/>
+	<texture_picker label="內衣" name="undershirt"/>
+	<texture_picker label="手套" name="gloves"/>
+	<texture_picker label="襯衣" name="shirt"/>
+	<texture_picker label="上身外衣" name="upper_jacket"/>
+	<texture_picker label="下身" name="baked_lower_body"/>
+	<texture_picker label="下身紋身" name="lower_bodypaint"/>
+	<texture_picker label="內褲" name="underpants"/>
+	<texture_picker label="襪子" name="socks"/>
+	<texture_picker label="鞋子" name="shoes"/>
+	<texture_picker label="褲子" name="pants"/>
+	<texture_picker label="夾克" name="jacket"/>
+	<texture_picker label="裙子" name="baked_skirt"/>
+	<texture_picker label="裙子" name="skirt_texture"/>
+</floater>

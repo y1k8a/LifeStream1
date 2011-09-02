@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<fonts>
+
+  <font name="default" comment="default font files (global fallbacks)">
+    <file>DejaVuSansCondensed.ttf</file>
+    <os name="Windows">
+      <file>MSGOTHIC.TTC</file>
+      <file>gulim.ttc</file>
+      <file>simhei.ttf</file>
+      <file>ArialUni.ttf</file>
+    </os>
+    <os name="Mac">
+      <file>ヒラギノ角ゴ Pro W3.otf</file>
+      <file>ヒラギノ角ゴ ProN W3.otf</file>
+      <file>AppleGothic.dfont</file>
+      <file>AppleGothic.ttf</file>
+      <file>华文细黑.ttf</file>
+    </os>
+  </font>
+
+
+  <font name="Monospace"
+	comment="Name of monospace font">
+    <file>VeraMono.ttf</file>
+  </font>
+
+
+  <font name="DejaVu"
+        comment="Name of DejaVu font"
+        size_mult="1.00">
+    <file>DejaVuSansCondensed.ttf</file>
+  </font>
+
+  <font name="DejaVu"
+        comment="Name of DejaVu font (bold)"
+        size_mult="1.00"
+        font_style="BOLD">
+    <file>DejaVuSansCondensed-Bold.ttf</file>
+  </font>
+
+  <font name="DejaVu"
+        comment="Name of DejaVu font (italic)"
+        size_mult="1.00"
+        font_style="ITALIC">
+    <file>DejaVuSansCondensed-Oblique.ttf</file>
+  </font>
+
+  <font name="DejaVu"
+        comment="Name of DejaVu font (bold italic)"
+        size_mult="1.00"
+        font_style="BOLD|ITALIC">
+    <file>DejaVuSansCondensed-BoldOblique.ttf</file>
+  </font>
+
+
+  <font name="Delicious"
+        comment="Name of Delicious font"
+        size_mult="1.1">
+    <file>Delicious-Roman.otf</file>
+  </font>
+
+  <font name="Delicious"
+        comment="Name of Delicious font (bold)"
+        size_mult="1.1"
+        font_style="BOLD">
+    <file>Delicious-Bold.otf</file>
+  </font>
+
+  <font name="Delicious"
+        comment="Name of Delicious font (italic)"
+        size_mult="1.1"
+        font_style="ITALIC">
+    <file>Delicious-Italic.otf</file>
+  </font>
+
+  <font name="Delicious"
+        comment="Name of Delicious font (bold italic)"
+        size_mult="1.1"
+        font_style="BOLD|ITALIC">
+    <file>Delicious-BoldItalic.otf</file>
+  </font>
+
+
+  <font name="Liberation"
+        comment="Name of Liberation font">
+    <file>LiberationSans-Regular.ttf</file>
+  </font>
+
+  <font name="Liberation"
+        comment="Name of Liberation font (bold)"
+        font_style="BOLD">
+    <file>LiberationSans-Bold.ttf</file>
+  </font>
+
+
+  <font name="DroidSans"
+        comment="Name of DroidSans font"
+        size_mult="1.0">
+    <file>DroidSans.ttf</file>
+  </font>
+
+  <font name="DroidSans"
+        comment="Name of DroidSans font (bold)"
+        size_mult="1.0"
+        font_style="BOLD">
+    <file>DroidSans-Bold.ttf</file>
+  </font>
+
+
+  <font name="Helvetica"
+	comment="Name of Helvetica font">
+    <file>arial.ttf</file>
+  </font>
+
+  <font name="Helvetica"
+	comment="Name of Helvetica font (bold)"
+	font_style="BOLD">
+    <file>arialbd.ttf</file>
+  </font>
+
+  <font name="Helvetica"
+	comment="Name of Helvetica font (italic)"
+	font_style="ITALIC">
+    <file>ariali.ttf</file>
+  </font>
+
+  <font name="Helvetica"
+	comment="Name of Helvetica font (bold italic)"
+	font_style="BOLD|ITALIC">
+    <file>arialbi.ttf</file>
+  </font>
+
+  <font name="OverrideTest"
+	comment="Name of font to test overriding">
+    <file>times.ttf</file>
+  </font>
+
+  <font_size name="Monospace"
+	     comment="Size for monospaced font (points, or 1/72 of an inch)"
+	     size="9"
+	     />
+  <font_size name="Huge"
+	     comment="Size of huge font (points, or 1/72 of an inch)"
+	     size="15"
+	     />
+  <font_size name="Large"
+	     comment="Size of large font (points, or 1/72 of an inch)"
+	     size="12"
+	     />
+  <font_size name="Bigger"
+	     comment="Size of medium font (points, or 1/72 of an inch)"
+	     size="11"
+	     />
+  <font_size name="Medium"
+	     comment="Size of medium font (points, or 1/72 of an inch)"
+	     size="10"
+	     />
+  <font_size name="Small"
+	     comment="Size of small font (points, or 1/72 of an inch)"
+	     size="8.5"
+	     />
+</fonts>
+

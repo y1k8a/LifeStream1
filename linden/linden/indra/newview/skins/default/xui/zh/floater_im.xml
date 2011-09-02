@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<multi_floater
+	 min_height="130"
+	 min_width="350"
+	 name="im_floater"
+	 title="即時聊天">
+	<tab_container
+		 name="Preview Tabs" />
+	<string
+		 name="only_user_message">
+		您是該會話中唯一的參與者。
+	</string>
+	<string
+		 name="offline_message">
+		[FIRST] [LAST] 下線了。
+	</string>
+	<string
+		 name="invite_message">
+		點擊 [BUTTON NAME] 按鈕來接受/連接到該語音聊天。
+	</string>
+	<string
+		 name="muted_message">
+		您已經消音了該位居民。發送消息的話將會自動解除消音。
+	</string>
+ 
+	<string
+		 name="generic_request_error">
+		發出請求時發生錯誤，請等會兒再試。
+	</string>
+	<string
+		 name="insufficient_perms_error">
+		您的許可權不足。
+	</string>
+	<string
+		 name="session_does_not_exist_error">
+		該會話已不存在
+	</string>
+	<string
+		 name="no_ability_error">
+		您沒有那種能力。
+	</string>
+	<string
+		 name="not_a_mod_error">
+		您不是會話管理員。
+	</string>
+	<string
+		 name="muted_error">
+		一位元會話管理員消音了您的文字聊天。
+	</string>
+	<!-- *所有* 事件字串都應該有 [RECIPIENT] 在其中 -->
+	<string
+		 name="add_session_event">
+		無法向與 [RECIPIENT] 的聊天會話中加入用戶。
+	</string>
+	<string
+		 name="message_session_event">
+		無法將您的消息送達到與 [RECIPIENT] 的聊天會話中。
+	</string>
+	<string
+		 name="removed_from_group">
+		您已被從社群中去除。
+	</string>
+	<string
+		 name="close_on_no_ability">
+		您不再有在聊天會話中的能力。
+	</string>
+</multi_floater>
+

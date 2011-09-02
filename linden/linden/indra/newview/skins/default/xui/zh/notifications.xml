@@ -1,0 +1,3238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<notifications>
+
+  <!-- I think "Second Life" should not be localized, actually. -Jacek -->
+  <!--
+  <global name="SECOND_LIFE">
+    二人生
+  </global>
+  -->
+
+	<global name="skipnexttime">
+		下次不要再讓我看這個了
+	</global>
+	<global name="alwayschoose">
+		永遠選擇此選項
+	</global>
+  <template name="okbutton">
+    <form>
+      <button
+       name="OK"
+       text="$yestext"/>
+    </form>
+  </template>
+
+  <template name="okignore">
+    <form>
+      <button
+       name="OK"
+       text="$yestext"/>
+      <ignore text="$ignoretext"/>
+    </form>
+  </template>
+
+  <template name="okcancelbuttons">
+    <form>
+      <button
+       name="OK"
+       text="$yestext"/>
+      <button
+       name="Cancel"
+       text="$notext"/>
+    </form>
+  </template>
+
+  <template name="okcancelignore">
+    <form>
+      <button
+       name="OK"
+       text="$yestext"/>
+      <button
+       
+       name="Cancel"
+       text="$notext"/>
+      <ignore text="$ignoretext"/>
+    </form>
+  </template>
+
+  <template name="okhelpbuttons">
+    <form>
+      <button
+       name="OK"
+       text="$yestext"/>
+      <button
+       name="Help"
+       text="$helptext"/>
+    </form>
+  </template>
+
+  <template name="yesnocancelbuttons">
+    <form>
+      <button
+       name="Yes"
+       text="$yestext"/>
+      <button
+       name="No"
+       text="$notext"/>
+      <button
+       name="Cancel"
+       text="$canceltext"/>
+    </form>
+  </template>
+	<notification functor="GenericAcknowledge" label="未知警報" name="MissingAlert">
+		您的第[VIEWER_NAME]版本無法顯示所接收到的訊息。
+
+錯誤詳情：無法在notifications.xml中找到'[_NAME]'。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="FloaterNotFound">
+		浮動框錯誤： 無法找到以下控制項：
+
+[CONTROLS]
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="TutorialNotFound">
+		現在還沒有可用的教程。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="GenericAlert">
+		[MESSAGE]
+	</notification>
+	<notification name="GenericAlertYesCancel">
+		[MESSAGE]
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="是"/>
+	</notification>
+	<notification name="BadInstallation">
+		第[VIEWER_NAME]升級錯誤。請從[VIEWER_SITE]重新下載安裝最新版本。
+    <usetemplate
+     name="okbutton"
+     yestext="確定"/>
+	</notification>
+	<notification name="LoginFailedNoNetwork">
+		網路錯誤：無法建立連接。
+'[DIAGNOSTIC]'
+請檢查你的網路連接情況。
+	<usetemplate
+     name="okbutton"
+     yestext="確定"/>
+	</notification>
+	<notification name="MessageTemplateNotFound">
+		找不到訊息範本[PATH]。
+	<usetemplate
+     name="okbutton"
+     yestext="確定"/>
+	</notification>
+	<notification name="WearableSave">
+		保存對當前衣物/身體部位的更改？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="不保存" yestext="保存"/>
+	</notification>
+	<notification name="CompileQueueSaveText">
+		上傳腳本內容時出錯，出於以下原因： [REASON]。請稍候再試。
+	</notification>
+	<notification name="CompileQueueSaveBytecode">
+		上傳已編譯腳本代碼時出錯，出於以下原因： [REASON]。請稍候再試。
+	</notification>
+	<notification name="WriteAnimationFail">
+		無法寫入動畫資料。請稍候再試。
+	</notification>
+	<notification name="UploadAuctionSnapshotFail">
+		上傳拍賣快照時出錯，出於以下原因： [REASON]。
+	</notification>
+	<notification name="UnableToViewContentsMoreThanOne">
+		一次不能流覽一個以上物品的內容。
+請只選擇一個物件後重試。
+	</notification>
+	<notification name="SaveClothingBodyChanges">
+		保存所有對衣物/身體部位的更改？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="不保存" yestext="全部保存"/>
+	</notification>
+	<notification name="GrantModifyRights">
+		授予另外一名居民修改的權利，意味著允許他們修改、刪除或拿走
+任何你在世界裡可能擁有的物品。請在執行這項許可的時候格外小心。
+你真的希望授予[FIRST_NAME] [LAST_NAME]修改權利嗎？
+		<usetemplate name="okcancelbuttons" notext="不，我想再考慮一下" yestext="是的，我願意"/>
+	</notification>
+	<notification name="GrantModifyRightsMultiple">
+		授予另外一名居民修改的權利，意味著允許他們修改、刪除或拿走
+任何你在世界裡可能擁有的物品。請在執行這項許可的時候格外小心。
+你真的希望授予所選擇的居民修改權利嗎？
+		<usetemplate name="okcancelbuttons" notext="不，我想再考慮一下" yestext="是的，我願意"/>
+	</notification>
+	<notification name="RevokeModifyRights">
+		你真的希望撤回[FIRST_NAME] [LAST_NAME]的修改權利嗎？
+		<usetemplate name="okcancelbuttons" notext="不，我想再考慮一下" yestext="是的，我願意"/>
+	</notification>
+	<notification name="RevokeModifyRightsMultiple">
+		你真的希望撤回所選居民的修改權利嗎？
+		<usetemplate name="okcancelbuttons" notext="不，我想再考慮一下" yestext="是的，我願意"/>
+	</notification>
+	<notification name="UnableToCreateGroup">
+		無法創建社群。
+[MESSAGE]
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="PanelGroupApply">
+		[NEEDS_APPLY_MESSAGE]
+[WANT_APPLY_MESSAGE]
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="忽略更改" yestext="應用更改"/>
+	</notification>
+	<notification name="MustSpecifyGroupNoticeSubject">
+		你必須為發送給社群的通知擬定一個主題。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="AddGroupOwnerWarning">
+		你將添加社群會員至角色 [ROLE_NAME] 中。
+會員不能從該角色中被移除。
+會員必須自己從角色中辭職。
+你真的願意繼續嗎？
+		<usetemplate ignoretext="當添加社群會員到團長角色時" name="okcancelignore" notext="否" yestext="是"/>
+	</notification>
+	<notification name="AssignDangerousActionWarning">
+		你將為角色 '[ROLE_NAME]' 添加 '[ACTION_NAME]' 的能力。
+
+ *警告*
+任何具有該角色的會員擁有這項能力後，都可以給他們自己——以及
+任何其他的會員各種角色——分配權利比他們目前所擁有的權利大得多
+的角色，並可能提拔他們自己到相近於團長權利的位置上。
+請在分配這項能力之前確定自己這麼做將帶來的後果。
+
+你是否願意添加這個能力至 '[ROLE_NAME]'？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="AssignDangerousAbilityWarning">
+		你將添加能力'[ACTION_NAME]'至角色 '[ROLE_NAME]'中。
+
+ *警告*
+任何具有該角色的會員擁有這項能力後，都可以給他們自己——或者其他會員——分配所有的能力，甚至可以提拔他們自己到相近於團長權利	的位置上。
+
+你是否願意添加這項能力至 '[ROLE_NAME]'？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ClickPublishHelpLand">
+		選擇 '在搜索中發佈'
+這個選項將會：
+- 在搜索結果中顯示該地塊
+- 顯示該地塊的公開物件
+- 在網頁搜索中顯示這個地塊
+	</notification>
+	<notification name="ClickSoundHelpLand">
+		媒體和音樂只能在地塊內體驗。語音和聲效選項可以被設置為只能被地塊內的居民聽到或只可以被那些滿足限制級條件的地塊外居民聽到。去知識庫瞭解關於此設置的詳情？
+		<url name="url">
+			https://support.secondlife.com/ics/support/default.asp?deptID=4417&amp;task=knowledge&amp;questionID=5046
+		</url>
+    <usetemplate
+     name="okcancelbuttons"
+     yestext="去知識庫"
+	 notext="關閉" />
+	</notification>
+	<notification name="ClickSearchHelpAll">
+		搜索結果是根據您所在的標籤頁，您的限制級，所選類別，以及其他一些因素組織的。請去知識庫瞭解詳情。
+		<url name="url">
+			https://support.secondlife.com/ics/support/default.asp?deptID=4417&amp;task=knowledge&amp;questionID=4722
+		</url>
+    <usetemplate
+     name="okcancelbuttons"
+     yestext="去知識庫"
+	 notext="關閉" />
+	</notification>
+	<notification name="ClickPublishHelpLandDisabled">
+		你不能讓這個地塊顯示在搜索中，因為它所在的地區禁止這樣做。
+	</notification>
+	<notification name="ClickPublishHelpAvatar">
+		選擇 '在搜索中顯示' 將會：
+			- 在搜索結果中顯示我的檔案
+			- 在公開社群的頁面中顯示到我的檔案的連結
+	</notification>
+	<notification name="ClickPartnerHelpAvatar">
+		你可以通過[SECOND_LIFE] 網站邀請另一位居民成為你的搭檔，或者解除現存的關係。
+
+到[SECOND_LIFE]網站查詢關於搭檔的資訊嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="打開網頁"/>
+	</notification>
+	<notification name="ClickUploadHelpPermissions">
+		您的默認許可權可能無法在較早版本的地區中起作用。
+	</notification>
+	<notification name="ClickWebProfileHelpAvatar">
+		如果該居民設置了網路檔案URL的話你可以：
+ * 選擇"載入"來用內部流覽器打開這個檔案頁面。
+ * 選擇 載入 &gt; "在外部流覽器中打開" 來在外部流覽。
+ * 如果您流覽到了其他的地方，點擊載入 &gt; "返回原來頁面" 來回到居民的 Web 檔案。
+
+在你的檔案中你可以輸入任何URL作為你的網路檔案然後按確認來設置。
+其他居民在觀看你的檔案的時候可以訪問你所指定的URL。
+	</notification>
+	<notification name="JoinGroupCanAfford">
+		加入該社群需花費F$[COST]。
+你願意繼續嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="加入"/>
+	</notification>
+	<notification name="JoinGroupCannotAfford">
+		加入該社群需花費 F$[COST]。
+您擁有的 F$ 不夠。
+	</notification>
+	<notification name="LandBuyPass">
+		花費 F$[COST] 你就可以進入這塊土地('[PARCEL_NAME]')
+[TIME]小時。是否購買通行證？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="購買"/>
+	</notification>
+	<notification name="SalePriceRestriction">
+		如果出售給任何人，出售價格必須 &gt; F$0。
+如果售價為F$0，請選定一個用戶來售出。
+	</notification>
+	<notification name="ConfirmLandSaleChange">
+		所選的 [LAND_SIZE]平方米土地正被設置為代售。
+你的售價將是為 F$[SALE_PRICE]並將被授權售給[NAME]。
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="ConfirmLandSaleToAnyoneChange">
+		請注意： 點擊 '售出給任何人' 將使你的土地對整個第[GRID_NAME]社區開放，包括當前不在這個地區中的人。
+
+所選的 [LAND_SIZE]平方米土地正被設置為代售。
+你的售價將是為 F$[SALE_PRICE]並將被授權售給[NAME]。
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="ReturnObjectsDeededToGroup">
+		你是否確定返還在這塊土地上由社群 '[NAME]'
+分享的物件至它們原先主人的百寶箱？
+
+*警告* 這項操作將刪除該社群所分享的不可轉讓的物件！
+
+物件： [N]個
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="ReturnObjectsOwnedByUser">
+		你是否確定返還居民 '[NAME]'
+在這地塊上擁有的所有物件到他的百寶箱？
+
+物件： [N]個
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="ReturnObjectsOwnedBySelf">
+		你是否確定願意返還你在這塊土地上
+擁有的所有物件至你的百寶箱？
+
+物件： [N]個
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="ReturnObjectsNotOwnedBySelf">
+		你是否確定返還在這塊土地上所有不屬於你自己的物件至
+它們主人的百寶箱？已經轉讓給別的社群的，可轉讓的物件將
+被歸還至它們原先的主人處。
+
+*警告* 這項操作將刪除該社群所分享的不可轉讓的物件！
+
+物件： [N]個
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="ReturnObjectsNotOwnedByUser">
+		你是否確定返還在這塊土地上所有*不*屬於居民 [NAME]  的物件至
+它們主人的百寶箱？ 已經轉讓給別的社群的，可轉讓的物件將
+被歸還至它們原先的主人處。
+
+*警告* 這項操作將刪除該社群所分享的不可轉讓的物件！
+
+
+物件： [N]個
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="ReturnAllTopObjects">
+		你確定要返還所有該區域中的物件至他們原先主人的百寶箱中嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="DisableAllTopObjects">
+		你確定要禁止該區域中的所有物件嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="禁止"/>
+	</notification>
+	<notification name="ReturnObjectsNotOwnedByGroup">
+		是否歸還這塊土地上不由
+社群 [NAME] 分享的物件
+至它們的主人處？
+
+物件： [N]個
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="UnableToDisableOutsideScripts">
+		無法禁用外部腳本。
+整塊區域都是已啟用傷害(不安全)。
+腳本必須被允許運行，才能使用武器。
+	</notification>
+	<notification name="MustBeInParcel">
+		你必須站在土地的範圍內才可以
+設置著陸點。
+	</notification>
+	<notification name="PromptRecipientEmail">
+		請輸入有效的收件人Email位址。
+	</notification>
+	<notification name="PromptSelfEmail">
+		請鍵入你的電子郵寄地址。
+	</notification>
+	<notification name="PromptMissingSubjMsg">
+		以預設標題或內容用電子郵件發送快照嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="ErrorProcessingSnapshot">
+		處理快照資料錯誤
+	</notification>
+	<notification name="ErrorEncodingSnapshot">
+		編碼快照時發生錯誤
+	</notification>
+	<notification name="ErrorUploadingPostcard">
+		發送快照時出現問題，出於以下原因： [REASON]。
+	</notification>
+	<notification name="ErrorUploadingReportScreenshot">
+		上傳報告的螢幕截圖時出錯，出於以下原因： [REASON]。
+	</notification>
+	<notification name="MustAgreeToLogIn">
+		你必須同意服務協定才能繼續登陸至 [GRID_NAME]。
+	</notification>
+	<notification name="CouldNotPutOnOutfit">
+		無法裝載服飾。
+服飾資料夾中沒有衣物、身體部位、或附件。
+	</notification>
+	<notification name="CannotWearTrash">
+		無法使用垃圾箱內的衣物或身體部位。
+	</notification>
+	<notification name="CannotWearInfoNotComplete">
+		無法穿上該物品，因為它還沒有載入完。請稍候再試。
+	</notification>
+	<notification name="MustHaveAccountToLogIn">
+		哎呀！有什麼地方沒填上。
+您必須輸入您的化身的名和姓。
+
+您需要一個帳戶才能進入[GRID_NAME]。您希望現在創建一個嗎？
+		<usetemplate name="okcancelbuttons" notext="再試一次吧…" yestext="創建新帳戶"/>
+	</notification>
+	<notification name="AddClassified">
+		分類廣告會在查找名錄的 '分類廣告' 欄目裡保留一周時間。
+
+
+填寫你的廣告，然後點擊 '發佈...'，即會添加廣告至廣告名錄中。
+當點擊發佈時，你將被要求支付發佈廣告費用。 大額支付意味著你的廣告會在名單較前的地方出現，並且當用關鍵字查找時，你的廣告也出現在查詢結果較高的位置上。
+		<usetemplate ignoretext="添加新分類廣告時" name="okcancelignore" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="DeleteClassified">
+		刪除分類廣告 '[NAME]'？
+將不會退還已付的費用。
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="刪除"/>
+	</notification>
+	<notification name="ClassifiedSave">
+		保存對分類廣告 [NAME] 的修改？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="不要保存" yestext="保存"/>
+	</notification>
+	<notification name="DeleteAvatarPick">
+		刪除收藏 [PICK]？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="刪除"/>
+	</notification>
+	<notification name="PromptGoToEventsPage">
+		是否轉到 [SECOND_LIFE] 事件網頁？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="打開網頁"/>
+	</notification>
+	<notification name="SelectProposalToView">
+		請選擇需要查看的提案。
+	</notification>
+	<notification name="SelectHistoryItemToView">
+		請選擇一個歷史項目來查看。
+	</notification>
+	<notification name="ResetShowNextTimeDialogs">
+		您希望重新啟用這些之前希望 '不再顯示' 的對話方塊嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="SkipShowNextTimeDialogs">
+		您希望禁用所有可以被略過的對話方塊嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="CacheWillClear">
+		緩存將在重新啟動 [VIEWER_NAME] 後清除。
+	</notification>
+	<notification name="CacheWillBeMoved">
+		緩存將在重新啟動 [VIEWER_NAME] 後移動。
+注意： 這樣將會清除緩存。
+	</notification>
+	<notification name="ChangeConnectionPort">
+		埠設定將在重新啟動 [VIEWER_NAME] 後生效。
+	</notification>
+	<notification name="ChangeSkin">
+		新皮膚將在 [VIEWER_NAME] 重新啟動後應用。
+	</notification>
+	<notification name="GoToAuctionPage">
+		是否跳至[SECOND_LIFE]網頁查看拍賣資訊
+或者參與投標？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="打開網頁"/>
+	</notification>
+	<notification name="SaveChanges">
+		保存更改？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="不要保存" yestext="保存"/>
+	</notification>
+	<notification name="GestureSaveFailedTooManySteps">
+		動作保存失敗。
+此動作包含太多步驟。
+嘗試刪除一些步驟，再保存一次。
+	</notification>
+	<notification name="GestureSaveFailedTryAgain">
+		動作保存失敗。請稍候再試。
+	</notification>
+	<notification name="GestureSaveFailedObjectNotFound">
+		無法保存動作，因為找不到物件或相關物件的內容。
+物件可能在範圍之外或已被刪除。
+	</notification>
+	<notification name="GestureSaveFailedReason">
+		保存動作時出錯，出於以下原因： [REASON]。請稍候嘗試重新保存動作。
+	</notification>
+	<notification name="SaveNotecardFailObjectNotFound">
+		無法保存記事卡，因為找不到物件或相關物件的內容。
+物件可能在範圍之外或已被刪除。
+	</notification>
+	<notification name="SaveNotecardFailReason">
+		保存記事卡時出錯，出於以下原因： [REASON]。請稍候嘗試重新保存記事卡。
+	</notification>
+	<notification name="ScriptCannotUndo">
+		無法撤銷對你的腳本版本的所有更改。
+你是否願意載入伺服器上次保存的版本？
+(***警告***： 此次操作無法撤銷。)
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="SaveScriptFailReason">
+		保存腳本時出錯，出於以下原因： [REASON]。請稍候嘗試重新保存腳本。
+	</notification>
+	<notification name="SaveScriptFailObjectNotFound">
+		無法保存腳本，因為找不到其所在的物件。
+該物件可能在範圍之外或已被刪除。
+	</notification>
+	<notification name="SaveBytecodeFailReason">
+		保存彙編腳本時出錯，出於以下原因： [REASON]。請稍候嘗試重新保存腳本。
+	</notification>
+	<notification name="CouldNotStartStopScript">
+		無法開始或停止腳本，因為找不到其所在的物件。
+該物件可能在範圍之外或已被刪除。
+	</notification>
+	<notification name="CannotDownloadFile">
+		無法下載檔案
+	</notification>
+	<notification name="CannotWriteFile">
+		無法寫入文件 [[FILE]]
+	</notification>
+	<notification name="UnsupportedHardware">
+		警告： 您的系統沒有滿足第[VIEWER_NAME]的最低系統需求。如果您繼續使用第[VIEWER_NAME]，您可能會得到糟糕的性能體驗。不幸的是，我們無法為不支援的系統配備提供技術支援。
+
+MINSPECS
+您希望訪問 [_URL] 得到更多資訊嗎？
+		<url name="url" option="0">
+			http://www.secondlife.com/corporate/sysreqs.php
+		</url>
+		<usetemplate ignoretext="檢測到不支援的硬體時" name="okcancelignore" notext="否" yestext="是"/>
+	</notification>
+	<notification name="UnknownGPU">
+		您的系統中安裝了一個我們所不知道的顯卡。
+這經常發生於我們還沒有來得及測試的新硬體上。
+第[VIEWER_NAME]將很可能正常運行，但您也許要
+調節您的圖形設定到更合適的水準上。
+(編輯 &gt; 首選項 &gt; 圖像)。
+		<form name="form">
+			<ignore name="ignore" text="檢測到未知的顯示卡時"/>
+		</form>
+	</notification>
+	<notification name="DisplaySettingsNoShaders">
+		[VIEWER_NAME] 在初始化圖形驅動程式時崩潰了。
+圖形品質將被設為"低"以避免常見的驅動程式錯誤。
+這將禁用某些圖形特性。
+我們建議更新您的顯示卡驅動程式。
+圖形品質可以在首選項 → 圖像中提高。
+	</notification>
+	<notification name="RegionNoTerraforming">
+		[REGION] 地區不允許改變地形。
+	</notification>
+	<notification name="CannotCopyWarning">
+		你沒有複製此項物品的許可。
+如果送出它，你將徹底失去
+此項物品。你是否真的要
+提供這項物品？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="CannotGiveItem">
+		無法給與百寶箱物品。
+	</notification>
+	<notification name="TransactionCancelled">
+		處理被取消。
+	</notification>
+	<notification name="TooManyItems">
+		一次百寶箱轉移中不能給與多於 42 件物品。
+	</notification>
+	<notification name="NoItems">
+		你沒有權利傳送所選的物品。
+	</notification>
+	<notification name="CannotCopyCountItems">
+		你沒有複製所選物品中的 [COUNT]件的許可。
+這些條目將從你的百寶箱中被除去。
+
+你真的要給出這些物品嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="CannotGiveCategory">
+		你沒有權利傳送所選的資料夾。
+	</notification>
+	<notification name="FreezeAvatar">
+		凍結此化身？
+他或她將暫時無法移動、交談
+或與世界互動。
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="解鎖" yestext="鎖定"/>
+	</notification>
+	<notification name="FreezeAvatarFullname">
+		凍結 [AVATAR_NAME]？
+他或她將暫時無法移動、交談
+或與世界互動。
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="解鎖" yestext="鎖定"/>
+	</notification>
+	<notification name="EjectAvatarFullname">
+		將 [AVATAR_NAME] 逐出你的土地？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="驅除並封禁" yestext="驅除"/>
+	</notification>
+	<notification name="EjectAvatarNoBan">
+		從您的土地逐出該成員？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="逐出"/>
+	</notification>
+	<notification name="EjectAvatarFullnameNoBan">
+		將 [AVATAR_NAME] 逐出您的領土？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="逐出"/>
+	</notification>
+	<notification name="AcquireErrorTooManyObjects">
+		獲取錯誤： 選擇的物件太多。
+	</notification>
+	<notification name="AcquireErrorObjectSpan">
+		獲取錯誤： 物件處在不只一個區域內。
+請將所有待獲得物件移至
+同一區域。
+	</notification>
+	<notification name="PromptGoToCurrencyPage">
+		[EXTRA]
+
+登陸 [URL] 查詢購買貨幣的資料？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="打開網頁"/>
+	</notification>
+	<notification name="UnableToLinkObjects">
+		無法連結 [COUNT] 個物件。
+您最多可以連結 [MAX]個物件。
+	</notification>
+	<notification name="CannotLinkIncompleteSet">
+		你只能對完整的物件進行連結，
+並且一次必須選定多個物件。
+	</notification>
+	<notification name="CannotLinkModify">
+		無法進行連結，因為你並不在全部所選物件上
+都有更改權利。
+
+請確定沒有物件被鎖定，並且所有物件都歸你所有。
+	</notification>
+	<notification name="CannotLinkDifferentOwners">
+		無法進行連結，因為並不是所有物件都屬於同一個人。
+請確定所有物件都歸你所有。
+	</notification>
+	<notification name="NoFileExtension">
+		此檔沒有檔拓展名： '[FILE]'
+
+請確保檔有其正確的拓展名。
+	</notification>
+	<notification name="InvalidFileExtension">
+		無效的檔拓展名 [EXTENSION]
+期待的 [VALIDS]
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="CannotUploadSoundFile">
+		不能打開上傳的音效檔：
+[FILE]
+	</notification>
+	<notification name="SoundFileNotRIFF">
+		檔不像是 RIFF WAVE 格式：
+[FILE]
+	</notification>
+	<notification name="SoundFileNotPCM">
+		檔不像是 PCM WAVE 格式：
+[FILE]
+	</notification>
+	<notification name="SoundFileInvalidChannelCount">
+		檔含無效通道數 (應該為單音道或身歷聲)：
+[FILE]
+	</notification>
+	<notification name="SoundFileInvalidSampleRate">
+		檔的頻率不是支援採樣頻率 (必須為 44.1k)：
+[FILE]
+	</notification>
+	<notification name="SoundFileInvalidWordSize">
+		檔不像是支持的字長 (應該為 8 或 16 位)：
+[FILE]
+	</notification>
+	<notification name="SoundFileInvalidHeader">
+		在 WAV 文件頭中無法找到 'data' 模組：
+[FILE]
+	</notification>
+	<notification name="SoundFileInvalidTooLong">
+		音效檔過長 (最長 10 秒)：
+[FILE]
+	</notification>
+	<notification name="ProblemWithFile">
+		文件 [FILE] 有問題：
+
+[ERROR]
+	</notification>
+	<notification name="CannotOpenTemporarySoundFile">
+		無法寫入壓縮的聲音暫存檔案：
+[FILE]
+	</notification>
+	<notification name="UnknownVorbisEncodeFailure">
+		對檔進行 Vorbis 編碼時發生錯誤： [FILE]
+	</notification>
+	<notification name="CannotEncodeFile">
+		無法編碼檔[FILE]
+	</notification>
+	<notification name="CorruptResourceFile">
+		崩壞的的資源檔： [FILE]
+	</notification>
+	<notification name="UnknownResourceFileVersion">
+		未知的林登資源檔版本發現於檔： [FILE]
+	</notification>
+	<notification name="UnableToCreateOutputFile">
+		無法創建輸出檔： [FILE]
+	</notification>
+	<notification name="DoNotSupportBulkAnimationUpload">
+		我們現在不支持大宗上傳動畫檔。
+	</notification>
+	<notification name="CannotUploadReason">
+		無法上傳檔[FILE]，原因為： [REASON]
+請隨後重試。
+	</notification>
+	<notification name="CannotCreateLandmarkNotOwner">
+		你不能在此設定地標，因為
+土地所有人不允許這樣做。
+	</notification>
+	<notification name="CannotRecompileSelectObjectsNoScripts">
+		無法重新編譯。
+
+請選擇有腳本的物件。
+	</notification>
+	<notification name="CannotRecompileSelectObjectsNoPermission">
+		無法重新編譯。
+
+請選擇你能夠修改的有腳本的物件。
+	</notification>
+	<notification name="CannotResetSelectObjectsNoScripts">
+		無法重置腳本。
+
+請選擇有腳本的物件。
+	</notification>
+	<notification name="CannotResetSelectObjectsNoPermission">
+		無法重置腳本。
+
+請選擇你能夠修改的有腳本的物件。
+	</notification>
+	<notification name="CannotSetRunningSelectObjectsNoScripts">
+		無法設置任何腳本為運行。
+
+請選擇有腳本的物件。
+	</notification>
+	<notification name="CannotSetRunningNotSelectObjectsNoScripts">
+		無法設置任何腳本為不運行。
+
+請選擇有腳本的物件。
+	</notification>
+	<notification name="NoFrontmostFloater">
+		沒有可保存的前置浮動框
+	</notification>
+	<notification name="SeachFilteredOnShortWords">
+		您的查詢已被更改，其中過短的詞被去除。
+
+最後搜索了： [FINALQUERY]
+	</notification>
+	<notification name="SeachFilteredOnShortWordsEmpty">
+		您的搜索用字太短
+所以最後並沒有執行查找。
+	</notification>
+	<notification name="CouldNotTeleportReason">
+		沒能瞬間移動。
+[REASON]
+	</notification>
+
+  <notification name="invalid_tport">
+處理您的瞬間移動請求時發生錯誤。您可能需要重新登入以後才能瞬間移動。
+如果您仍繼續遇到這條消息，請到以下位址參考技術支持常見問題:
+www.secondlife.com/support
+  </notification>
+  <notification name="invalid_region_handoff">
+處理您的區域變換時發生錯誤。您可能需要重新登入以後才能瞬間移動。
+如果您仍繼續遇到這條消息，請到以下位址參考技術支持常見問題:
+www.secondlife.com/support
+  </notification>
+  <notification name="blocked_tport">
+抱歉，當前不允許瞬間移動。請稍候再試。
+如果您仍然不能瞬間移動，請登出後重新登錄解決問題。
+  </notification>
+  <notification name="nolandmark_tport">
+抱歉，系統無法找到地標目的地。
+  </notification>
+  <notification name="timeout_tport">
+抱歉，系統無法完成瞬間移動連接。
+請稍候再試。
+  </notification>
+  <notification name="noaccess_tport">
+抱歉，您不能訪問瞬間移動目標。
+  </notification>
+  <notification name="missing_attach_tport">
+您的裝備還沒有到齊。請再等幾秒鐘，或者登出後重新登錄以後再試著瞬間移動。
+  </notification>
+  <notification name="too_many_uploads_tport">
+該區域內的資產佇列當前堵塞，所以您的瞬間移動請求將不能按時完成。
+請稍候再試，或前往較空閒的區域再試。
+  </notification>
+  <notification name="expired_tport">
+抱歉，系統無法按時地完成您的瞬間移動請求。請稍候再試。
+  </notification>
+  <notification name="expired_region_handoff">
+抱歉，系統無法按時地完成您的區域變換請求。請稍候再試。
+  </notification>
+  <notification name="no_host">
+無法找到瞬間移動目標。目標可能暫時不可用，或者已不存在。請稍後再試。
+  </notification>
+  <notification name="no_inventory_host">
+百寶箱系統當前不可用。
+  </notification>
+
+	<notification name="CannotSetLandOwnerNothingSelected">
+		無法設定土地擁有者：
+未選擇任何地塊。
+	</notification>
+	<notification name="CannotSetLandOwnerMultipleRegions">
+		無法強制土地所有權，因為選項跨越數個
+區域。請選擇較小的區域並重試。
+	</notification>
+	<notification name="ForceOwnerAuctionWarning">
+		這塊單位土地正在拍賣。如果投標已經開始，
+強制所有權將會使拍賣流標，並且很有可能
+使其他居民不快。是否強制所有權？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="強制"/>
+	</notification>
+	<notification name="CannotContentifyNothingSelected">
+		不能滿足：
+未選中任何物件。
+	</notification>
+	<notification name="CannotContentifyNoRegion">
+		不能滿足：
+沒有區域。
+	</notification>
+	<notification name="CannotReleaseLandNothingSelected">
+		無法放棄土地：
+未選中任何物件。
+	</notification>
+	<notification name="CannotReleaseLandNoRegion">
+		無法放棄土地：
+找不到該區域。
+	</notification>
+	<notification name="CannotBuyLandNothingSelected">
+		無法購買土地：
+未選中任何內容。
+	</notification>
+	<notification name="CannotBuyLandNoRegion">
+		無法購買土地：
+無法找到該土地所在區域。
+	</notification>
+	<notification name="CannotCloseFloaterBuyLand">
+		在第[GRID_NAME]完成對這次交易的估價前，
+你不能關閉"購買土地"視窗。
+	</notification>
+	<notification name="CannotDeedLandNothingSelected">
+		無法轉讓土地：
+沒有選擇地塊。
+	</notification>
+	<notification name="CannotDeedLandNoGroup">
+		無法轉讓土地：
+沒有選擇社群。
+	</notification>
+	<notification name="CannotDeedLandNoRegion">
+		無法轉讓土地：
+無法找到此土地所屬的區域。
+請使用幫助 &gt; 報告漏洞來報告此項錯誤。
+	</notification>
+	<notification name="CannotDeedLandMultipleSelected">
+		無法轉讓土地：
+選擇了多塊土地。
+
+請選擇單塊土地。
+	</notification>
+	<notification name="ParcelCanPlayMedia">
+		這個地方可以播放流媒體。
+流媒體需要較快的網路連接。
+
+如果網路可用，是否播放流媒體？
+(你可以稍後在 首選項 &gt; 音訊和視頻 中
+更改這個選項。)
+		<usetemplate name="okcancelbuttons" notext="禁止" yestext="播放媒體"/>
+	</notification>
+	<notification name="CannotDeedLandWaitingForServer">
+		無法轉讓土地：
+請等待伺服器報告土地歸屬。
+請稍候再試。
+	</notification>
+	<notification name="CannotDeedLandNoTransfer">
+		無法轉讓土地：
+區域 [REGION] 不允許轉移土地。
+	</notification>
+	<notification name="CannotReleaseLandWatingForServer">
+		無法放棄土地：
+正等待伺服器更新地塊資訊。
+
+幾秒鐘後請再嘗試一次。
+	</notification>
+	<notification name="CannotReleaseLandSelected">
+		無法放棄土地：
+你並不擁有所有選中的地塊。
+
+請選擇單個地塊。
+	</notification>
+	<notification name="CannotReleaseLandDontOwn">
+		無法放棄土地：
+你沒有讓出這塊土地的許可。
+你擁有的土地在世界中是綠色。
+	</notification>
+	<notification name="CannotReleaseLandRegionNotFound">
+		無法放棄土地：
+無法找到此土地所屬的區域。
+
+請使用幫助 &gt; 報告漏洞來報告這個錯誤。
+	</notification>
+	<notification name="CannotReleaseLandNoTransfer">
+		無法放棄土地：
+區域 [REGION] 內不允許轉移土地。
+	</notification>
+	<notification name="CannotReleaseLandPartialSelection">
+		無法放棄土地：
+你必須選中整個地塊才能使用此功能。
+嘗試按兩下來選中全部地塊,或者
+先分割你的地塊。
+	</notification>
+	<notification name="ReleaseLandWarning">
+		你將放棄面積為 [AREA] 平方米的土地。
+放棄該土地會將他從你擁有的土地中
+移走, 不會兌換成任何 F$。
+
+是否放棄土地？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="CannotDivideLandNothingSelected">
+		無法劃分土地：
+未選中任何物件。
+	</notification>
+	<notification name="CannotDivideLandPartialSelection">
+		無法劃分土地：
+
+你選擇了整塊地塊。
+請選擇該地塊的一部分。
+	</notification>
+	<notification name="LandDivideWarning">
+		分割此土地會將地塊一分為二，
+且每塊地塊會保留原配置。操作成功後，
+一些設置會被重置為預設值。
+
+是否分割土地？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="劃分"/>
+	</notification>
+	<notification name="CannotDivideLandNoRegion">
+		無法劃分土地：
+ 無法找到土地所屬區域。
+請使用幫助 &gt; 報告漏洞來報告此項錯誤。
+	</notification>
+	<notification name="CannotJoinLandNoRegion">
+		無法連接土地：
+無法找到該土地所屬的區域。
+請使用幫助 &gt; 報告程式漏洞，讓我們知道問題所在。
+	</notification>
+	<notification name="CannotJoinLandNothingSelected">
+		無法合併土地：
+未選中任何選項。
+	</notification>
+	<notification name="CannotJoinLandEntireParcelSelected">
+		無法合併土地：
+您只選擇了單個地塊。
+
+請選擇跨兩個地塊的區域。
+	</notification>
+	<notification name="CannotJoinLandSelection">
+		無法合併土地：
+您必須選擇一個以上的地塊。
+
+請選擇跨兩個地塊的區域。
+	</notification>
+	<notification name="JoinLandWarning">
+		合併土地將從與所選矩形相交的所有
+地塊創建新的地塊。
+
+你必須重置這一新地塊的名稱和選項。
+
+是否合併土地？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="合併"/>
+	</notification>
+	<notification name="ShowOwnersHelp">
+		顯示擁有者：
+以顏色區分擁有者的類型。
+
+綠色 = 您的土地
+淺綠 = 您社群的土地
+紅色 = 其他人的土地
+黃色 = 售賣中的土地
+紫色 = 拍賣中的土地
+灰色 = 公共土地
+	</notification>
+	<notification name="ConfirmNotecardSave">
+		只有保存這張記事卡之後，此項物品才可以複製或查看。是否保存記事卡？
+		<usetemplate name="okcancelbuttons" notext="取消保存" yestext="是的，請保存"/>
+	</notification>
+	<notification name="ConfirmItemCopy">
+		複製此物品至你的百寶箱？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="複製"/>
+	</notification>
+	<notification name="ResolutionSwitchFail">
+		切換解析度到 [RESX] × [RESY] 失敗
+	</notification>
+	<notification name="ErrorUndefinedGrasses">
+		錯誤： 未定義草坪： [SPECIES]
+	</notification>
+	<notification name="ErrorUndefinedTrees">
+		錯誤： 未定義樹木： [SPECIES]
+	</notification>
+	<notification name="CannotSaveWearableOutOfSpace">
+		無法儲存 '[NAME]' 到服飾檔。你可能需要
+釋放部分電腦存儲空間後重新儲存。
+	</notification>
+	<notification name="CannotSaveToAssetStore">
+		無法儲存 [NAME] 至中央資料伺服器。
+這通常只是臨時的問題。請自訂後再次保存。
+
+如果問題依然存在，請點擊
+幫助/報告漏洞並提供
+您的網路設置的具體資訊。
+	</notification>
+	<notification name="YouHaveBeenLoggedOut">
+		你已經退出[GRID_NAME]：
+
+[MESSAGE]
+
+您仍可以查看歷史即時通記錄和聊天記錄。
+否則點擊退出將立即關閉 [VIEWER_NAME]。
+		<usetemplate name="okcancelbuttons" notext="退出" yestext="查看聊天記錄"/>
+	</notification>
+	<notification name="OnlyOfficerCanBuyLand">
+		無法為社群購買土地：
+你沒有為你的活動社群購買土地的許可。
+	</notification>
+	<notification label="添加朋友" name="AddFriend">
+		好友可以互相允許對方
+在地圖上找到自己，
+以及接受上線通知。
+
+是否提議 [NAME] 成為好友？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="提議"/>
+	</notification>
+	<notification label="添加好友" name="AddFriendWithMessage">
+		好友間可以相互授權查看各自在地圖上的位置和線上狀態。
+
+加 [NAME] 為好友嗎？
+		<form name="form">
+			<input name="message" type="text">
+				您想成為我的好友麼？
+			</input>
+			<button name="Offer" text="是"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="RemoveFromFriends">
+		你是否要將[FIRST_NAME] [LAST_NAME] 從好友列表中去除？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="移除"/>
+	</notification>
+	<notification name="RemoveMultipleFromFriends">
+		你希望從好友列表中移除若干好友嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="是的，移除"/>
+	</notification>
+	<notification name="GodDeleteAllScriptedPublicObjectsByUser">
+		你確定要刪除Sim上** [AVATAR_NAME] **所擁有的全部含代碼的物件麼？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="GodDeleteAllScriptedObjectsByUser">
+		你是否確定刪除用戶
+** [AVATAR_NAME] **
+在該模擬器中 &lt;所有土地&gt; 上帶有腳本的所有物件？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="全部刪掉!!"/>
+	</notification>
+	<notification name="GodDeleteAllObjectsByUser">
+		你是否確定刪除用戶
+** [AVATAR_NAME] **
+在該模擬器中 &lt;所有土地&gt; 上的所有物件
+(無論是否帶有腳本)？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="全部刪掉!!"/>
+	</notification>
+	<notification name="BlankClassifiedName">
+		你必須給分類廣告設定一個名字。
+	</notification>
+	<notification name="MinClassifiedPrice">
+		廣告刊登出價必須大於 F$[MIN_PRICE]。
+
+請輸入一個更高的價格。
+	</notification>
+	<notification name="ConfirmObjectDeleteLock">
+		您選擇的物品中至少有一件被鎖定。
+
+您確定要刪除這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteNoCopy">
+		您選擇的物品中至少有一件不可複製。
+
+您確定要刪除這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteNoOwn">
+		您選擇的物品中至少有一件不是你的。
+
+您確定要刪除這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteLockNoCopy">
+		您選擇的物品中至少有一件被鎖定，
+並且至少有一件不可複製。
+
+您確定要刪除這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteLockNoOwn">
+		您選擇的物品中至少有一件被鎖定，
+並且至少有一件不是你的。
+
+您確定要刪除這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteNoCopyNoOwn">
+		您選擇的物品中至少有一件不可複製，
+並且至少有一件不是你的。
+
+您確定要刪除這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectDeleteLockNoCopyNoOwn">
+		您選擇的物品中至少有一件被鎖定，
+			至少有一件不可複製，並且
+			至少有一件不是你的。
+
+您確定要刪除這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectTakeLock">
+		您選擇的物品中至少有一件被鎖定。
+
+您確定要拿走這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectTakeNoOwn">
+		您選擇的物品中至少有一件不是你的。
+如果有某件物件本不屬於你而你卻拿走了它,
+下個擁有者權利將對該物件適用並可能限制
+你複製或修改它的權利。
+
+您確定要拿走這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="ConfirmObjectTakeLockNoOwn">
+		您選擇的物品中至少有一件被鎖定，
+如果有某件物件本不屬於你而你卻拿走了它,
+下個擁有者權利將對該物件適用並可能限制
+你複製或修改它的權利。
+但是你仍舊可以拿走當前所選項。
+
+您確定要拿走這些物件嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="CantBuyLandAcrossMultipleRegions">
+		無法購買土地，因為選項跨越的區域太多。
+請選擇一個小一點的面積，並重試。
+	</notification>
+	<notification name="DeedLandToGroup">
+		轉讓這塊地塊後, 社群需要擁有並
+保留足夠的土地使用額度。
+
+土地的購買價格不會退還給所有人。
+若所轉讓的地塊被售出，售出價
+將被平均分給所有組員。
+
+轉讓這塊面積為 [AREA]平方米的土地至社群
+'[GROUP_NAME]'？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="轉讓"/>
+	</notification>
+	<notification name="DeedLandToGroupWithContribution">
+		轉讓這塊地塊後, 社群需要擁有並
+保留足夠的土地使用額度。
+
+轉讓將同時包括
+ '[FIRST_NAME] [LAST_NAME]' 對社群的土地貢獻。
+
+土地的購買價格不會退還給所有人。
+若所轉讓的地塊被售出，售出價
+將被平均分給所有組員。
+
+轉讓這塊面積為 [AREA]平方米的土地至社群
+'[GROUP_NAME]'？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="轉讓"/>
+	</notification>
+	<notification name="DisplaySetToSafe">
+		顯示設定已調整為安全水準，因為您指定了 -safe 選項。
+	</notification>
+	<notification name="DisplaySetToRecommended">
+		基於您電腦的系統組態，顯示設定已經被設置在推薦的水準上。
+	</notification>
+	<notification name="ErrorMessage">
+		[ERROR_MESSAGE]
+	</notification>
+	<notification name="AvatarMoved">
+		您 [TYPE] 位置當前不可用。
+[HELP]
+您已被移動至附近的區域。
+	</notification>
+	<notification name="ClothingLoading">
+		你的服飾仍在下載中。
+你現在可以按正常的使用這個世界，
+其他用戶也可以看見你。
+		<form name="form">
+			<ignore name="ignore" text="服飾下載時間太長"/>
+		</form>
+	</notification>
+	<notification name="FirstRun">
+		[VIEWER_NAME] 安裝已完成。
+
+如果這是你第一次使用[GRID_NAME], 登陸前你
+需要創建一個新帳戶。
+
+返回 [GRID_SITE] 創建帳戶？
+		<usetemplate name="okcancelbuttons" notext="繼續" yestext="新帳戶..."/>
+	</notification>
+	<notification name="LoginPacketNeverReceived">
+		我們遇到了一些連接上的麻煩。問題可能出在您的互聯網連接，也可能出在第[GRID_NAME]的伺服器。
+
+請幾分鐘後再試, 或點擊説明連接我們的支援頁面，或選擇 "瞬間移動" 來嘗試瞬間移動回家。
+		<form name="form">
+			<button name="OK" text="確定"/>
+			<button name="Help" text="幫助"/>
+			<button name="Teleport" text="瞬間移動"/>
+		</form>
+	</notification>
+	<notification name="WelcomeChooseSex">
+		你的角色將在數秒後出現。
+
+使用方向鍵來行走。
+任何時候都可以按 F1 鍵，來獲取幫助或學習更多關於 [GRID_NAME] 的資訊。
+請選擇男性或女性角色。
+以後還是可以改變主意的。
+		<usetemplate name="okcancelbuttons" notext="女性" yestext="男性"/>
+	</notification>
+	<notification name="NotEnoughCurrency">
+		[NAME] F$ [PRICE] 您沒有足夠的 F$ 來這樣做。
+	</notification>
+	<notification name="GrantedModifyRights">
+		你已經被授予特權，你可以任意修改[FIRST_NAME] [LAST_NAME]的物件。
+	</notification>
+	<notification name="RevokedModifyRights">
+		你的特權已經被撤回，你不可以再任意修改[FIRST_NAME] [LAST_NAME]的物件。
+	</notification>
+	<notification name="FlushMapVisibilityCaches">
+		這樣將會清空該區域的地圖緩存。
+這實際上只對調試有用。
+(在正式環境中，等待 5 分鐘，然後所有人的地圖將在他們重新登錄後更新。)
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="BuyOneObjectOnly">
+		您不能一次購買多項物品。請選擇一項購買。
+	</notification>
+	<notification name="OnlyCopyContentsOfSingleItem">
+		無法同時複製一個以上物品的內容。
+請僅選擇一項物件，並重新嘗試。
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="好的"/>
+	</notification>
+	<notification name="KickUsersFromRegion">
+		是否將此區域內所有使用者瞬間移動回家？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="EstateObjectReturn">
+		您是否要返還
+[USER_NAME]
+擁有的物件？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="InvalidTerrainBitDepth">
+		無法設定區域的材質：
+地面材質 [TEXTURE_NUM] 的色彩深度 [TEXTURE_BIT_DEPTH] 無效。
+
+請把目前的地面材質 [TEXTURE_NUM] 替換為 24 位
+512×512 解析度或者更小的圖片，然後再次點擊 '應用'。
+	</notification>
+	<notification name="InvalidTerrainSize">
+		無法設置區域的質地：
+
+地面材質 [TEXTURE_NUM] 的尺寸 [TEXTURE_SIZE_X]×[TEXTURE_SIZE_Y] 過大。
+
+請把目前的地面材質 [TEXTURE_NUM] 替換為 24 位
+512×512 解析度或者更小的圖片，然後再次點擊 '應用'。
+	</notification>
+	<notification name="RawUploadStarted">
+		上載開始。這個過程可能持續2分鐘, 具體時間取決於你的網路連線速度。
+	</notification>
+	<notification name="ConfirmBakeTerrain">
+		是你否真的願意烘烤當前的地形, 使得它成為地形上升或下降限制的中間值，以及'恢復'工具的預設值？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="烘烤"/>
+	</notification>
+	<notification name="MaxAllowedAgentOnRegion">
+		你最多只能列出 [MAX_AGENTS]名允許的居民。
+	</notification>
+	<notification name="MaxBannedAgentsOnRegion">
+		你最多只能列出 [MAX_BANNED] 名禁止的居民。
+	</notification>
+	<notification name="MaxAgentOnRegionBatch">
+		嘗試添加 [NUM_ADDED] 名代表時失敗：
+超出 [LIST_TYPE] [MAX_AGENTS]名的限制 [NUM_EXCESS]名。
+	</notification>
+	<notification name="MaxAllowedGroupsOnRegion">
+		你只能有[MAX_GROUPS]個允許的社群。
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="烘烤"/>
+	</notification>
+	<notification name="MaxManagersOnRegion">
+		您最多只能有 [MAX_MANAGER]位地產管理人。
+	</notification>
+	<notification name="OwnerCanNotBeDenied">
+		不能添加地產主人至 '拒絕進入' 名單。
+	</notification>
+	<notification name="CanNotChangeAppearanceUntilLoaded">
+		衣服和身體載入之前不能更改外表。
+	</notification>
+	<notification name="ClassifiedMustBeAlphanumeric">
+		你的分類廣告必須以字母A到Z或數位打頭。標點符號不允許出現。
+	</notification>
+	<notification name="CantSetBuyObject">
+		不能設置購買物件, 因為此物件是非賣品。
+請把物件設置為待售狀態並重試。
+	</notification>
+	<notification name="FinishedRawDownload">
+		完成下載地形檔至資料夾：
+[DOWNLOAD_PATH]
+	</notification>
+	<notification name="DownloadWindowsMandatory">
+		[VIEWER_NAME] 有新版本可用。
+[MESSAGE]
+
+你必須下載此更新才能使用 [GRID_NAME]。
+		<usetemplate name="okcancelbuttons" notext="退出" yestext="下載"/>
+	</notification>
+	<notification name="DownloadWindows">
+		[VIEWER_NAME] 有新版本可用。
+[MESSAGE]
+
+這個更新不是必須的，但我們建議下載並安裝此更新，以改善性能和穩定性。
+		<usetemplate name="okcancelbuttons" notext="繼續" yestext="下載"/>
+	</notification>
+	<notification name="DownloadWindowsReleaseForDownload">
+		[VIEWER_NAME] 有新版本可用。
+[MESSAGE]
+
+這個更新不是必須的，但我們建議下載並安裝此更新，以改善性能和穩定性。
+		<usetemplate name="okcancelbuttons" notext="繼續" yestext="下載"/>
+	</notification>
+	<notification name="DownloadMacMandatory">
+		[VIEWER_NAME]有新版本可用。
+[MESSAGE]
+
+你必須下載此更新才能使用 [GRID_NAME]。
+是否下載更新至應用程式檔案夾？
+		<usetemplate name="okcancelbuttons" notext="退出" yestext="下載"/>
+	</notification>
+	<notification name="DownloadMac">
+		[VIEWER_NAME]有新版本可用。
+[MESSAGE]
+
+這個更新不是必須的，但我們建議下載並安裝此更新，以改善性能和穩定性。
+
+是否下載更新至應用程式檔案夾？
+		<usetemplate name="okcancelbuttons" notext="繼續" yestext="下載"/>
+	</notification>
+	<notification name="DownloadMacReleaseForDownload">
+		[VIEWER_NAME]有新版本可用。
+[MESSAGE]
+
+這個更新不是必須的，但我們建議下載並安裝此更新，以改善性能和穩定性。
+
+是否下載更新至應用程式檔案夾？
+		<usetemplate name="okcancelbuttons" notext="繼續" yestext="下載"/>
+	</notification>
+	<notification name="DeedObjectToGroup">
+		轉讓此物件會導致社群：
+* 收到付給該物件的F$。
+		<usetemplate ignoretext="轉讓物件到社群" name="okcancelignore" notext="取消" yestext="轉讓"/>
+	</notification>
+	<notification name="WebLaunchExternalTarget">
+		打開你系統的流覽器來查看該內容？
+		<usetemplate ignoretext="打開默認流覽器查看網頁" name="okcancelignore" notext="取消" yestext="打開"/>
+	</notification>
+	<notification name="WebLaunchJoinNow">
+		是否轉至 [GRID_SITE] 管理帳戶？
+		<usetemplate ignoretext="打開流覽器管理您的帳戶" name="okcancelignore" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="WebLaunchBugReport101">
+		訪問 [SECOND_LIFE] Wiki 學習怎樣正確地報告錯誤。
+		<usetemplate ignoretext="打開流覽器查看錯誤報告基礎 Wiki" name="okcancelignore" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="WebLaunchSecurityIssues">
+		訪問 [SECOND_LIFE] Wiki 學習如何正確地報告安全事件。
+		<usetemplate ignoretext="打開流覽器查看安全事件 Wiki" name="okcancelignore" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="WebLaunchQAWiki">
+		訪問 [SECOND_LIFE] 品質保證 Wiki。
+		<usetemplate ignoretext="打開流覽器查看品質保證 Wiki" name="okcancelignore" notext="取消" yestext="確定"/>
+	</notification>
+	<notification name="WebLaunchPublicIssue">
+		訪問 [SECOND_LIFE] 公開事件跟蹤器，你可以在那裡報告程式錯誤和其他事件。
+		<usetemplate ignoretext="打開流覽器查看公開事件跟蹤器" name="okcancelignore" notext="取消" yestext="打開頁面"/>
+	</notification>
+	<notification name="WebLaunchPublicIssueHelp">
+		訪問 [SECOND_LIFE] Wiki 瞭解如何使用公開事件跟蹤器。
+		<usetemplate ignoretext="打開流覽器查看公開事件跟蹤器 Wiki" name="okcancelignore" notext="取消" yestext="打開頁面"/>
+	</notification>
+	<notification name="WebLaunchSupportWiki">
+		進入林登官方博客，獲取最新的新聞和資訊。
+		<usetemplate ignoretext="打開流覽器查看官方博客" name="okcancelignore" notext="取消" yestext="打開頁面"/>
+	</notification>
+	<notification name="WebLaunchLSLGuide">
+		是否轉至林登指令碼語言嚮導查閱腳本編輯幫助？
+		<usetemplate ignoretext="打開流覽器查閱腳本編輯幫助" name="okcancelignore" notext="取消" yestext="打開頁面"/>
+	</notification>
+	<notification name="WebLaunchLSLWiki">
+		是否跳至LSL語言首頁以獲得腳本編輯幫助？
+		<usetemplate ignoretext="當啟動web流覽器訪問LSL入口時" name="okcancelignore" notext="取消" yestext="打開頁面"/>
+	</notification>
+	<notification name="ReturnToOwner">
+		你確定要將所選物件歸還至
+它們的主人？可轉移的已轉讓給社群的
+物件會被歸還至他們原先的主人處。
+
+*警告* 不可轉讓的轉讓給社群的物件會被刪除!
+		<usetemplate ignoretext="當將物件返回給其主人時" name="okcancelignore" notext="取消" yestext="返還"/>
+	</notification>
+	<notification name="GroupLeaveConfirmMember">
+		你目前是社群[GROUP]的成員。
+是否離開社群？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="離開"/>
+	</notification>
+	<notification name="ConfirmKick">
+		你*真的*要將所有用戶踢下線嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="踢下所有用戶"/>
+	</notification>
+	<notification name="MuteLinden">
+		對不起，你不能遮罩林登家的人。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="CannotStartAuctionAlreadyForSale">
+		您不能拍賣正在出售中的地塊。若需拍賣此地，請先取消地塊出售。
+	</notification>
+	<notification label="按名稱遮罩物件失敗" name="MuteByNameFailed">
+		你已經遮罩了這個名字。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="RemoveItemWarn">
+		儘管允許, 刪除內容可能會造成物件的
+損壞。你確定要刪除該物品嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="刪除"/>
+	</notification>
+	<notification name="CantOfferCallingCard">
+		目前無法提供名片。請稍候再試。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="CantOfferFriendship">
+		目前無法建立朋友關係。請稍候再試。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="BusyModeSet">
+		已設置為忙碌模式。
+將隱藏聊天和即時消息。即時通會收到
+你的忙碌模式回復。所有瞬間移動邀請
+都會被拒絕。所有給與的物品都會放入
+你的垃圾箱。
+		<usetemplate ignoretext="設置忙碌狀態" name="okignore" yestext="確定"/>
+	</notification>
+	<notification name="JoinedTooManyGroupsMember">
+		你已經加入了太多的社群，無法再加入
+新的社群。加入此社群之前，請至少離開
+一個舊社群, 或者拒絕新社群邀請。
+離開社群請選擇'編輯'功能表下的
+'我的社群...'選項。
+[NAME]邀請你成為該社群成員。
+[INVITE]
+		<usetemplate name="okcancelbuttons" notext="謝絕" yestext="加入"/>
+	</notification>
+	<notification name="KickUser">
+		發送下列消息並踢走此人？
+		<form name="form">
+			<input name="message" type="text">
+				管理員已經迫使您下線。
+			</input>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="KickAllUsers">
+		發送下列消息並踢走目前連接到網格的每個人？
+		<form name="form">
+			<input name="message" type="text">
+				管理員已經迫使您下線。
+			</input>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="FreezeUser">
+		用哪一條消息通知凍結的化身？
+		<form name="form">
+			<input name="message" type="text">
+				您已經被凍結。您不能移動或聊天。管理員會通過即時資訊聯繫您。
+			</input>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="UnFreezeUser">
+		用哪一條消息通知解凍的化身？
+		<form name="form">
+			<input name="message" type="text">
+				您已經被解凍。
+			</input>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="OfferTeleport">
+		發送下列消息並邀請瞬間移動？
+		<form name="form">
+			<input name="message" type="text">
+				和我一起到 [REGION] 來吧！
+			</input>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="OfferTeleportFromGod">
+		是否神明召喚用戶來你的位置？
+		<form name="form">
+			<input name="message" type="text">
+				和我一起到 [REGION] 來吧！
+			</input>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="TeleportFromLandmark">
+		你確定要瞬間移動嗎？
+		<usetemplate ignoretext="使用百寶箱中的地標瞬間移動" name="okcancelignore" notext="取消" yestext="瞬間移動"/>
+	</notification>
+	<notification label="通知在這塊地產上的每個人" name="MessageEstate">
+		輸入一條簡短的通知，該聲明將
+會發送給目前在你地產內的所有居民。
+		<form name="form">
+			<input name="message" type="text"/>
+			<button name="OK" text="確定"/>
+		</form>
+	</notification>
+	<notification label="更改林登地產" name="ChangeLindenEstate">
+		你將要更改林登所有的地產(大陸、
+少年網格、方位島，等等)。
+
+ 這個動作極度危險，因為它可能會在基礎的層次上
+影響到用戶體驗。在大陸上, 它將改變
+上千的區域，並會使空間伺服器噎著。
+
+是否繼續？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="更改不動產"/>
+	</notification>
+	<notification label="更改林登地產准入列表" name="ChangeLindenAccess">
+		你將要更改林登所有的地產的准入列表(大陸、
+少年網格、方位島，等等)。
+
+該操作非常危險， 應該僅在利用把物件/金錢
+轉移進或出某個網格的對付活兒 (hack) 時候
+才應該被執行。 它將改變上千的區域，並會
+使空間伺服器噎著。
+
+是否繼續？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="更改不動產"/>
+	</notification>
+	<notification label="選擇地產" name="EstateAllowedAgentAdd">
+		僅列入此地產還是[ALL_ESTATES]的允許名單？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="所有地產" yestext="該地產"/>
+	</notification>
+	<notification label="選擇地產" name="EstateAllowedAgentRemove">
+		僅移出此地產還是[ALL_ESTATES]的允許名單？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="所有地產" yestext="該地產"/>
+	</notification>
+	<notification label="選擇地產" name="EstateAllowedGroupAdd">
+		僅列入此地產還是[ALL_ESTATES]的社群允許名單？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="所有地產" yestext="該地產"/>
+	</notification>
+	<notification label="選擇地產" name="EstateAllowedGroupRemove">
+		僅移出此地產還是[ALL_ESTATES]的社群允許名單？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="所有地產" yestext="該地產"/>
+	</notification>
+	<notification label="選擇地產" name="EstateBannedAgentAdd">
+		拒絕訪問僅此領地還是[ALL_ESTATES]？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="所有地產" yestext="該地產"/>
+	</notification>
+	<notification label="選擇地產" name="EstateBannedAgentRemove">
+		停止拒絕該居民進入僅這一個地產還是[ALL_ESTATES]？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="所有地產" yestext="該地產"/>
+	</notification>
+	<notification label="選擇地產" name="EstateManagerAdd">
+		僅為這一個地產還是為[ALL_ESTATES]添加地產經理？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="所有地產" yestext="該地產"/>
+	</notification>
+	<notification label="選擇地產" name="EstateManagerRemove">
+		僅將領地經理從這個開除從[ALL_ESTATES]開除？
+		<usetemplate canceltext="取消" name="yesnocancelbuttons" notext="所有地產" yestext="該地產"/>
+	</notification>
+	<notification label="確定踢出" name="EstateKickUser">
+		將 [EVIL_USER] 踢出此處地產？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="踢人"/>
+	</notification>
+	<notification name="EstateChangeCovenant">
+		你是否確定改變地產契約？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="更改"/>
+	</notification>
+	<notification name="RegionEntryAccessBlocked">
+		您的限制級不允許您訪問此地區。這可能是由於您的年齡還沒有被驗證。
+
+請檢查您的第[VIEWER_NAME]是否是最新版本並到知識庫去瞭解有關區存取權限和限制級的關係。
+    <usetemplate
+     name="okbutton"
+     yestext="確定"/>
+	</notification>
+	<notification name="RegionEntryAccessBlocked_KB">
+		您的限制級不允許您訪問此地區。
+
+去知識庫瞭解關於限制級的詳情？
+		<url name="url">
+			https://support.secondlife.com/ics/support/default.asp?deptID=4417&amp;task=knowledge&amp;questionID=6010
+		</url>
+    <usetemplate
+     name="okcancelignore"
+     yestext="去知識庫"
+	 notext="關閉"
+	 ignoretext="當由於限制級無法進入地區時"/>
+	</notification>
+	<notification name="RegionEntryAccessBlocked_Notify">
+		基於您的限制級設置，您無法訪問該地區。
+	</notification>
+	<notification name="RegionEntryAccessBlocked_Change">
+		您的限制級設置不允許您進入此地。
+
+您可以點擊"更改限制級"立即獲得進入此地區的許可權。您從此將可以搜索和訪問[REGIONMATURITY]內容。之後如果您想改回此設置，請點擊"編輯" &gt; &quot;參數設置&quot; &gt; "一般"。
+	<form name="form">
+      <button
+       name="OK"
+       text="更改設定"/>
+      <button
+       name="Cancel"
+       text="關閉"/>
+       <ignore name="ignore" text="當由於限制級設定值無法進入地區時"/>
+    </form>
+	</notification>
+	<notification name="LandClaimAccessBlocked">
+		您的限制級不允許您申請此地的產權。這可能是由於您還沒有通過年齡驗證。
+
+請檢查您的第[VIEWER_NAME]是否是最新版本並到知識庫去瞭解有關區存取權限和限制級的關係。
+    <usetemplate
+     name="okbutton"
+     yestext="確定"/>
+	</notification>
+	<notification name="LandClaimAccessBlocked_KB">
+		您的限制級不允許您申請此地的產權。
+				
+去知識庫瞭解更多關於限制級的資訊？
+		<url name="url">
+			https://support.secondlife.com/ics/support/default.asp?deptID=4417&amp;task=knowledge&amp;questionID=6010
+		</url>
+    <usetemplate
+     name="okcancelignore"
+     yestext="去知識庫"
+	 notext="關閉"
+	 ignoretext="當由於限制級無法申請地區產權時"/>
+	</notification>
+	<notification name="LandClaimAccessBlocked_Notify">
+		基於您的限制級，您不能申請此地的產權。
+	</notification>
+	<notification name="LandClaimAccessBlocked_Change">
+		您的限制級不允許您申請此地的產權。
+
+您可以點擊"更改限制級"立即獲得進入此地區的許可權。您從此將可以搜索和訪問[REGIONMATURITY]內容。之後如果您想改回此設置，請點擊"編輯" &gt; &quot;參數設置&quot; &gt; "一般"。
+    <usetemplate
+     name="okcancelignore"
+     yestext="更改設定"
+	 notext="關閉"
+	 ignoretext="當由於限制級設定值無法申請地區產權時"/>
+	</notification>
+	<notification name="LandBuyAccessBlocked">
+		您的限制級不允許您購買此土地。這可能是由於您還沒有通過年齡驗證。
+
+請檢查您的第[VIEWER_NAME]是否是最新版本並到知識庫去瞭解有關區存取權限和限制級的關係。
+    <usetemplate
+     name="okbutton"
+     yestext="確定"/>
+	</notification>
+	<notification name="LandBuyAccessBlocked_KB">
+		您的限制級不允許您購買此土地。
+
+去知識庫瞭解更多關於限制級的資訊？
+		<url name="url">
+			https://support.secondlife.com/ics/support/default.asp?deptID=4417&amp;task=knowledge&amp;questionID=6010
+		</url>
+    <usetemplate
+     name="okcancelignore"
+     yestext="去知識庫"
+	 notext="關閉"
+	 ignoretext="當由於限制級無法買地時"/>
+	</notification>
+	<notification name="LandBuyAccessBlocked_Notify">
+		您的限制級不允許您購買此土地。
+	</notification>
+	<notification name="LandBuyAccessBlocked_Change">
+		您的限制級不允許您購買此土地。
+
+您可以點擊"更改限制級"立即獲得進入此地區的許可權。您從此將可以搜索和訪問[REGIONMATURITY]內容。之後如果您想改回此設置，請點擊"編輯" &gt; &quot;參數設置&quot; &gt; "一般"。
+    <usetemplate
+     name="okcancelignore"
+     yestext="去知識庫"
+	 notext="關閉"
+	 ignoretext="當由於限制級設定值無法買地時"/>
+	</notification>
+	<notification name="ProblemImportingEstateCovenant">
+		導入地產契約時出錯。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="ProblemAddingEstateManager">
+		添加地產管理人時遇到問題。  一個或多個地產的管理人列表可能已滿。
+	</notification>
+	<notification name="ProblemAddingEstateGeneric">
+		添加到地產列表時遇到問題。 一個或多個地產的列表可能已滿。
+	</notification>
+	<notification name="UnableToLoadNotecardAsset">
+		當前無法下載記事卡的資源檔
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="NotAllowedToViewNotecard">
+		缺乏許可權，不能查看與要求的資產 ID 相關的記事卡
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="MissingNotecardAssetID">
+		記事卡的資產 ID 已經從資料庫中遺失。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="PublishClassified">
+		請遵記： 分類廣告費用不會退還。
+
+是否以F$[AMOUNT]發佈廣告？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="發佈"/>
+	</notification>
+	<notification name="SetClassifiedMature">
+		這份廣告中含有Mature內容嗎？
+    <usetemplate
+     canceltext="取消"
+     name="yesnocancelbuttons"
+     notext="否"
+     yestext="是"/>
+	</notification>
+	<notification name="SetGroupMature">
+		這個社群中包含Mature內容嗎？
+    <usetemplate
+     canceltext="取消"
+     name="yesnocancelbuttons"
+     notext="否"
+     yestext="是"/>
+	</notification>
+	<notification label="確定重新啟動" name="ConfirmRestart">
+		你真的要在2分鐘後重新開機區域嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="重啟"/>
+	</notification>
+	<notification label="通知在這塊土地上的每個人" name="MessageRegion">
+		輸入一條簡短的通知，該聲明將
+會分發給目前在此區域內的所有居民。
+		<form name="form">
+			<input name="message" type="text"/>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification label="鎖定地形" name="HelpRegionBlockTerraform">
+		如果選擇此項, 無論每地塊的'編輯地形' 如何設置，土地所有者都無法編輯他們自己的土地。
+
+默認： 關
+	</notification>
+	<notification label="鎖定飛翔" name="HelpRegionBlockFly">
+		如果選擇此項,無論每個地塊設置如何，
+人們都不能在此區域內飛行。
+
+默認：關
+	</notification>
+	<notification label="允許傷害" name="HelpRegionAllowDamage">
+		選定框將使健康系統應用於所有地塊。如果不選中這項， 個別地塊
+的持有人仍可以打開他們土地上的健康系統。
+
+默認：關
+	</notification>
+	<notification label="代理限制" name="HelpRegionAgentLimit">
+		設置此片區域內的化身數量最大值。
+注意，區域內的化身數量越多，性能
+可能就越差。
+
+默認：40
+	</notification>
+	<notification label="額外物件因數" name="HelpRegionObjectBonus">
+		額外物件因數是對單個地塊內所允許的元件數量的倍數。
+允許的範圍是1 到 10。'1' 代表每個 512 平方米的地塊允許 117
+個物件。'2' 代表每個 512 平方米的地塊允許 234 個物件，也就是
+2 倍，以此類推。無論額外物件是多少，每個區域所允許的物件仍是
+15,000。一旦額外物件被設置，請注意減少該設置將可能導致物件
+被返還或刪除。
+
+默認： 1.0
+	</notification>
+	<notification label="限制級" name="HelpRegionMaturity">
+		設置地區的限制級，它將在頂部的功能表條和世界地圖的工具提示（挪動滑鼠至本地區上）中顯示。這個設置將會影響此地區的存取權限和是否在搜索結果中顯示。只有在其"選項"中選擇了與此地區相同限制級的居民可以訪問此地區並在搜索結果中看到它。
+
+本次更改的結果要過一段時間才會顯現在地圖上。
+	</notification>
+	<notification label="限制推動" name="HelpRegionRestrictPushObject">
+		設定所有區域為限制推動區。居民只能推動自己，或者由土地主人的腳本代碼推動。
+
+(推動功能和llPushObject() LSL函數有關。)
+
+默認： 關
+	</notification>
+	<notification label="土地合併/劃分" name="HelpParcelChanges">
+		該設置決定不屬於地產所有人的地塊是否可被合併或劃分。
+如果該選項未被選擇：
+ * 只有不動產主人和經理人有權利連接或再劃分土地。
+ * 他們只能連接或再劃分屬於這個主人的土地, 或屬於具有合適權利的社群的土地。
+
+如果選項被選擇：
+ * 所有土地的主人都可以連接或再劃分他們所擁有的土地。
+ * 對於社群所擁有的土地, 擁有合適權利的社群可以連接或再劃分土地。
+
+
+默認： 選擇
+	</notification>
+	<notification label="Do Not Show In Search" name="HelpRegionSearch">
+		打開該選項將阻止地塊擁有者在搜索中列出他們的地塊。
+默認：關
+	</notification>
+	<notification label="更改區域的成人指數設定" name="RegionMaturityChange">
+		此區域內的成人內容等級已經更新。
+
+但是，世界地圖更新時間需要大約5分鐘，
+因為系統只能定期更新地圖資訊。
+	</notification>
+	<notification label="土地重新出售" name="HelpRegionLandResell">
+		不動產主人和經理人有權利出售任何不動產主人的土地。
+如果選項沒有被執行, 買主不能再出售該區域內的土地。如果選項被執行，
+買主則可以再出售該區域內土地。
+
+
+默認： 不允許
+	</notification>
+	<notification label="無效腳本" name="HelpRegionDisableScripts">
+		如果類比性能平庸，可能是腳本問題。
+打開統計條 (Ctrl-Shift-1)。 找到模擬器物理FPS。如果低於
+45，打開位於系統條底部的'時間' 板。 如果腳本時間為 25 毫秒
+甚至更高, 則點擊 '獲取首要腳本' 按鈕。你會得到可能導致不良
+模擬表現的腳本的名稱及位置。
+
+打開 '禁用腳本' 選項然後點擊 '應用'按鈕，可以暫時使該區域內
+所有腳本失效。 你可能需要這樣做以到達標出的 '首要腳本' 的
+位置。一旦你到達那裡, 就可以分析 是否是這些腳本導致了問題。 你也許想聯繫腳本的主人或刪除或歸還物件。關閉 '禁用腳本' 選項
+並點擊 '應用'，可以再次啟動該區域內腳本。
+
+默認： 關
+	</notification>
+	<notification label="無效碰撞" name="HelpRegionDisableCollisions">
+		如果類比性能平庸，可能是物理物件問題。
+打開統計條(Ctrl-Shift-1)。找到模擬器物理FPS。如果它小於45，
+打開位於統計條底部的時間一欄。 如果 '類比物理時間' 在
+20 毫秒或以上，點擊 '獲得首要碰撞者' 按鈕。
+你將得到可能導致類比表現不好的物件的名稱和位置。
+
+打開 '禁用碰撞' 選項然後點擊 '應用'按鈕，這樣可以暫時關閉
+物件對物件的碰撞。 你可能需要這樣做以到達標出的 '首要碰撞者'
+的位置。一旦你到達該位置，你應該調查該物件是否在與其他物件
+一直碰撞。你也許想聯繫腳本的主人或刪除或歸還物件。
+關閉 '禁用碰撞' 選項並點擊 '應用'，可以再次啟動該區域內腳本。
+
+默認： 關
+	</notification>
+	<notification label="無效物理" name="HelpRegionDisablePhysics">
+		無效物理和無效碰撞類似, 除了所有物理類比
+都是無效的。這意味著不僅所有物件將會
+停止相互碰撞，且化身們也將無法移動。
+
+僅當無效碰撞沒有向地區回饋回足夠的表現，
+以致無法調查物理問題或者
+ '首要碰撞源' 時，才能使用無效物理。
+
+完成後請確認恢復物理, 否則化身們還將無法移動。
+
+默認：關
+	</notification>
+	<notification label="首要衝擊源" name="HelpRegionTopColliders">
+		列出正在經受大量潛在的物物碰撞的
+物件的名單。這些物件可能會減慢
+類比性能。選擇查看 &gt; 統計條
+然後模擬器 &gt; 時間 &gt; 類比時間 (物理)
+來參考是否有至少 20 毫秒花在物理上了。
+	</notification>
+	<notification label="首要腳本" name="HelpRegionTopScripts">
+		顯示花費很多時間運行林登指令碼語言的物件
+的名單。  這些物件可能會減慢類比性能。
+選擇查看 &gt; 統計條
+然後模擬器 &gt; 時間 &gt; 類比時間 (物理)
+來參考是否有至少 25 毫秒花在腳本上了。
+	</notification>
+	<notification label="重新開機地區" name="HelpRegionRestart">
+		兩分鐘的警告之後，將會重新開機這片區域的伺服器進程。
+區域內的所有居民將會斷線。區域內的資料將會保留，
+並且應會在 90 秒鐘以內恢復正常。
+
+重新開機不會解決太多的性能問題，
+所以應該只有在收到指示時才用到。
+	</notification>
+	<notification label="水深" name="HelpRegionWaterHeight">
+		這是水面出現的深度。如果該值不是 20，
+並且你擁有臨近世界邊緣的水域或者
+'空洞' 水，那麼將會可以看到水面斷開。
+
+默認： 20
+	</notification>
+	<notification label="地形升高" name="HelpRegionTerrainRaise">
+		這是地塊擁有人可以將他們的
+土地升高至 '烘烤的' 土地
+默認高度之上的最高值。
+
+默認： 4
+	</notification>
+	<notification label="地形降低" name="HelpRegionTerrainLower">
+		這是地塊擁有人可以將他們的
+土地降低至 '烘烤的' 土地
+默認高度之下的最低值。
+
+默認： -4
+	</notification>
+	<notification label="上傳尾碼為 RAW的地形" name="HelpRegionUploadRaw">
+		點擊這個按鈕可以把尾碼為 .RAW 的檔上傳到你所在的地區。
+檔必須包含正確的尺寸和通道數： RGB, 256×256 和 13 個通道。
+創建地形檔最好的方法就是下載已有的 RAW 檔。一個好的
+首要步驟是修復第一個通道 (陸地高度)，並將它上傳。
+
+上傳過程需時 45 秒。請注意，上傳地形檔 *不會* 移動
+地上的物件, 只會移動地形本身和地塊相關的許可權。
+這可能導致物件沉入地下。
+
+更多編輯區域高度圖的資訊，請按 F1 鍵尋求幫助。
+	</notification>
+	<notification label="下載尾碼為RAW的地形" name="HelpRegionDownloadRaw">
+		點擊此按鈕可以下載包含土地高度資料，地塊尺寸，
+地塊出售情況，和此區域內單位土地許可證等資訊
+的文件。當用如同 Photoshop 這類程式打開檔時，
+你必須指定檔的尺寸為： RGB, 256×256 ，13
+個通道。這種地形檔只能以這種方式打開，
+而不能用別的。
+
+更多編輯區域高度圖的資訊，請按 F1 鍵尋求幫助。
+	</notification>
+	<notification label="使用地產太陽" name="HelpRegionUseEstateSun">
+		這個選定框可以使這片區域內太陽的位置
+與地產內其他區域內太陽的位置相同。
+
+默認：開
+	</notification>
+	<notification label="太陽固定" name="HelpRegionFixedSun">
+		這個選擇框設置太陽的位置到滑塊
+所指定的位置，並且停止太陽移動。
+
+默認： 關
+	</notification>
+	<notification label="烘烤地形" name="HelpRegionBakeTerrain">
+		這個按鈕把當前地形保存為區域地形的預設值。
+			一旦烤幹，你或者他人使用編輯土地的 '恢復'選項時
+			土地將恢復成保存的形態。
+			烤幹的地形也是地形上升或下降極限的中點。
+	</notification>
+	<notification label="不動產經理" name="HelpEstateEstateManager">
+		地產經理是你委派的負責區域控制
+和地產調節的居民。 地產經理
+有權改變控制板內任何調節項, 除了上傳,
+下載, 和壓縮地形。特別的, 他們有權允許
+或禁止居民進入你的地產。
+
+地產經理只能被地產主人雇傭或辭退
+, 不能互相之間委派。請選擇你信任的
+居民作為你的地產經理, 因為他們的
+行為最終將由你負責。
+	</notification>
+	<notification label="使用國際時間" name="HelpEstateUseGlobalTime">
+		這個選定框可以使你的地產的太陽位置
+與林登所有的 '大陸' 地產的太陽位置
+一致。
+
+默認： 開
+	</notification>
+	<notification label="太陽固定" name="HelpEstateFixedSun">
+		這個選擇框設置太陽的位置到滑塊
+所指定的位置，並且停止太陽移動。
+	</notification>
+	<notification label="從大陸可視" name="HelpEstateExternallyVisible">
+		設置在在其他地產上的居民是否可以
+			進入該地產而不需要在訪問清單上列出。
+
+默認： 可以
+	</notification>
+	<notification label="允許直接瞬間移動" name="HelpEstateAllowDirectTeleport">
+		打開該選項後，使用者可瞬間移動到你的領地的
+任何一個點。 關閉該選項時, 居民只能瞬間
+移動至最近的瞬間移動樞紐。
+
+默認： 關
+	</notification>
+	<notification label="允許進入通道" name="HelpEstateAllowResident">
+		對該地產的訪問將僅限於以下列出的居民和社群。
+該設置僅在 "允許公眾訪問"關閉時有效。
+	</notification>
+	<notification label="允許社群進入通道" name="HelpEstateAllowGroup">
+		對該地產的訪問將僅限列出的社群和以上列出的居民。
+該設置僅在 "允許公眾訪問"關閉時有效。
+	</notification>
+	<notification label="不良行為報告電子郵寄地址" name="HelpEstateAbuseEmailAddress">
+		將這一項設為有效的電子郵寄位址會讓
+該地產上的不良行為報告送到這個位址。
+留空該項會使得不良行為報告僅發送給
+林登實驗室。
+	</notification>
+	<notification label="拒絕訪問" name="HelpEstateBanResident">
+		不管以上社群的設置為什麼情況，
+名單上的居民將被拒絕到達您的地產。
+	</notification>
+	<notification label="允許語音聊天" name="HelpEstateVoiceChat">
+		允許該地產中的地塊擁有自己的語音聊天頻道，
+			可以讓居民與臨近的其他人交談。
+
+
+默認：關
+	</notification>
+	<notification label="語音聊天版本不符合" name="VoiceVersionMismatch">
+		該版本的第[VIEWER_NAME]與該地區的語音聊天不相容。
+為了正常使用語音聊天你需要更新第[VIEWER_NAME]。
+	</notification>
+	<notification label="不動產契約合同" name="HelpEstateCovenant">
+		設置不動產的契約合同使你可以出售地產中的土地。如果不動產契約合同沒有設置，你則不能出售土地。如果在買主購買之前，你不想在土地上設置任何相關的給買主的意見和規定，你的契約合同的注釋卡可以是空的。
+
+一個不動產契約合同可以被用來制定規定和指導方針，表明文化資訊或僅僅是你自己對未來買家的期望。它可以包含分區制度，建築規範，支付方式選擇以及任何你認為重要，並希望新主人在購買之前看到，並同意的條款。
+
+買主必須遵守契約合同上所標出的規定，在完成消費前，買主要在是否同意的方格裡畫鉤。不動產契約合同總是在任何設置為此的土地中關於土地對話方塊中可見。
+	</notification>
+	<notification label="不能購買物件" name="BuyObjectOneOwner">
+		一次無法從不同主人處購買物件。
+請僅選擇一件物件，再試一次。
+	</notification>
+	<notification label="不能購買內容" name="BuyContentsOneOnly">
+		一次無法購買一個以上的物件的內容。
+請僅選擇一件物件，並再試一遍。
+	</notification>
+	<notification label="不能購買內容" name="BuyContentsOneOwner">
+		一次無法從不同主人處購買物件。
+請僅選擇一件物件，再試一次。
+	</notification>
+	<notification name="BuyOriginal">
+		是否以 F$[PRICE] 購買原物件？
+你將成為物件的主人。
+你將可以：
+ 修改： [MODIFYPERM]
+ 複製： [COPYPERM]
+ 轉賣或贈送： [RESELLPERM]
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="購買"/>
+	</notification>
+	<notification name="BuyOriginalNoOwner">
+		是否以 F$[PRICE] 購買原物件？
+你將成為物件的主人。
+你將可以：
+ 修改： [MODIFYPERM]
+ 複製： [COPYPERM]
+ 轉賣或贈送： [RESELLPERM]
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="購買"/>
+	</notification>
+	<notification name="BuyCopy">
+		是否以 F$[PRICE] 從 [OWNER] 購買物件的副本？
+這件物件將被複製到你的百寶箱。
+你將可以：
+ 修改： [MODIFYPERM]
+ 複製： [COPYPERM]
+ 轉賣或贈送： [RESELLPERM]
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="購買"/>
+	</notification>
+	<notification name="BuyCopyNoOwner">
+		是否以 F$[PRICE] 購買物件的副本？
+這件物件將被複製到你的百寶箱。
+你將可以：
+ 修改： [MODIFYPERM]
+ 複製： [COPYPERM]
+ 轉賣或贈送： [RESELLPERM]
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="購買"/>
+	</notification>
+	<notification name="BuyContents">
+		是否以 F$[PRICE] 從 [OWNER] 購買內容？
+它們將被複製到你的百寶箱。
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="購買"/>
+	</notification>
+	<notification name="BuyContentsNoOwner">
+		是否以 F$[PRICE] 購買內容？
+它們將被複製到你的百寶箱。
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="購買"/>
+	</notification>
+	<notification name="ConfirmPurchase">
+		此項交易將：
+ [ACTION]
+
+你確定要繼續購買嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="確認"/>
+	</notification>
+	<notification name="ConfirmPurchasePassword" type="password">
+		此項交易將：
+ [ACTION]
+
+你確定要繼續購買嗎？
+請你再次鍵入密碼並點擊確定。
+		<form name="form">
+			<input name="message" type="password"/>
+			<button name="ConfirmPurchase" text="確認購買"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="SetPickLocation">
+		注意：
+您已經更新了該收藏的
+位址，但其他的細節仍
+會保留其原來的值。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="MoveInventoryFromObject">
+		你已經選擇 '不可複製' 的物品條目。
+這些物件將被移入百寶箱，而不是被複製。
+
+確定移動物件嗎？
+		<usetemplate ignoretext="從物件內容中移動不可複製的條目" name="okcancelignore" notext="不要移動" yestext="移動"/>
+	</notification>
+	<notification name="MoveInventoryFromScriptedObject">
+		你已經選擇 '不可複製' 的物品條目。
+這些物件將被移入百寶箱，而不是被複製。
+
+由於此物件帶有腳本，將這些條目移動到
+你的百寶箱可能造成腳本故障。
+
+確定移動物件嗎？
+		<usetemplate ignoretext="當從含腳本物件移動不可複製部分到百寶箱時" name="okcancelignore" notext="不要移動" yestext="移動"/>
+	</notification>
+	<notification name="ClickActionNotPayable">
+		警告：向物件付款的動作已經設定，但它僅在
+添加了帶有 money() 事件的腳本後才能工作。
+		<form name="form">
+			<ignore name="ignore" text="在物件上設置付款動作但沒有 money() 事件時"/>
+		</form>
+	</notification>
+	<notification name="OpenObjectCannotCopy">
+		這個物件中沒有你能夠複製的項目。
+	</notification>
+	<notification name="WebLaunchAccountHistory">
+		是否前往第[SECOND_LIFE]網站查看你的帳戶記錄？
+		<usetemplate ignoretext="打開流覽器查看帳戶記錄" name="okcancelignore" notext="取消" yestext="打開網頁"/>
+	</notification>
+	<notification name="ClickOpenF1Help">
+		訪問第[SECOND_LIFE]幫助網站嗎？
+		<usetemplate ignoretext="訪問第[SECOND_LIFE]幫助網站時" name="okcancelignore" notext="取消" yestext="打開頁面"/>
+	</notification>
+	<notification name="ConfirmQuit">
+		確定退出？
+		<usetemplate ignoretext="退出第[VIEWER_NAME]時" name="okcancelignore" notext="繼續" yestext="退出"/>
+	</notification>
+	<notification name="HelpReportAbuseEmailLL">
+		使用該工具來報告違反服務條款和社區標準。 請訪問：
+ http://secondlife.com/corporate/tos.php
+ http://secondlife.com/corporate/cs.php
+
+所有報告了的濫用服務條款和社區標準都是經過調查研究後確定的。 您可以在事件報告中流覽事件分析：
+ http://secondlife.com/support/incidentreport.php
+	</notification>
+	<notification name="HelpReportAbuseEmailEO">
+		重要提示： 這個報告將不會到達林登實驗室處，而會發送給你
+目前所在區域的主人。
+-
+作為一項針對于居民和遊客的服務，你所在這塊區域的主人有責任
+接受所有來自這塊區域的問題報告，並有責任解決它們。
+林登實驗室將不會調查你從所在地點提交的問題報告。
+
+這塊區域的主人將遵守基於土地契約所概述的當地規則，解決報告。
+(你可以從世界功能表中選擇 "關於土地" 來查看契約。)
+
+該報告的解決結果僅對該區域有效；居民對第[GRID_NAME]其他地方的使用
+將不會受該報告結果的影響。<!-- 只有林登實驗室能夠限制訪問整個
+第[GRID_NAME]。-->
+	</notification>
+	<notification name="HelpReportBug">
+		這個工具只用來報告與描述或預期工作不一致的技術功能。請盡能提供詳細資料。
+你也可以回復自動確認電子郵件來為你的報告添加更多細節。
+
+所有的錯誤都會被追查並評估。不會有任何電子郵件回復。
+
+如果你遇到了技術障礙，請與支持取得聯繫：
+
+http://secondlife.com/community/support.php
+
+注意：不完整的報告將不會被調查。
+	</notification>
+	<notification name="HelpReportAbuseSelectCategory">
+		請為此次不良行為報告選擇一項分類。
+ 選擇一個分類可以幫助我們歸檔和處理不良行為報告。
+	</notification>
+	<notification name="HelpReportBugSelectCategory">
+		請為此次錯誤報告選擇一項分類。
+ 選擇一個分類可以説明我們歸檔和處理錯誤報告。
+	</notification>
+	<notification name="HelpReportAbuseAbuserNameEmpty">
+		請輸入辱駡者的名字。
+輸入正確的描述可以幫助我們歸檔和處理不良行為報告。
+	</notification>
+	<notification name="HelpReportAbuseAbuserLocationEmpty">
+		請輸入不良行為發生的位址。
+
+輸入正確的描述可以幫助我們歸檔和處理不良行為報告。
+	</notification>
+	<notification name="HelpReportAbuseSummaryEmpty">
+		請輸入不良行為的概況。
+
+輸入對事件的正確描述可以幫助我們歸檔和處理不良行為報告。
+	</notification>
+	<notification name="HelpReportBugSummaryEmpty">
+		請輸入錯誤概況。
+
+輸入對事件的正確描述可以説明我們歸檔和處理錯誤報告。
+	</notification>
+	<notification name="HelpReportAbuseDetailsEmpty">
+		請鍵入不良行為的詳細描述。請儘量具體地描述，包括名字和報告事件細節。
+
+ 輸入對事件的正確描述可以幫助我們歸檔和處理辱駡事件。
+	</notification>
+	<notification name="HelpReportBugDetailsEmpty">
+		請鍵入錯誤的詳細描述。
+請儘量具體地描述，可能的話包括如何再現錯誤的步驟。
+
+輸入對事件的正確描述可以説明我們歸檔和處理錯誤報告。
+	</notification>
+	<notification name="HelpReportAbuseContainsCopyright">
+		親愛的居民,
+如果您將要報告智慧財產權侵犯，請確認您通過正確的方式報告：
+
+(1) 不良行為報告手續。您可以提交一份不良行為報告，如果您相信某位居民正在利用第[SECOND_LIFE]許可系統的漏洞，例如使用 CopyBot 或者類似的複製工具，來侵犯智慧財產權。不良行為調查小組負責對於違反第[SECOND_LIFE]社區標準或服務條款的行為進行調查以及實行相應的懲罰措施。但是，不良行為調查小組不負責從世界中移除內容，並且不會對這類請求作出回應。
+
+(2) DMCA (數位千年版權協定) 或者說內容移除手續。 要請求從第[SECOND_LIFE]中去除內容，您*必須*提交一份按我們 DMCA 條例 http://secondlife.com/corporate/dmca.php 中所指出的，有效的侵權通知。
+
+如果您仍希望繼續不良行為的報告，請關閉此視窗，並完成提交您的報告。
+您可能需要選擇 'CopyBot 或利用漏洞' 這一特定分類。
+
+感謝您的合作,
+
+林登實驗室
+	</notification>
+	<notification name="FailedRequirementsCheck">
+		以下必須的部件丟失於 [FLOATER]：
+[COMPONENTS]
+	</notification>
+	<notification label="替換已經存在的附件" name="ReplaceAttachment">
+		已經有一個物件附在身體的這個部位上了。
+你是否要用所選物件替代它？
+		<form name="form">
+			<ignore name="ignore" save_option="true" text="替換已有的附件時"/>
+			<button ignore="自動替換" name="Yes" text="是"/>
+			<button ignore="永遠不替換" name="No" text="否"/>
+		</form>
+	</notification>
+	<notification label="忙碌模式警告" name="BusyModePay">
+		你在忙碌模式中, 這意味著你將不能
+收到這次交易中對方提供的任何物品。
+
+你是否願意在完成交易前
+退出忙碌模式？
+		<form name="form">
+			<ignore name="ignore" save_option="true" text="忙碌模式中付款給他人或物件時"/>
+			<button ignore="總離開忙碌模式" name="Yes" text="是"/>
+			<button ignore="從不離開忙碌模式" name="No" text="否"/>
+		</form>
+	</notification>
+	<notification name="ConfirmEmptyTrash">
+		你確定要永久性刪除垃圾箱裡的內容嗎？
+		<usetemplate ignoretext="清空百寶箱垃圾箱資料夾時" name="okcancelignore" notext="不是" yestext="是的，刪除"/>
+	</notification>
+	<notification name="ConfirmClearBrowserCache">
+		確實要清除流覽器緩存嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="清除"/>
+	</notification>
+	<notification name="ConfirmClearCookies">
+		確實要清除 Cookies 嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="清除"/>
+	</notification>
+	<notification name="ConfirmClearMediaUrlList">
+		確實要清除保存的 URL 列表嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="清除"/>
+	</notification>
+	<notification name="ConfirmEmptyLostAndFound">
+		你確定要永久性刪除失物招領資料夾裡的內容嗎？
+		<usetemplate ignoretext="清空百寶箱失物招領資料夾時" name="okcancelignore" notext="No" yestext="Yes"/>
+	</notification>
+	<notification name="CopySLURL">
+		以下連結已經被複製到你的剪貼板中：
+
+    [SLURL]
+
+  把它加入到網頁裡，讓別人更容易的訪問這個地點，
+  或者直接粘貼到流覽器的地址欄中自己嘗試一下。
+		<form name="form">
+			<ignore name="ignore" text="當拷貝一個SLURL到剪切板"/>
+		</form>
+	</notification>
+	<notification name="GraphicsPreferencesHelp">
+		該面板控制視窗尺寸和解析度，以及用戶端圖形品質。你可以選擇四種圖像等級：低、中、高和極高。你也可以選擇自訂，來更改以下的設置：
+
+著色器：啟用或禁用各種圖元著色器。
+
+反射細節：設置可以反射的物件類型。
+
+化身渲染：設置影響用戶端渲染化身的選項。
+
+描繪距離： 影響離你的視角多遠的物件將會被渲染在場景中。
+
+最大粒子數：設置你在螢幕上同時可見粒子的最大數目。
+
+後期處理品質：設置光輝渲染的解析度。
+
+模型細節： 設置渲染各類物件時的細節，或者說使用三角形的數目。較高的值渲染時間較長，但會令物件顯得更具細節。
+
+光照細節： 選擇你想要渲染什麼類型的燈光。
+
+地面細節： 選擇地面材質細節量。
+	</notification>
+	<notification name="WLSavePresetAlert">
+		你希望覆蓋保存的預設嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="保存"/>
+	</notification>
+	<notification name="WLDeletePresetAlert">
+		你希望刪除 [SKY] 嗎？
+		<usetemplate name="okcancelbuttons" notext="取消" yestext="刪除"/>
+	</notification>
+	<notification name="WLNoEditDefault">
+		你不能編輯或刪除默認預設。
+	</notification>
+	<notification name="WLMissingSky">
+		該日期迴圈檔參考了一個不存在的天空檔： [SKY]。
+	</notification>
+	<notification name="PPSaveEffectAlert">
+		後處理效果已存在。還是想要覆蓋它嗎？
+		<usetemplate name="okcancelbuttons" notext="否" yestext="是"/>
+	</notification>
+	<notification name="HelpEditSky">
+		編輯 WindLight 滑動條創建和保存天空設定。
+	</notification>
+	<notification name="HelpEditDayCycle">
+		選擇一天之內出現哪些天空。
+	</notification>
+	<notification name="EnvSettingsHelpButton">
+		這些設置調節環境在您的電腦上看起來怎麼樣。您的顯卡需要支援大氣染色器才能利用全部的設置。
+
+調節 '時間' 滑塊來在本地改變一日的時間。
+
+調節 '雲層覆蓋' 滑塊來控制雲彩的多少。
+
+選擇 '水色' 改變水的顏色。
+
+調節 '水霧' 控制水下的霧的濃淡。
+
+點擊 '使用地產時間' 使時間返回到區域的時間並與之同步。
+
+點擊 '高級天空選項' 來打開較高級天空設置的編輯器。
+
+點擊 '高級水面選項' 來打開較高級水面設置的編輯器。
+	</notification>
+	<notification name="HelpDayCycle">
+		日夜週期編輯器給予你對第[GRID_NAME]日夜迴圈中天空的控制。這也是基礎環境編輯器的時間滑塊所使用的週期。
+
+日夜週期編輯器的基礎是關鍵幀。它們是帶有天空預設的節點 (在時間圖上以灰色的點表示)。當時間流逝，WindLight 的天空 也會通過過在這些關鍵幀之間插值而產生變化。
+
+在時間線之上的黃色箭頭表示您當前所看到天空的時間。拖動它可以看到您的天空將如何變化。您可以按右邊的添加鍵和刪除鍵按鈕來添加或刪除關鍵幀。
+
+您可以通過在時間線上拖動關鍵幀來改變其時間位置，也可以直接在關鍵幀設置中直接設置它的值。在關鍵幀設置中，您可以將關鍵幀與其相應的 WindLight 預設聯繫起來。
+
+週期長度決定一天的時間長短。將這個值設得較低 (例如，2 分鐘) 意味著您整個 24 小時的時間線完成變化的時間將只有實際的兩分鐘！一旦您對時間線和關鍵幀週期滿意，使用播放和停止按鈕來預覽結果。切記 — 您也可以拖動黃色的時間指示箭頭觀看天空變化。使用使用地產時間按鈕將使您的全天長度與時間和地產的日夜週期同步。
+
+當您對您的日夜週期滿意時，您可以使用保存測試日和讀取測試日按鈕將其保存。請注意，我們現在只允許一個日夜週期。
+	</notification>
+	<notification name="HelpBlueHorizon">
+		使用 紅色/綠色/藍色 (RGB) 滑塊來編輯天空的顏色。您可以用強度 (I) 滑塊來同時移動紅綠藍滑塊。
+	</notification>
+	<notification name="HelpHazeHorizon">
+		雲霧地平是調節整個場景曝光最有用的參數。它可以有效地模仿多種曝光設定，
+例如雪天白茫茫一片的場景以及曝光不足較陰暗的場景。
+	</notification>
+	<notification name="HelpBlueDensity">
+		藍色濃度影響整個天空和霧的飽和度。如果您將強度 (I) 滑塊向右移動，顏色將變得更亮、更鮮豔。如果您將其移動到最左邊，顏色將變得暗淡，直到最後成為黑白。如果您想要精細的調節天空的顏色平衡，您可以使用紅色/綠色/藍色 (RGB) 滑塊單獨控制各個顏色的飽和度。
+	</notification>
+	<notification name="HelpHazeDensity">
+		雲霧濃度控制大氣中灰濛濛霧霾的量。在模擬含有大量煙霧和人造污染物的場景時很有效。也適於模擬霧和靄。
+	</notification>
+	<notification name="HelpDensityMult">
+		濃度乘數可以用來影響整個的大氣濃度。在較低的設定上，它可以表現出 "稀薄空氣" 的感受，而較高的設定將會創造厚重而濃的效果。
+	</notification>
+	<notification name="HelpDistanceMult">
+		調節 WindLight 的距離效果。設置為零將等同於關閉 WindLight 對地面和物件的作用。大於 1 的值模擬比實際更深的距離，產生更濃的氣象效果。
+	</notification>
+	<notification name="HelpMaxAltitude">
+		最大高度調節 WindLight 進行氣象計算時所作的高度計算。  在傍晚時分時，用它來調節日落的 '深度' 很有作用。
+	</notification>
+	<notification name="HelpSunlightColor">
+		調節場景中的直射光源的亮度和顏色。
+	</notification>
+	<notification name="HelpSunAmbient">
+		調節場景中的環境光亮度和顏色。
+	</notification>
+	<notification name="HelpSunGlow">
+		尺寸滑塊控制太陽的尺寸。
+聚焦滑塊調節太陽在天空中模糊的程度。
+	</notification>
+	<notification name="HelpSceneGamma">
+		調節螢幕的明暗分佈。
+	</notification>
+	<notification name="HelpStarBrightness">
+		調節天空中星星的亮度。
+	</notification>
+	<notification name="HelpTimeOfDay">
+		調節太陽在天空中的位置。
+類似高度。
+	</notification>
+	<notification name="HelpEastAngle">
+		調節太陽在天空中的位置。
+類似方位角。
+	</notification>
+	<notification name="HelpCloudColor">
+		編輯雲的顏色。一般來說，
+建議還是白一點好，不過嘛，
+想要有點樂趣當然也沒問題。
+	</notification>
+	<notification name="HelpCloudDetail">
+		控制覆蓋在在主雲層圖像之上的細節圖。X 和 Y 控制它的位置。 D (密度) 控制雲看起來是蓬鬆還是離散。
+	</notification>
+	<notification name="HelpCloudDensity">
+		可以用 X 和 Y 滑塊控制雲層的位置，D (密度) 控制雲層的密度。
+	</notification>
+	<notification name="HelpCloudCoverage">
+		控制雲覆蓋天空的量。
+	</notification>
+	<notification name="HelpCloudScale">
+		控制雲層在穹頂上的大小。
+	</notification>
+	<notification name="HelpCloudScrollX">
+		控制雲層在 X 軸移動的速度。
+	</notification>
+	<notification name="HelpCloudScrollY">
+		控制雲層在 Y 軸移動的速度。
+	</notification>
+	<notification name="HelpClassicClouds">
+		選取該框以在渲染 WindLight 的雲層同時渲染第[SECOND_LIFE]的舊雲層。
+	</notification>
+	<notification name="HelpWaterFogColor">
+		控制水霧顏色。
+	</notification>
+	<notification name="HelpWaterFogDensity">
+		控制水霧濃度及水下視野範圍。
+	</notification>
+	<notification name="HelpUnderWaterFogMod">
+		修飾水霧濃度指數的效果，控制水下視野範圍。
+	</notification>
+	<notification name="HelpWaterGlow">
+		控制水面發光的範圍。
+	</notification>
+	<notification name="HelpWaterNormalScale">
+		控制組成水面的三個小波的縮放。
+	</notification>
+	<notification name="HelpWaterFresnelScale">
+		控制不同角度反射的光量多少。
+	</notification>
+	<notification name="HelpWaterFresnelOffset">
+		控制反光強度。
+	</notification>
+	<notification name="HelpWaterScaleAbove">
+		控制水面上放折射光量的大小。
+	</notification>
+	<notification name="HelpWaterScaleBelow">
+		控制水面下方折射光量的大小。
+	</notification>
+	<notification name="HelpWaterBlurMultiplier">
+		控制水波和折射混合的方式。
+	</notification>
+	<notification name="HelpWaterNormalMap">
+		改變決定水面反射/折射的法向貼圖。
+	</notification>
+	<notification name="HelpWaterWave1">
+		控制較大尺寸的法向貼圖在 X 和 Y 方向上移動的速度。
+	</notification>
+	<notification name="HelpWaterWave2">
+		控制較小尺寸的法向貼圖在 X 和 Y 方向上移動的速度。
+	</notification>
+	<notification name="NewSkyPreset">
+		給新的天空取一個名字。
+		<form name="form">
+			<input name="message" type="text">
+				新設定
+			</input>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="ExistsSkyPresetAlert">
+		預設已存在！
+	</notification>
+	<notification name="NewWaterPreset">
+		給新的水面取一個名字。
+		<form name="form">
+			<input name="message" type="text">
+				新設定
+			</input>
+			<button name="OK" text="確定"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="ExistsWaterPresetAlert">
+		預設已存在！
+	</notification>
+	<notification name="WaterNoEditDefault">
+		您不能更改或刪除默認預設。
+	</notification>
+	<notification name="ChatterBoxSessionStartError">
+		無法與 [RECIPIENT] 開始會話。
+[REASON]
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="ChatterBoxSessionEventError">
+		[EVENT]
+[REASON]
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="ForceCloseChatterBoxSession">
+		您與 [NAME] 的聊天會話必須關閉。
+[REASON]
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="Cannot_Purchase_an_Attachment">
+		物品作為附件時無法購買。
+	</notification>
+	<notification label="About Requests for the Debit Permission" name="DebitPermissionDetails">
+		授予該請求將給予腳本持續的從您的帳戶中提取林登幣 (F$) 的許可。要取消這項許可，物件的擁有者必須刪除物件或重置物件中的腳本。
+		<usetemplate name="okbutton" yestext="確定"/>
+	</notification>
+	<notification name="AutoWearNewClothing">
+		希望自動穿著您創建的衣物嗎？
+		<usetemplate ignoretext="自動穿著新衣物" name="okcancelignore" notext="否" yestext="是"/>
+	</notification>
+	<notification name="NotAgeVerified">
+		您需要驗證年齡才能進入這個地塊。
+您希望訪問第[SECOND_LIFE]網站驗證您的年齡嗎？
+
+[_URL]
+		<url name="url" option="0">
+			https://secondlife.com/account/verification.php
+		</url>
+		<usetemplate ignoretext="警告沒有驗證年齡時" name="okcancelignore" notext="否" yestext="是"/>
+	</notification>
+	<notification name="Cannot enter parcel: no payment info on file">
+		在您訪問該土地前，您的帳戶需要付款資訊。
+您要到[SECOND_LIFE]網站來設置麼？
+
+[_URL]
+		<url name="url" option="0">
+			https://secondlife.com/account/
+		</url>
+		<usetemplate ignoretext="缺少付款資訊警告" name="okcancelignore" notext="否" yestext="是"/>
+	</notification>
+	<notification name="MissingString">
+		strings.xml 中找不到字串 [STRING_NAME]
+	</notification>
+	<notification name="SystemMessageTip">
+		[MESSAGE]
+	</notification>
+	<notification name="Cancelled">
+		已取消
+	</notification>
+	<notification name="CancelledSit">
+		已取消坐下
+	</notification>
+	<notification name="CancelledAttach">
+		已取消裝備
+	</notification>
+	<notification name="ReplacedMissingWearable">
+		將遺失的衣服/身體部位替換為默認。
+	</notification>
+	<notification name="GroupNotice">
+		主題： [SUBJECT], 信息： [MESSAGE]
+	</notification>
+	<notification name="FriendOnline">
+		[FIRST] [LAST]上線了。
+	</notification>
+	<notification name="FriendOffline">
+		[FIRST] [LAST]下線了。
+	</notification>
+	<notification name="AddSelfFriend">
+		您無法將自己添加為好友。
+	</notification>
+	<notification name="UploadingAuctionSnapshot">
+		正在向世界中和網站上傳快照...
+(大概要 5 分鐘)
+	</notification>
+	<notification name="UploadPayment">
+		您為了上傳付出了 F$[AMOUNT]。
+	</notification>
+	<notification name="UploadWebSnapshotDone">
+		快照已經被上傳至網頁。
+	</notification>
+	<notification name="UploadSnapshotDone">
+		快照已經被上傳至世界中。
+	</notification>
+	<notification name="TerrainDownloaded">
+		Terrain.raw 下載完成
+	</notification>
+	<notification name="GestureMissing">
+		動作 [NAME] 已從資料庫中遺失。
+	</notification>
+	<notification name="UnableToLoadGesture">
+		無法載入動作 [NAME]。請再嘗試一次。
+	</notification>
+	<notification name="LandmarkMissing">
+		地標從資料庫中遺失。
+	</notification>
+	<notification name="UnableToLoadLandmark">
+		無法載入地標。請再試一次。
+	</notification>
+	<notification name="CapsKeyOn">
+		大寫鎖定處於開啟狀態。
+因為這會影響您鍵入的密碼，
+也許您會想把它關掉。
+	</notification>
+	<notification name="NotecardMissing">
+		記事卡從資料庫中遺失。
+	</notification>
+	<notification name="NotecardNoPermissions">
+		缺乏許可，不能查看記事卡。
+	</notification>
+	<notification name="RezItemNoPermissions">
+		缺乏許可，不能創建物件。
+	</notification>
+	<notification name="UnableToLoadNotecard">
+		現在暫時無法載入記事卡相關的資產。
+	</notification>
+	<notification name="ScriptMissing">
+		腳本從資料庫中遺失。
+	</notification>
+	<notification name="ScriptNoPermissions">
+		缺乏許可，不允許查看腳本。
+	</notification>
+	<notification name="UnableToLoadScript">
+		無法載入腳本。請再嘗試一次。
+	</notification>
+	<notification name="IncompleteInventory">
+		你提供的完整內容在本地尚不可用。請在幾分鐘後
+嘗試重新提供這些內容。
+	</notification>
+	<notification name="CannotModifyProtectedCategories">
+		你不能修改被保護的分類。
+	</notification>
+	<notification name="CannotRemoveProtectedCategories">
+		你不能移除被保護的分類。
+	</notification>
+	<notification name="OfferedCard">
+		你給 [FIRST] [LAST] 提供了名片。
+	</notification>
+	<notification name="UnableToBuyWhileDownloading">
+		下載物件資料時無法購買。
+請再嘗試一次。
+	</notification>
+	<notification name="UnableToLinkWhileDownloading">
+		下載物件資料時無法連結。
+請再嘗試一次。
+	</notification>
+	<notification name="CannotBuyObjectsFromDifferentOwners">
+		無法同時從不同主人處購買物件。
+請選擇單個物件。
+	</notification>
+	<notification name="ObjectNotForSale">
+		物件不像是處在出售狀態。
+	</notification>
+	<notification name="EnteringGodMode">
+		進入神明模式，等級[LEVEL]
+	</notification>
+	<notification name="LeavingGodMode">
+		離開神明模式，等級[LEVEL]
+	</notification>
+	<notification name="CopyFailed">
+		複製失敗，因為你沒有複製權利。
+	</notification>
+	<notification name="InventoryAccepted">
+		[NAME] 接受了你提供的物品。
+	</notification>
+	<notification name="InventoryDeclined">
+		[NAME] 拒絕了你提供的物品。
+	</notification>
+	<notification name="ObjectMessage">
+		[NAME]： [MESSAGE]
+	</notification>
+	<notification name="CallingCardAccepted">
+		你的名片已經被接受
+	</notification>
+	<notification name="CallingCardDeclined">
+		你的名片被拒絕。
+	</notification>
+	<notification name="TeleportToLandmark">
+		既然現在您已經到達大陸，您可以瞬間移動到例如'[NAME]'的地方，只要點擊
+螢幕右下角的百寶箱按鈕，然後選擇 Landmark 資料夾。
+按兩下地標，然後點擊瞬間移動來移動到那兒。
+	</notification>
+	<notification name="TeleportToPerson">
+		既然現在您已經到達大陸，您可以呼叫例如'[NAME]'的居民，
+只要點擊螢幕右下角的百寶箱按鈕，然後選擇 Calling Cards 資料夾。
+按兩下名片，點擊即時消息，然後鍵入您的消息。
+	</notification>
+	<notification name="CantSelectLandFromMultipleRegions">
+		無法跨伺服器選擇土地。請嘗試選擇一塊小一點的土地。
+	</notification>
+	<notification name="SearchWordBanned">
+		根據社區標準中的內容管制條例，某些搜索詞被遮罩掉了。
+	</notification>
+	<notification name="NoContentToSearch">
+		請選擇搜索至少一種類型的內容（PG，Mature，或Adult).
+	</notification>
+	<notification name="GroupVote">
+		[NAME]提議投票討論：
+[MESSAGE]
+		<form name="form">
+			<button name="VoteNow" text="現在投票"/>
+			<button name="Later" text="稍後"/>
+		</form>
+	</notification>
+	<notification name="SystemMessage">
+		[MESSAGE]
+	</notification>
+	<notification name="EventNotification">
+		事件提醒：
+
+[NAME]
+[DATE]
+		<form name="form">
+			<button name="Teleport" text="瞬間移動"/>
+			<button name="Description" text="描述"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="TransferObjectsHighlighted">
+		此處所有將隨土地一起轉讓給購買者的物件已經高亮顯示。
+
+* 將傳送的樹木和綠化不會高亮顯示。
+		<form name="form">
+			<button name="Done" text="完成"/>
+		</form>
+	</notification>
+	<notification name="DeactivatedGesturesTrigger">
+		取消啟動了觸發器相同的動作：
+[NAMES]
+	</notification>
+	<notification name="NoQuickTime">
+		Apple 公司的 QuickTime 沒有安裝在你的作業系統中。如果你希望觀看在支持的地塊中播放的媒體流，則需要從
+QuickTime網站 (http://www.apple.com/quicktime) 安裝 QuickTime Player。
+	</notification>
+	<notification name="OwnedObjectsReturned">
+		在所選地塊上你所擁有的物件已經被歸還至你的百寶箱中。
+	</notification>
+	<notification name="OtherObjectsReturned">
+		在所選的地塊上歸[FIRST] [LAST]所擁有的物件
+已經被返還至其百寶箱中。
+	</notification>
+	<notification name="OtherObjectsReturned2">
+		在所選的地塊上歸居民 '[NAME]' 所擁有的物件
+已經被返還至其主人處。
+	</notification>
+	<notification name="GroupObjectsReturned">
+		在所選地塊上，與社群 [GROUPNAME] 分享的物件已經被歸還至它們的主人的百寶箱裡。
+可轉讓的轉讓到社群的物件已經被歸還至它們先前主人處。
+不可轉讓的轉讓到社群的物件已經刪除。
+	</notification>
+	<notification name="UnOwnedObjectsReturned">
+		在選擇的地塊上，*不*屬於你的物件已經被歸還至它們的主人處。
+	</notification>
+	<notification name="NotSafe">
+		這塊土地打開了傷害選項 ('不安全')。
+您在這裡可能會受傷。如果您死了，您將會被瞬間移動至您的家位置。
+	</notification>
+	<notification name="NoFly">
+		這塊土地關閉了飛行 ('不能飛行')。
+您不能在這裡飛行。
+	</notification>
+	<notification name="PushRestricted">
+		這塊土地 '不允許推動'。
+您不能推動這裡的任何物件，除非您擁有這塊土地。
+	</notification>
+	<notification name="NoVoice">
+		這塊土地禁用了語音。
+	</notification>
+	<notification name="NoBuild">
+		這塊土地上關閉了建造 ('不能建造')。
+您不能在此創建物件。
+	</notification>
+	<notification name="ScriptsStopped">
+		管理員暫時停止了該地區的腳本運行。
+	</notification>
+	<notification name="ScriptsNotRunning">
+		該地區沒有運行任何腳本。
+	</notification>
+	<notification name="NoOutsideScripts">
+		這塊土地關閉了外部腳本 ('沒有外部腳本')。
+除了屬於土地主人的腳本，任何腳本在這裡都不會運行。
+	</notification>
+	<notification name="ClaimPublicLand">
+		只能對您所在的公共土地上申請產權。
+	</notification>
+	<notification name="RegionTPAccessBlocked">
+		您的限制級不允許您進入此地。您可能需要下載並安裝最新的第[VIEWER_NAME]軟體或取得年齡驗證。
+
+請去知識庫瞭解更多關於存取權限與限制級的關係。
+	</notification>
+	<notification name="URBannedFromRegion">
+		您被禁止進入此地區。
+	</notification>
+	<notification name="NoTeenGridAccess">
+		您的帳號不能連接到該"少年專屬區"。
+	</notification>
+	<notification name="NoHelpIslandTP">
+		您不能瞬間轉移回"援助島"。
+去"公共援助島"重複您的教程。
+	</notification>
+	<notification name="ImproperPaymentStatus">
+		您沒有適當的付款資訊，不能進入此區。
+	</notification>
+	<notification name="MustGetAgeRegion">
+		您必須經過年齡驗證才可進入此地區。
+	</notification>
+	<notification name="MustGetAgeParcel">
+		你必須經過年齡驗證才可以進入此地
+	</notification>
+	<notification name="NoDestRegion">
+		找不到目的地地區。
+	</notification>
+	<notification name="NotAllowedInDest">
+		您無法進入目的地。
+	</notification>
+	<notification name="RegionParcelBan">
+		不能跨過邊界進入被禁止訪問的地塊。請嘗試另一種方法。
+	</notification>
+	<notification name="TelehubRedirect">
+		您被限制於傳送站。
+	</notification>
+	<notification name="CouldntTPCloser">
+		無法瞬間轉移到距目的地更近的位置。
+	</notification>
+	<notification name="TPCancelled">
+		取消瞬間轉移。
+	</notification>
+	<notification name="FullRegionTryAgain">
+		您要訪問的地區人滿為患。請過會兒再試。
+	</notification>
+	<notification name="GeneralFailure">
+		一般失敗
+	</notification>
+	<notification name="RoutedWrongRegion">
+		路經錯誤地區。請重試。
+	</notification>
+	<notification name="NoValidAgentID">
+		沒有有效的用戶ID。
+	</notification>
+	<notification name="NoValidSession">
+		沒有有效的會期ID。
+	</notification>
+	<notification name="NoValidCircuit">
+		沒有有效的回路
+	</notification>
+	<notification name="NoValidTimestamp">
+		沒有有效的時間標記
+	</notification>
+	<notification name="NoPendingConnection">
+		無法建立連接。
+	</notification>
+	<notification name="InternalUsherError">
+		瞬間轉移的傳送過程導致了一個伺服器錯誤。第[GRID_NAME]伺服器可能存在異常。
+	</notification>
+	<notification name="NoGoodTPDestination">
+		在此地區中無法找到一個合適的傳送點。
+	</notification>
+	<notification name="InternalErrorRegionResolver">
+		您的瞬間轉移請求在解釋全域座標時導致了一個伺服器錯誤。第[GRID_NAME]伺服器可能存在異常。
+	</notification>
+	<notification name="NoValidLanding">
+		找不到一個有效的降落點
+	</notification>
+	<notification name="NoValidParcel">
+		找不到有效的地塊。
+	</notification>
+	<notification name="ObjectGiveItem">
+		[FIRST] [LAST] 擁有的物件 [OBJECTFROMNAME] 贈與您了名為 '[OBJECTNAME]' 的[OBJECTTYPE]。
+		<form name="form">
+			<button name="Keep" text="保留"/>
+			<button name="Discard" text="放棄"/>
+			<button name="Mute" text="遮罩"/>
+		</form>
+	</notification>
+	<notification name="ObjectGiveItemUnknownUser">
+		(某位元未知使用者) 擁有的物件 [OBJECTFROMNAME] 贈與您了名為 '[OBJECTNAME]' 的[OBJECTTYPE]。
+		<form name="form">
+			<button name="Keep" text="保留"/>
+			<button name="Discard" text="放棄"/>
+			<button name="Mute" text="遮罩"/>
+		</form>
+	</notification>
+	<notification name="UserGiveItem">
+		[NAME] 給了您一件名為 '[OBJECTNAME]' 的[OBJECTTYPE]。
+		<form name="form">
+			<button name="Keep" text="保留"/>
+			<button name="Discard" text="放棄"/>
+			<button name="Mute" text="遮罩"/>
+		</form>
+	</notification>
+	<notification name="GodMessage">
+		[NAME]
+[MESSAGE]
+	</notification>
+	<notification name="JoinGroup">
+		[MESSAGE]
+		<form name="form">
+			<button name="Join" text="加入"/>
+			<button name="Decline" text="謝絕"/>
+			<button name="Info" text="信息"/>
+		</form>
+	</notification>
+	<notification name="TeleportOffered">
+		[NAME] 邀請您瞬間移動到他/她的位置：
+
+[MESSAGE]
+		<form name="form">
+			<button name="Teleport" text="瞬間移動"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="GotoURL">
+		[MESSAGE]
+[URL]
+		<form name="form">
+			<button name="Later" text="稍後"/>
+			<button name="GoNow..." text="現在就登陸…"/>
+		</form>
+	</notification>
+	<notification name="OfferFriendship">
+		[NAME] 邀請您成為好友。
+
+[MESSAGE]
+
+(預設狀態下，你們將可以互相看到對方的線上狀況。)
+		<form name="form">
+			<button name="Accept" text="接受"/>
+			<button name="Decline" text="謝絕"/>
+		</form>
+	</notification>
+	<notification name="OfferFriendshipNoMessage">
+		[NAME] 邀請您成為好友。
+(預設狀態下，你們將可以互相看到對方的線上狀況。)
+		<form name="form">
+			<button name="Accept" text="接受"/>
+			<button name="Decline" text="謝絕"/>
+		</form>
+	</notification>
+	<notification name="FriendshipAccepted">
+		[NAME] 接受了您的好友邀請。
+	</notification>
+	<notification name="FriendshipDeclined">
+		[NAME] 謝絕了您的好友邀請。
+	</notification>
+	<notification name="OfferCallingCard">
+		[FIRST] [LAST] 要給你他的通話卡。這將在你的百寶箱中添加一個書簽，這樣你就可以快速的通過即時消息聯繫這位元元元居民。
+		<form name="form">
+			<button name="Accept" text="接受"/>
+			<button name="Decline" text="謝絕"/>
+		</form>
+	</notification>
+	<notification name="RegionRestartMinutes">
+		地區將在 [MINUTES]分鐘後重新啟動。
+如果仍留在此地區內，您將會被登出。
+	</notification>
+	<notification name="RegionRestartSeconds">
+		區域將在 [MINUTES]秒後重新啟動。
+如果仍留在此地區內，您將會被登出。
+	</notification>
+	<notification name="LoadWebPage">
+		是否載入網頁[URL]？
+
+[MESSAGE]
+
+來自物件： [OBJECTNAME], 主人： [NAME]？
+		<form name="form">
+			<button name="Gotopage" text="打開網頁"/>
+			<button name="Cancel" text="取消"/>
+		</form>
+	</notification>
+	<notification name="FailedToFindWearableUnnamed">
+		在資料庫中沒能找到[TYPE]。
+	</notification>
+	<notification name="FailedToFindWearable">
+		在資料庫中沒能找到名為 [DESC] 的[TYPE]。
+	</notification>
+	<notification name="InvalidWearable">
+		您所要穿戴的物品使用了一種當前用戶端無法處理的功能。請升級您的第[VIEWER_NAME]版本以正確穿戴此物品。
+	</notification>
+	<notification name="ScriptQuestion">
+		'[OBJECTNAME]', 一件 '[NAME]' 擁有的物件, 想要：
+
+[QUESTIONS]
+這樣可以嗎？
+		<form name="form">
+			<button name="Yes" text="允許"/>
+			<button name="No" text="拒絕"/>
+			<button name="Mute" text="遮罩"/>
+		</form>
+	</notification>
+	<notification name="ScriptQuestionCaution">
+		'[OBJECTNAME]', 一件 '[NAME]' 擁有的物件, 想要：
+
+[QUESTIONS]
+如果您不信任該物件和它的創建者，您應該拒絕這請求。點擊細節按鈕察看詳細資料。
+
+是否授予許可？
+		<form name="form">
+			<button name="Grant" text="授予"/>
+			<button name="Deny" text="謝絕"/>
+			<button name="Details" text="細節..."/>
+		</form>
+	</notification>
+	<notification name="ScriptDialog">
+		[FIRST] [LAST] 的 '[TITLE]'
+[MESSAGE]
+		<form name="form">
+			<button name="Ignore" text="忽視"/>
+		</form>
+	</notification>
+	<notification name="ScriptDialogGroup">
+		[GROUPNAME] 的 '[TITLE]'
+[MESSAGE]
+		<form name="form">
+			<button name="Ignore" text="忽視"/>
+		</form>
+	</notification>
+	<notification name="FirstBalanceIncrease">
+		您剛收到了 F$[AMOUNT]。
+物件和其他使用者可以向您支付F$。
+您的帳戶餘額顯示在螢幕的右上角。
+	</notification>
+	<notification name="FirstBalanceDecrease">
+		您剛支付了 F$[AMOUNT]。
+您的帳戶餘額顯示在螢幕的右上角。
+	</notification>
+	<notification name="FirstSit">
+		您正在坐著。
+使用方向鍵 (或者AWSD) 來改變視角。
+點擊 '站起來' 按鈕起身。
+	</notification>
+	<notification name="FirstMap">
+		點擊並拖動地圖以查看全景。
+按兩下以瞬間移動。
+使用右邊的控制項查找資訊，並顯示不同的背景。
+	</notification>
+	<notification name="FirstBuild">
+		您可以在 [GRID_NAME] 的某些區域中創建新物件。
+使用左上角的工具建造，也試一試按下 Ctrl 或者 Alt 鍵快速地切換工具。
+按 Esc 鍵停止建造。
+	</notification>
+	<notification name="FirstLeftClickNoHit">
+		點擊左鍵可以與特殊的物件互動。
+如果滑鼠指標成為手型，您就可以與該物件互動。
+點擊右鍵總是會顯示您可以做的事的功能表。
+	</notification>
+	<notification name="FirstTeleport">
+		這個地區不允許點對點瞬間移動，所以您被移動到了最近的瞬移樞紐上。
+您的目的地由一個高的信標標出。
+跟著紅色箭頭前往信標位置，或者點擊箭頭關閉信標。
+	</notification>
+	<notification name="FirstOverrideKeys">
+		您的動作控制按鍵現在被一件物件控制。
+嘗試一下方向鍵或 AWSD 看看它們的作用。
+某些物件 (例如槍) 需要您進入滑鼠視角才能使用。
+按 'M' 鍵進入滑鼠視角。
+	</notification>
+	<notification name="FirstAppearance">
+		您正在編輯您的外觀。要旋轉或者縮放視角，使用方向鍵。編輯完了的時候，點擊  '全部保存' 按鈕，來保存您的外觀並退出。您在任何時候都可以隨意編輯外觀。
+	</notification>
+	<notification name="FirstInventory">
+		這是您的百寶箱，是存放物件、記事卡、衣服和您擁有的其他東西的地方。
+* 要穿上物件或裝備資料夾，將它拖動到您自己身上。
+* 要將物件帶入世界中，將它拖動到地上。
+* 要閱讀記事卡，按兩下它。
+	</notification>
+	<notification name="FirstSandbox">
+		這是一塊沙箱區域。
+在這裡創建的物件在您離開後可能會刪除。沙箱區域會被定期清空，請參照螢幕上方區功能變數名稱稱旁邊的資訊。
+
+沙箱區域並不常見, 並會有特殊標識標出。
+	</notification>
+	<notification name="FirstFlexible">
+		該物件是活動的。
+活動物件不能同時為物理的，並且必須為幻影，除非取消其活動性。
+	</notification>
+	<notification name="FirstDebugMenus">
+		您已啟用了高級菜單。
+該功能表包含對調試第[VIEWER_NAME]的開發者有用的功能。
+要切換該菜單，在 Windows 中按 Ctrl-Alt-D。 在 Mac 中按 Cmd-Opt-Shift-D。
+	</notification>
+	<notification name="FirstSculptedPrim">
+		您正在編輯 sculpted 元件。
+Sculpted 元件需要特殊的材質來指定其形狀。
+您可以在百寶箱庫中找到示範 sculpted 材質。
+	</notification>
+	<notification name="FirstMedia">
+		您已經開始播放媒體。媒體可以在參數設置的音訊和視頻一欄中設置為自動播放。請注意這對於您不信任的媒體網站可能會有安全隱患。
+	</notification>
+	<notification name="MaxListSelectMessage">
+		您從該列表中最多只能選擇[MAX_SELECT] 個項目。
+	</notification>
+	<notification name="VoiceInviteP2P">
+		[NAME] 正在邀請您加入語音聊天。
+點擊接受來加入對話或按謝絕來拒絕邀請。點擊遮罩來遮罩該呼叫者。
+		<form name="form">
+			<button name="Accept" text="接受"/>
+			<button name="Decline" text="謝絕"/>
+			<button name="Mute" text="遮罩"/>
+		</form>
+	</notification>
+	<notification name="AutoUnmuteByIM">
+		您向 [FIRST] [LAST] 發送了一條即時消息，所以他已經被自動解除遮罩。
+	</notification>
+	<notification name="AutoUnmuteByMoney">
+		您向 [FIRST] [LAST] 付款，所以他已經被自動解除遮罩。
+	</notification>
+	<notification name="AutoUnmuteByInventory">
+		您正給與 [FIRST] [LAST] 百寶箱物品，所以他已經被自動解除遮罩。
+	</notification>
+	<notification name="VoiceInviteGroup">
+		[NAME] 加入了與 [GROUP] 社群的語音聊天。
+點擊接受來加入對話或按謝絕來拒絕邀請。點擊遮罩來遮罩該呼叫者。
+		<form name="form">
+			<button name="Accept" text="接受"/>
+			<button name="Decline" text="謝絕"/>
+			<button name="Mute" text="遮罩"/>
+		</form>
+	</notification>
+	<notification name="VoiceInviteAdHoc">
+		[NAME] 加入了一個語音聊天會議。
+點擊接受來加入對話或按謝絕來拒絕邀請。點擊遮罩來遮罩該呼叫者。
+		<form name="form">
+			<button name="Accept" text="接受"/>
+			<button name="Decline" text="謝絕"/>
+			<button name="Mute" text="遮罩"/>
+		</form>
+	</notification>
+	<notification name="InviteAdHoc">
+		[NAME] 正在邀請您加入語音聊天會議。
+點擊接受來加入對話或按謝絕來拒絕邀請。點擊遮罩來遮罩該呼叫者。
+		<form name="form">
+			<button name="Accept" text="接受"/>
+			<button name="Decline" text="謝絕"/>
+			<button name="Mute" text="遮罩"/>
+		</form>
+	</notification>
+	<notification name="VoiceChannelFull">
+		您嘗試加入的語音呼叫， [VOICE_CHANNEL_NAME], 已經達到最大成員數。請稍候再試。
+	</notification>
+	<notification name="ProximalVoiceChannelFull">
+		我們很抱歉。該區域已經達到語音交流的最大成員數。請嘗試在其他區域使用語音聊天。
+	</notification>
+	<notification name="VoiceChannelDisconnected">
+		您已經從 [VOICE_CHANNEL_NAME] 斷開連接。 您現在將會被重新連接到空間語音聊天。
+	</notification>
+	<notification name="VoiceChannelDisconnectedP2P">
+		[VOICE_CHANNEL_NAME] 已經結束呼叫。您現在將會被重新連接到空間語音聊天。
+	</notification>
+	<notification name="P2PCallDeclined">
+		[VOICE_CHANNEL_NAME] 謝絕了您的呼叫。您現在將會被重新連接到空間語音聊天。
+	</notification>
+	<notification name="P2PCallNoAnswer">
+		[VOICE_CHANNEL_NAME] 暫時不能接聽您的呼叫。您現在將會被重新連接到空間語音聊天。
+	</notification>
+	<notification name="VoiceChannelJoinFailed">
+		連接到 [VOICE_CHANNEL_NAME] 失敗，請稍候再試。您現在將會被重新連接到空間語音聊天。
+	</notification>
+	<notification duration="10" name="VoiceLoginRetry">
+		我們正在為您創建語音聊天頻道。最多會需要一分鐘。
+	</notification>
+	<notification name="Cannot enter parcel: not a group member">
+		無法進入地塊，您不是合適的社群的會員。
+	</notification>
+	<notification name="Cannot enter parcel: banned">
+		無法進入地塊，您已被禁止進入。
+	</notification>
+	<notification name="Cannot enter parcel: not on access list">
+		無法進入地塊，您不在允許名單上。
+	</notification>
+	<notification name="VoiceNotAllowed">
+		您沒有連接到 [VOICE_CHANNEL_NAME] 的語音聊天的許可。
+	</notification>
+	<notification name="VoiceCallGenericError">
+		嘗試連接到 [VOICE_CHANNEL_NAME] 時發生錯誤。 請稍候再試。
+	</notification>
+	<notification duration="10" name="ServerVersionChanged">
+		您剛進入的區域正在運行不同的模擬器版本。點擊該消息察看詳細資料。
+	</notification>
+	<notification name="UnableToOpenCommandURL">
+		您點擊的URL不能從該流覽器中打開。
+	</notification>
+	<global name="UnsupportedCPU">
+		- 您的 CPU(中央處理器)速度沒有達到最低需求。
+	</global>
+	<global name="UnsupportedGLRequirements">
+		您似乎沒有滿足第[VIEWER_NAME]的系統需求的硬體。第[VIEWER_NAME]需要支援多重材質 (multitexture)
+的 OpenGL 顯示卡。如果您滿足這個條件的話，也許您需要確認已經
+安裝了您的顯示卡的最新驅動程式、以及作業系統的 Service Pack 和補丁。
+
+如果您還是遇到問題，請訪問： http://www.secondlife.com/support
+	</global>
+	<global name="UnsupportedCPUAmount">
+		796
+	</global>
+	<global name="UnsupportedRAMAmount">
+		510
+	</global>
+	<global name="UnsupportedGPU">
+		- 您的顯示卡沒有達到最低需求。
+	</global>
+	<global name="UnsupportedRAM">
+		- 您的系統記憶體沒有達到最低需求。
+	</global>
+	<global name="PermYes">
+		可
+	</global>
+	<global name="PermNo">
+		否
+	</global>
+</notifications>
